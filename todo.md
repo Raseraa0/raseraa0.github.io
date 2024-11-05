@@ -9,12 +9,12 @@
 
 - signaler que l'on peut clicker sur les case lorsque l'on a la vue éclaircie sur la page du game of life
 - rajouter un hi im d'une autre couleur ??????
-- mettre en évidence les boutons des pages projet afin qu'un sache ce qu'on peut faire
 - load la page progressivement, c'est tout con mais juste d es fade d'opacité un par un ?
 - changer les icones genre de logo ?
 - faire tout les textes...
 - foutre des ombre partout ???
 - les compétence, faire en sorte que ca ressort comme si c'était en relief ??
+- faire en sorte que quand je retoure sur la page principale depuis une des page projet, et bien le boutton back to top sois afficher, actuellement il ne l'ai pas car je check la condition uniquement quand je scroll
 
 ### Features
 
@@ -25,7 +25,6 @@
 - ((rajouter fonctionnalité comme bouton pour passer a la section suivante))
 - en dessous, et au dessus sur les icon, avoir mon adresse mail (ou logo lettre) ou je peux cliquer et ca ouvre directement un truc pour envoyer un mal
 - quand je passe ma souris sur ma photo genre emttre des info genre mon age mes passion etc genre les truc plus perso quoi
-- pour chaque bouton de la page de projet quand je passe ma souris dessus, afficher ce que ca fait, au debut juste afficher un message au survol, genre ca se fais en html directe puis si j'ai la fois genre afficher un message qui s'affiche sur la gauche, en mode le texte aparait de droite a gauche, genre comme si un masque transparent translatait de droite a gauche (!!!FAIRE CA APRES AVOIR RESTRUCTURÉ LES BOUTON GENRE TOUS LES METTRE DANS UN NAV!!!)
 
 ### Random
 

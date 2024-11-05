@@ -65,8 +65,9 @@
 
 .scroll-down {
   position: absolute;
-  transform: rotateZ(90deg);
+  rotate: 90deg;
   bottom: 50px;
+
 }
 
 .scroll-down .chevron {

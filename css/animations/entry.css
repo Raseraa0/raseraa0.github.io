@@ -1,0 +1,216 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+:root {
+  --anim-delay: 0.1s;
+}
+
+/*===============================================================================================================*/
+/*Global: My self section*/
+
+
+#navigation-selecteur {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-fill-mode: backwards;
+}
+
+#nav-1 {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-fill-mode: backwards;
+  animation-delay: calc(var(--anim-delay) * 1);
+}
+
+#nav-3 {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-fill-mode: backwards;
+  animation-delay: calc(var(--anim-delay) * 2);
+}
+
+#nav-4 {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-fill-mode: backwards;
+  animation-delay: calc(var(--anim-delay) * 3);
+}
+
+#nav-5 {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-fill-mode: backwards;
+  animation-delay: calc(var(--anim-delay) * 4);
+}
+
+#prenom {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-fill-mode: backwards;
+  animation-delay: calc(var(--anim-delay) * 5);
+}
+
+#prenom-barre {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-fill-mode: backwards;
+  animation-delay: calc(var(--anim-delay) * 6);
+}
+
+#desc {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-fill-mode: backwards;
+  animation-delay: calc(var(--anim-delay) * 7);
+}
+
+.profil-picture-outer {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-fill-mode: backwards;
+  animation-delay: calc(var(--anim-delay) * 6);
+}
+
+
+#media-1 {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-fill-mode: backwards;
+  animation-delay: calc(var(--anim-delay) * 9);
+}
+
+#media-2 {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-fill-mode: backwards;
+  animation-delay: calc(var(--anim-delay) * 10);
+}
+
+#media-3 {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-fill-mode: backwards;
+  animation-delay: calc(var(--anim-delay) * 11);
+}
+
+.scroll-down {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-fill-mode: backwards;
+  animation-delay: calc(var(--anim-delay) * 15);
+}
+
+/*===============================================================================================================*/
+/*Global: Project section*/
+
+#projects-title {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-fill-mode: backwards;
+  animation-delay: 0;
+}
+
+
+#project-1 {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-fill-mode: backwards;
+  animation-delay: calc(var(--anim-delay) * 1);
+}
+
+#project-1 .project-name {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-fill-mode: backwards;
+  animation-delay: calc(var(--anim-delay) * 2);
+}
+
+#project-1 .project-description {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-fill-mode: backwards;
+  animation-delay: calc(var(--anim-delay) * 3);
+}
+
+#project-1 .project-img {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-fill-mode: backwards;
+  animation-delay: calc(var(--anim-delay) * 4);
+}
+
+#project-1 .project-plus-outer {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-fill-mode: backwards;
+  animation-delay: calc(var(--anim-delay) * 5);
+}
+
+#project-2 {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-fill-mode: backwards;
+  animation-delay: calc(var(--anim-delay) * 6);
+}
+
+#project-2 .project-name {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-fill-mode: backwards;
+  animation-delay: calc(var(--anim-delay) * 7);
+}
+
+#project-2 .project-description {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-fill-mode: backwards;
+  animation-delay: calc(var(--anim-delay) * 8);
+}
+
+#project-2 .project-img {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-fill-mode: backwards;
+  animation-delay: calc(var(--anim-delay) * 9);
+}
+
+#project-2 .project-plus-outer {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-fill-mode: backwards;
+  animation-delay: calc(var(--anim-delay) * 10);
+}
+
+#project-3 {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-fill-mode: backwards;
+  animation-delay: calc(var(--anim-delay) * 11);
+}
+
+#project-3 .project-name {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-fill-mode: backwards;
+  animation-delay: calc(var(--anim-delay) * 12);
+}
+
+#project-3 .project-description {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-fill-mode: backwards;
+  animation-delay: calc(var(--anim-delay) * 13);
+}
+
+#project-3 .project-img {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-fill-mode: backwards;
+  animation-delay: calc(var(--anim-delay) * 14);
+}
+
+#project-3 .project-plus-outer {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-fill-mode: backwards;
+  animation-delay: calc(var(--anim-delay) * 15);
+}
+
+/*===============================================================================================================*/
+/*Global: Skills section*/
+
+#skills-title {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-fill-mode: backwards;
+  animation-delay: 0;
+}
+
+#project-1 {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-fill-mode: backwards;
+  animation-delay: calc(var(--anim-delay) * 15);
+}
+
+/*===============================================================================================================*/
+
+
+/*===============================================================================================================*/

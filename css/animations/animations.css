@@ -1,56 +1,52 @@
 @keyframes appear {
-    from {
-        opacity: 0;
-        scale: 0.7;
-    }
-    to {
-        opacity: 1;
-        scale: 1;
-    }
+  from {
+    opacity: 0;
+    scale: 0.7;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
 }
 
 .project {
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 20%;
+  animation: appear ease-out;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
 }
 
-
-#skill-1, #skill-3 {
-    animation: appear1 linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 20%;
+#skill-1,
+#skill-3 {
+  animation: appear1 ease-out;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
 }
 
-#skill-2, #skill-4 {
-    animation: appear2 linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 20%;
+#skill-2,
+#skill-4 {
+  animation: appear2 ease-out;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
 }
-
-
-
-
 
 @keyframes appear1 {
-    from {
-        opacity: 0;
-        transform: translateX(-100px); 
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes appear2 {
-    from {
-        opacity: 0;
-        transform: translateX(100px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
-
