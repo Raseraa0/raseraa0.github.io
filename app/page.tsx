@@ -1,11 +1,14 @@
 "use client";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Hero from "./Hero";
+import PreloadImages from "./utils/PreloadImages";
 
 export default function Home() {
   return (
     <main className="bg-black-100">
+
       <Parallax pages={2} style={{ top: "0", left: "0" }} className="animation">
+        <PreloadImages/>
         <Hero/>
         <ParallaxLayer offset={1} speed={0}>
           <div className="text-white-1 p-20 bg-blue-9">
