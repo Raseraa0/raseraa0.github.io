@@ -2,20 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Hero */
+
+.animation {
+  height: 100vh;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.animation_layer, .name {
+  height: 1000px;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.animation {
+  display: block;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+
+}
+
+.animation_layer {
+  background-position: bottom center;
+  background-size: auto 1038px;
+  background-repeat: repeat-x;
+  width: 100%;
+  position: absolute;
+}
+.animation_layer.parallax {
+  position: fixed;
 }
