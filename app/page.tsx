@@ -1,11 +1,46 @@
 "use client";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import { useEffect, useState } from "react";
 import Hero from "./Hero";
+import LoadingScreen from "./components/LoadingScreen";
 
 export default function Home() {
+
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const images = document.querySelectorAll('[data-bg]');
+    let loadedCount = 0;
+
+    const handleImageLoad = () => {
+      loadedCount += 1;
+      if (loadedCount === images.length) {
+        setLoading(false);
+      }
+    };
+
+    images.forEach((image) => {
+      const url = image.getAttribute('data-bg');
+      if (url) {
+        const img = new Image();
+        img.src = url;
+        img.onload = handleImageLoad;
+        img.onerror = handleImageLoad;
+      }
+    });
+
+    if (images.length === 0) {
+      setLoading(false);
+    }
+  }, []);
+
+
+
   return (
     <main className="bg-black-100">
 
+      {loading && <LoadingScreen />}
       <Parallax pages={2} style={{ top: "0", left: "0" }} className="animation">
         <Hero/>
         <ParallaxLayer offset={1} speed={0}>
