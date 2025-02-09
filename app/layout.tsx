@@ -22,3 +22,8 @@ export default function RootLayout({
     </html>
   );
 }
+
+
+
+
+// avec parallax useref il existe un truc genre scroll to

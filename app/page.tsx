@@ -1,6 +1,6 @@
 "use client";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import { useEffect, useState } from "react";
+import { IParallax, Parallax, ParallaxLayer } from "@react-spring/parallax";
+import { useEffect, useRef, useState } from "react";
 import Hero from "./Hero";
 import LoadingScreen from "./components/LoadingScreen";
 
@@ -36,13 +36,15 @@ export default function Home() {
   }, []);
 
 
+  const parallaxRef = useRef<IParallax>(null)
+
 
   return (
     <main className="bg-black-100">
 
       {loading && <LoadingScreen />}
-      <Parallax pages={2} style={{ top: "0", left: "0" }} className="animation">
-        <Hero/>
+      <Parallax ref={parallaxRef} pages={2} style={{ top: "0", left: "0" }} className="animation">
+        <Hero parallaxRef={parallaxRef}/>
         <ParallaxLayer offset={1} speed={0}>
           <div className="text-white-1 p-20 bg-blue-9">
             <h2 className="text-3xl py-10">lorem lipsum</h2>
