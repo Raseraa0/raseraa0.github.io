@@ -39,3 +39,5 @@ function Hero({ parallaxRef }: Props) {
 }
 
 export default Hero;
+
+//TODO problème avec le paralax que très grand écran, genre jsp vrm pk, il faut regler se probleme, peut etre regler en meme temps le pb sur telephone, jsp teouver qqch
