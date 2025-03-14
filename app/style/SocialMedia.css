@@ -1,0 +1,32 @@
+.social-media-badge {
+  display: inline-flex;
+  height: 2.75rem;
+  width: 2.75rem;
+  padding: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+
+  transition: box-shadow 0.5s ease-out 0s;
+}
+
+.social-media-badge:hover {
+  box-shadow: 0 0 10px #00131c;
+}
+
+#social-media-selecteur {
+  position: relative;
+  left: 0;
+  height: 3px;
+  width: 100%;
+
+  box-shadow: 0 0 10px #00131c;
+
+  background-color: #002545;
+
+  transition: left 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+
+/*écrire en dessous de la barre genre my social media et des que je hover un element ca écriet github ou linkedin ou alors ca met mon adresse mail ( mettre la possibilité de copy to clipboard le mail)*/
+/* et genre écrire ca avec une police très caligraphique ?? */

@@ -7,8 +7,8 @@ type Props = {
 
 function BackgroundLayer({ div_id, speed }: Props) {
   return (
-    <ParallaxLayer offset={0} speed={speed}>
-      <div className="animation_layer parallax" id={div_id}></div>
+    <ParallaxLayer className="no_pointer_layer" offset={0} speed={speed}>
+      <div className="animation_layer parallax " id={div_id}></div>
     </ParallaxLayer>
   );
 }

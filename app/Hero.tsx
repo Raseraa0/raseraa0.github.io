@@ -3,15 +3,17 @@ import { RefObject } from "react";
 import BackgroundLayer from "./components/BackgroundLayer";
 import Name from "./components/Name";
 import ScrollDownArrow from "./components/ScrollDownArrow";
+import SocialMediaBar from "./components/SocialMediaBar";
 
 type Props = {
-  parallaxRef: RefObject<IParallax>;
+  parallaxRef: RefObject<IParallax | null>;
 };
 
 function Hero({ parallaxRef }: Props) {
   return (
     <>
       <BackgroundLayer speed={0} div_id="sky-0" />
+      <SocialMediaBar speed={-3} className={"flex"}/>
       <BackgroundLayer speed={-1.2} div_id="clouds-1" />
       <BackgroundLayer speed={-1} div_id="mountains-2" />
       <BackgroundLayer speed={-0.8} div_id="mountains-3" />
@@ -21,18 +23,18 @@ function Hero({ parallaxRef }: Props) {
       <Name
         speed={-4}
         text="Arthur Rasera"
-        className="translate-y-[385px] text-8xl text-blue-7"
+        className="flex items-center translate-y-[-5%] text-6xl lg:text-8xl text-blue-7"
       />
       <Name
         speed={-2.5}
         text="Hi, I'm"
-        className="translate-y-[360px] translate-x-[-250px] text-4xl text-blue-9"
+        className="flex items-center translate-y-[-10%] lg:translate-x-[-250px] text-4xl text-blue-9"
       />
       <BackgroundLayer speed={-0.4} div_id="bridge-7" />
       <BackgroundLayer speed={-0.2} div_id="forest-8" />
       <BackgroundLayer speed={0} div_id="forest-9" />
-      <ParallaxLayer>
-        <ScrollDownArrow parallaxRef={parallaxRef}/>
+      <ParallaxLayer className="no_pointer_layer">
+        <ScrollDownArrow parallaxRef={parallaxRef} />
       </ParallaxLayer>
     </>
   );

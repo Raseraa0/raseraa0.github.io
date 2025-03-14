@@ -14,7 +14,7 @@ function Name({ speed, text, className= '' }: Props) {
     <ParallaxLayer
       offset={0}
       speed={speed}
-      className="flex justify-center"
+      className="no_pointer_layer flex justify-center"
     >
       <p
         className={`${jersey_15.className} ${className}`}

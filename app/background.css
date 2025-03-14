@@ -1,41 +1,70 @@
 
 #sky-0 {
-    background-image: url(../public/Minimaliste/Modified_Layer/0_Sky.png);
-  }
-  
-  #clouds-1 {
-    background-image: url(../public/Minimaliste/Modified_Layer/1_Clouds.png);
-  }
-  
-  #mountains-2 {
-    background-image: url(../public/Minimaliste/Modified_Layer/2_Mountains.png);
-  }
-  
-  #mountains-3 {
-    background-image: url(../public/Minimaliste/Modified_Layer/3_Mountains.png);
-  }
-  
-  #mountains-4 {
-    background-image: url(../public/Minimaliste/Modified_Layer/4_Mountains.png);
-  }
-  
-  #birds-5 {
-    background-image: url(../public/Minimaliste/Modified_Layer/5_Birds.png);
-  }
-  
-  #birds-6 {
-    background-image: url(../public/Minimaliste/Modified_Layer/6_Birds.png);
-  }
-  
-  #bridge-7 {
-    background-image: url(../public/Minimaliste/Modified_Layer/7_Bridge.png);
-  }
-  
-  #forest-8 {
-    background-image: url(../public/Minimaliste/Modified_Layer/8_Forest.png);
-  }
-  
-  #forest-9 {
-    background-image: url(../public/Minimaliste/Modified_Layer/9_Forest.png);
-  }
-  
+  background-image: url(../public/Minimaliste/Modified_Layer/0_Sky.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#clouds-1 {
+  background-image: url(../public/Minimaliste/Modified_Layer/1_Clouds.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#mountains-2 {
+  background-image: url(../public/Minimaliste/Modified_Layer/2_Mountains.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#mountains-3 {
+  background-image: url(../public/Minimaliste/Modified_Layer/3_Mountains.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#mountains-4 {
+  background-image: url(../public/Minimaliste/Modified_Layer/4_Mountains.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#birds-5 {
+  background-image: url(../public/Minimaliste/Modified_Layer/5_Birds.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#birds-6 {
+  background-image: url(../public/Minimaliste/Modified_Layer/6_Birds.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#bridge-7 {
+  background-image: url(../public/Minimaliste/Modified_Layer/7_Bridge.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#forest-8 {
+  background-image: url(../public/Minimaliste/Modified_Layer/8_Forest.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#forest-9 {
+  background-image: url(../public/Minimaliste/Modified_Layer/9_Forest.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

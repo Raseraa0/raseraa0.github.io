@@ -7,7 +7,7 @@ type Props = {
   margin_side?: number;
   size?: number;
   scrollThreshold?: number;
-  parallaxRef: RefObject<IParallax>;
+  parallaxRef: RefObject<IParallax | null>;
 };
 
 type PropsAgain = {
@@ -30,7 +30,7 @@ function Chevron({ size }: PropsAgain) {
 function ScrollDownArrow({
   margin_side = 70,
   margin_bottom = 30,
-  size = 25,
+  size = 20,
   scrollThreshold = 30,
   parallaxRef,
 }: Props) {
@@ -52,7 +52,11 @@ function ScrollDownArrow({
   }, [scrollThreshold, parallaxRef]);
 
   return (
-    <div className={`h-[100vh] fluide-anim relative ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+    <div
+      className={`h-[100vh] fluide-anim relative ${
+        isVisible ? "opacity-100" : "opacity-0"
+      }`}
+    >
       <div
         className={`absolute`}
         style={{ bottom: margin_bottom, left: margin_side }}

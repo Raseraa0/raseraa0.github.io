@@ -2,14 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.minimal-size {
+  min-width: 320px;
+  min-height: 500px;
+}
+
 /* Hero */
 
 .animation {
   height: 100vh;
+  outline: solid red 3px;
 }
 
-.animation_layer, .name {
-  height: 1000px;
+.animation_layer,
+.name {
+  /* height: 1000px; */
+  height: 100vh;
 }
 
 .animation {
@@ -17,7 +26,7 @@
   position: relative;
   z-index: 10;
   overflow: hidden;
-
+  outline: solid green 3px;
 }
 
 .animation_layer {
@@ -27,10 +36,20 @@
   width: 100%;
   position: absolute;
 }
+
 .animation_layer.parallax {
   position: fixed;
 }
 
 .fluide-anim {
   transition: all 0.5s ease-in-out;
+}
+
+/* * { */
+/* outline: solid red 1px; */
+/* } */
+
+.fluide-anim,
+.no_pointer_layer {
+  pointer-events: none;
 }
