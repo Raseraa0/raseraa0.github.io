@@ -43,7 +43,7 @@ export default function Home() {
     <main className="bg-black-100">
 
       {loading && <LoadingScreen />}
-      <Parallax ref={parallaxRef} pages={2} style={{ top: "0", left: "0" }} className="animation minimal-size">
+      <Parallax ref={parallaxRef} pages={2} style={{ top: "0", left: "0" }} className="animation ">
         <Hero parallaxRef={parallaxRef}/>
         <ParallaxLayer offset={1} speed={0}>
           <div className="text-white-1 p-20 bg-blue-9">

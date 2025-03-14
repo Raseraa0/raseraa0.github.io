@@ -11,14 +11,17 @@
 /* Hero */
 
 .animation {
-  height: 100vh;
-  outline: solid red 3px;
+  /* height: 100vh; */
+  min-width: 320px;
+  min-height: 500px;
 }
 
 .animation_layer,
 .name {
-  /* height: 1000px; */
   height: 100vh;
+  
+  min-width: 320px;
+  min-height: 500px;
 }
 
 .animation {
@@ -26,7 +29,6 @@
   position: relative;
   z-index: 10;
   overflow: hidden;
-  outline: solid green 3px;
 }
 
 .animation_layer {
