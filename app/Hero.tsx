@@ -13,9 +13,9 @@ function Hero({ parallaxRef }: Props) {
   return (
     <>
       <BackgroundLayer speed={0} div_id="sky-0" />
-      <SocialMediaBar speed={-3} className={"flex"}/>
       <BackgroundLayer speed={-1.2} div_id="clouds-1" />
       <BackgroundLayer speed={-1} div_id="mountains-2" />
+      <SocialMediaBar speed={-3} className={"flex"}/>
       <BackgroundLayer speed={-0.8} div_id="mountains-3" />
       <BackgroundLayer speed={-0.6} div_id="mountains-4" />
       <BackgroundLayer speed={0.5} div_id="birds-5" />
