@@ -1,6 +1,7 @@
 
 #sky-0 {
-  background-image: url(../public/Minimaliste/LowSize_Layer/0_Sky.png);
+  /* background-image: url(../public/Minimaliste/LowSize_Layer/0_Sky.png); */
+  background-color: #a2fff4;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
