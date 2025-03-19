@@ -23,12 +23,12 @@ function Hero({ parallaxRef }: Props) {
       <Name
         speed={-4}
         text="Arthur Rasera"
-        className="flex items-center translate-y-[-5%] text-6xl lg:text-8xl text-blue-7"
+        className="translate-y-[-20px] lg:translate-y-[-30px] text-6xl lg:text-8xl text-blue-7"
       />
       <Name
         speed={-2.5}
         text="Hi, I'm"
-        className="flex items-center translate-y-[-10%] lg:translate-x-[-230px] text-4xl text-blue-9"
+        className="translate-y-[-60px] lg:translate-y-[-80px] lg:translate-x-[-230px] text-4xl text-blue-9"
       />
       <BackgroundLayer speed={-0.4} div_id="bridge-7" />
       <BackgroundLayer speed={-0.2} div_id="forest-8" />

@@ -17,7 +17,7 @@ function Name({ speed, text, className= '' }: Props) {
       className="no_pointer_layer flex justify-center"
     >
       <p
-        className={`${jersey_15.className} ${className}`}
+        className={`flex items-center transition-all duration-200 ease-in-out ${jersey_15.className} ${className}`}
       >
         {text}
       </p>
