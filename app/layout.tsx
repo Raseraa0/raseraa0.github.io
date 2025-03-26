@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import "./background.css";
-import "./globals.css";
+import "./style/background.css";
+import "./style/globals.css";
 import { fontInter } from "@/public/font";
 
 

@@ -42,6 +42,7 @@ export default function Home() {
         {/* Hero pour la page d'acceuil */}
         <Hero parallaxRef={parallaxRef} />
 
+
         {/* Block temporaire */}
         <ParallaxLayer offset={1} speed={0}>
 
