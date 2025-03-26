@@ -1,6 +1,6 @@
-import { IParallax } from "@react-spring/parallax";
 import Image from "next/image";
 import { RefObject, useEffect, useState } from "react";
+import { IParallax, ParallaxLayer } from "@react-spring/parallax";
 
 type Props = {
   margin_bottom?: number;
@@ -52,28 +52,30 @@ function ScrollDownArrow({
   }, [scrollThreshold, parallaxRef]);
 
   return (
-    <div
-      className={`h-[100vh] fluide-anim relative ${
-        isVisible ? "opacity-100" : "opacity-0"
-      }`}
-    >
+
+    <ParallaxLayer className="p-no-pointer-layer">
       <div
-        className={`absolute`}
-        style={{ bottom: margin_bottom, left: margin_side }}
+        className={`h-[100vh] p-fluide-anim relative ${isVisible ? "opacity-100" : "opacity-0"
+          }`}
       >
-        <Chevron size={size} />
-        <Chevron size={size} />
-        <Chevron size={size} />
+        <div
+          className={`absolute`}
+          style={{ bottom: margin_bottom, left: margin_side }}
+        >
+          <Chevron size={size} />
+          <Chevron size={size} />
+          <Chevron size={size} />
+        </div>
+        <div
+          className={`absolute`}
+          style={{ bottom: margin_bottom, right: margin_side }}
+        >
+          <Chevron size={size} />
+          <Chevron size={size} />
+          <Chevron size={size} />
+        </div>
       </div>
-      <div
-        className={`absolute`}
-        style={{ bottom: margin_bottom, right: margin_side }}
-      >
-        <Chevron size={size} />
-        <Chevron size={size} />
-        <Chevron size={size} />
-      </div>
-    </div>
+    </ParallaxLayer>
   );
 }
 

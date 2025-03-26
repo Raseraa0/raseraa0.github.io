@@ -1,23 +1,38 @@
-import { ParallaxLayer } from "@react-spring/parallax";
-import { Jersey_15 } from "next/font/google";
+/**
+ * @name name
+ * @description Affiche un text au centre de l'écran
+ */
 
+import { fontJersey15 } from "@/public/font";
+import { ParallaxLayer } from "@react-spring/parallax";
+
+// Propriétés
 type Props = {
+
+  // Vitesse à transmettre à la couche parallax
   speed: number;
+
+  // Texte à afficher
   text: string;
-  className? : string;
+
+  // Class supplémentaire
+  className?: string;
 };
 
-const jersey_15 = Jersey_15({ weight: "400", subsets: ["latin"] });
-
-function Name({ speed, text, className= '' }: Props) {
+/**
+ * Fonction principale
+ * @returns 
+ *      - Couche parallax qui va contenir le texte
+ */
+function Name({ speed, text, className = '' }: Props) {
   return (
     <ParallaxLayer
       offset={0}
       speed={speed}
-      className="no_pointer_layer flex justify-center"
+      className="p-no-pointer-layer flex justify-center"
     >
       <p
-        className={`flex items-center transition-all duration-200 ease-in-out ${jersey_15.className} ${className}`}
+        className={`flex items-center transition-all duration-200 ease-in-out ${fontJersey15.className} ${className}`}
       >
         {text}
       </p>

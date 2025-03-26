@@ -3,55 +3,38 @@
 @tailwind utilities;
 
 
-.minimal-size {
+.p-minimal-size {
   min-width: 320px;
   min-height: 500px;
 }
 
 /* Hero */
 
-.animation {
+.p-animation {
   /* height: 100vh; */
   min-width: 320px;
   min-height: 500px;
-}
-
-.animation_layer,
-.name {
-  height: 100vh;
-  
-  min-width: 320px;
-  min-height: 500px;
-}
-
-.animation {
   display: block;
   position: relative;
   z-index: 10;
   overflow: hidden;
 }
 
-.animation_layer {
+.p-background-layer {
+  height: 100vh;
+  width: 100%;
+  min-height: 500px;
+  min-width: 320px;
   background-position: bottom center;
   background-size: auto 1038px;
   background-repeat: repeat-x;
-  width: 100%;
-  position: absolute;
-}
-
-.animation_layer.parallax {
   position: fixed;
 }
 
-.fluide-anim {
+.p-fluide-anim {
   transition: all 0.5s ease-in-out;
 }
 
-/* * { */
-/* outline: solid red 1px; */
-/* } */
-
-.fluide-anim,
-.no_pointer_layer {
+.p-no-pointer-layer {
   pointer-events: none;
 }

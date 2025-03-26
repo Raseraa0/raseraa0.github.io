@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./background.css";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import { fontInter } from "@/public/font";
 
 
 export const metadata: Metadata = {
@@ -18,12 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} minimal-size`}>{children}</body>
+      <body className={`${fontInter.className} p-minimal-size`}>{children}</body>
     </html>
   );
 }
-
-
-
-
-// avec parallax useref il existe un truc genre scroll to

@@ -15,7 +15,7 @@ export default function SocialMediaBar({ speed, className = '' }: Props) {
   function headerSetup() {
     const selecteur = document.getElementById("social-media-selecteur");
 
-    const allSocialMedia = document.getElementsByClassName("social-media-badge");
+    const allSocialMedia = document.getElementsByClassName("p-social-media-badge");
     for (const socialMedia of Array.from(allSocialMedia) as HTMLElement[]) {
       socialMedia.addEventListener("mouseenter", () => {
         const num = parseInt(socialMedia.dataset.num ?? "0");
@@ -39,7 +39,7 @@ export default function SocialMediaBar({ speed, className = '' }: Props) {
   }
 
   return (
-    <ParallaxLayer offset={0} speed={speed} className="flex justify-center">
+    <ParallaxLayer offset={0} speed={speed} className="flex justify-center ">
       <div id="social-media-outer" className={`flex flex-col gap-2 p-3 ${className}`}>
         <div className="flex flex-row gap-10">
           <SocialMedia svgSrc="./SocialMedia/github-badge.svg" className="" num="1" />

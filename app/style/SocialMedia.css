@@ -1,4 +1,4 @@
-.social-media-badge {
+.p-social-media-badge {
   display: inline-flex;
   height: 2.75rem;
   width: 2.75rem;
@@ -10,7 +10,7 @@
   transition: box-shadow 0.5s ease-out 0s;
 }
 
-.social-media-badge:hover {
+.p-social-media-badge:hover {
   box-shadow: 0 0 10px #00131c;
 }
 
