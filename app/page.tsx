@@ -8,6 +8,9 @@ import { IParallax, Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { useEffect, useRef, useState } from "react";
 import Hero from "./Hero";
 import LoadingScreen from "./components/LoadingScreen";
+import Persona from "./Persona";
+import Projects from "./Projets";
+import Skills from "./Skills";
 
 /**
  * Fonction principal
@@ -42,6 +45,9 @@ export default function Home() {
         {/* Hero pour la page d'acceuil */}
         <Hero parallaxRef={parallaxRef} />
 
+        <Persona />
+        <Projects />
+        <Skills />
 
         {/* Block temporaire */}
         <ParallaxLayer offset={1} speed={0}>
