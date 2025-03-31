@@ -29,6 +29,9 @@ type Props = {
  */
 function Hero({ parallaxRef }: Props) {
 
+
+ 
+
   return (
     <>
       {/* Couche pour le background */}
@@ -66,6 +69,7 @@ function Hero({ parallaxRef }: Props) {
 
       {/* Fleche qui invite à scroller */}
       <ScrollDownArrow parallaxRef={parallaxRef} />
+        
     </>
   );
 }

@@ -1,0 +1,18 @@
+@keyframes pulse {
+    50% {
+        opacity: .3;
+    }
+}
+
+
+.chevron-1 {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.chevron-2 {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) 100ms infinite;
+}
+
+.chevron-3 {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) 200ms infinite;
+}

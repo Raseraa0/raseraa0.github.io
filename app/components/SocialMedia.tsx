@@ -1,5 +1,5 @@
 import Image from "next/image";
-import "../style/SocialMedia.css";
+import "../style/socialMedia.css";
 
 type Props = {
   svgSrc: string;
