@@ -55,7 +55,7 @@ function ScrollDownArrow({
 
     <ParallaxLayer className="p-no-pointer-layer">
       <div
-        className={`h-[100vh] p-fluide-anim relative ${isVisible ? "opacity-100" : "opacity-0"
+        className={`h-dvh p-fluide-anim relative ${isVisible ? "opacity-100" : "opacity-0"
           }`}
       >
         <div
