@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${fontInter.className} p-minimal-size`}>{children}</body>
+      <body className={`${fontInter.className} text-white-1 p-minimal-size`}>{children}</body>
     </html>
   );
 }

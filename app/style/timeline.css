@@ -1,0 +1,32 @@
+/* blue: {
+  1: "#a2fff4",
+  2: "#c4ebff",
+  3: "#b0e3ff",
+  4: "#97dcff",
+  5: "#6aceff",
+  6: "#81d3ff",
+  7: "#003b64",
+  8: "#002545",
+  9: "#00131c", */
+
+
+.timeline-box {
+    background-color: #003b64;
+    border: solid 1px #a2fff4;
+}
+
+.timeline-middle svg {
+    color: #a2fff4;
+}
+
+.timeline li hr {
+    background-color: #f7f7f7;
+}
+
+.timeline li #first-hr {
+    background: linear-gradient(to right,transparent, #f7f7f7);
+}
+
+.timeline li #last-hr {
+    background: linear-gradient(to right, #f7f7f7, transparent);
+}

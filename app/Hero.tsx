@@ -64,7 +64,6 @@ function Hero({ parallaxRef }: Props) {
         className="translate-y-[-20px] lg:translate-y-[-30px] text-6xl lg:text-8xl text-blue-7"
       />
 
-
       {/* Couche pour le background */}
       <BackgroundLayer speed={-0.4} div_id="bridge-7" />
       <BackgroundLayer speed={-0.2} div_id="forest-8" />
