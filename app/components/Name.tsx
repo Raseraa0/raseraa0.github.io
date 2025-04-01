@@ -34,7 +34,9 @@ function Name({ speed, text, className = '' }: Props) {
       <p
         className={`flex items-center transition-all duration-200 ease-in-out ${fontJersey15.className} ${className}`}
       >
-        {text}
+        <span className="p-pointer-layer">
+          {text}
+        </span>
       </p>
     </ParallaxLayer>
   );
