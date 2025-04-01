@@ -4,10 +4,9 @@ import SocialMedia from "./SocialMedia";
 
 type Props = {
   speed: number;
-  className?: string;
 };
 
-export default function SocialMediaBar({ speed, className = '' }: Props) {
+export default function SocialMediaBar({ speed }: Props) {
   useEffect(() => {
     headerSetup();
   }, []);
@@ -25,7 +24,7 @@ export default function SocialMediaBar({ speed, className = '' }: Props) {
 
         if (selecteur) {
           selecteur.style.width = `${socialMedia.clientWidth}px`;
-          selecteur.style.left = `${offset-offset_first}px`;
+          selecteur.style.left = `${offset - offset_first}px`;
         }
       });
 
@@ -39,9 +38,9 @@ export default function SocialMediaBar({ speed, className = '' }: Props) {
   }
 
   return (
-    <ParallaxLayer offset={0} speed={speed} className="flex justify-center ">
-      <div id="social-media-outer" className={`flex flex-col gap-2 p-3 ${className}`}>
-        <div className="flex flex-row gap-10">
+    <ParallaxLayer id="social-media-layer" offset={0} speed={speed} className="flex justify-start sm:justify-center sm:ml-0 ">
+      <div id="social-media-outer" className={`flex flex-col gap-2 p-3`}>
+        <div className="flex flex-row gap-7 sm:gap-10">
           <SocialMedia svgSrc="./SocialMedia/github-badge.svg" className="" num="1" />
           <SocialMedia svgSrc="./SocialMedia/linkedin-badge.svg" className="" num="2" />
           <SocialMedia svgSrc="./SocialMedia/mail-badge.svg" className="" num="3" />

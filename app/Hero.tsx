@@ -10,6 +10,7 @@ import BackgroundLayer from "./components/BackgroundLayer";
 import Name from "./components/Name";
 import ScrollDownArrow from "./components/ScrollDownArrow";
 import SocialMediaBar from "./components/SocialMediaBar";
+import NavigationBar from "./components/NavigationBar";
 
 // Propriétés
 type Props = {
@@ -29,9 +30,6 @@ type Props = {
  */
 function Hero({ parallaxRef }: Props) {
 
-
- 
-
   return (
     <>
       {/* Couche pour le background */}
@@ -40,13 +38,17 @@ function Hero({ parallaxRef }: Props) {
       <BackgroundLayer speed={-1} div_id="mountains-2" />
 
       {/* Barre des réseaux sociaux */}
-      <SocialMediaBar speed={-3} className={"flex"} />
+      <SocialMediaBar speed={-3}/>
+
 
       {/* Couche pour le background */}
       <BackgroundLayer speed={-0.8} div_id="mountains-3" />
       <BackgroundLayer speed={-0.6} div_id="mountains-4" />
       <BackgroundLayer speed={0.5} div_id="birds-5" />
       <BackgroundLayer speed={0.3} div_id="birds-6" />
+
+      {/* Barre de navigation */}
+      <NavigationBar speed={-2}/>
 
       {/* Nom et prénom */}
       <Name
@@ -69,7 +71,7 @@ function Hero({ parallaxRef }: Props) {
 
       {/* Fleche qui invite à scroller */}
       <ScrollDownArrow parallaxRef={parallaxRef} />
-        
+
     </>
   );
 }

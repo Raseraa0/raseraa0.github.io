@@ -27,6 +27,10 @@
   transition: left 0.3s ease-in-out, width 0.3s ease-in-out;
 }
 
+#social-media-layer {
+  transition: margin 0.5s ease-in-out,
+    gap 0.5s ease-in-out;
+}
 
 /*écrire en dessous de la barre genre my social media et des que je hover un element ca écriet github ou linkedin ou alors ca met mon adresse mail ( mettre la possibilité de copy to clipboard le mail)*/
 /* et genre écrire ca avec une police très caligraphique ?? */

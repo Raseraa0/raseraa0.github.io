@@ -1,0 +1,32 @@
+/* blue: {
+  1: "#a2fff4",
+  2: "#c4ebff",
+  3: "#b0e3ff",
+  4: "#97dcff",
+  5: "#6aceff",
+  6: "#81d3ff",
+  7: "#003b64",
+  8: "#002545",
+  9: "#00131c", */
+
+
+  .p-navigation-bar-text{
+    transition: all 0.2s ease-in-out;
+  }
+
+#navigation-bar:has(.p-navigation-bar-text:hover) 
+.p-navigation-bar-text:not(:hover) {
+    color: #003b64;
+    scale: 0.8;
+}
+
+.p-navigation-bar-text:hover {
+    scale: 1.1;
+    text-shadow: 0 0 30px #002545 ;
+    cursor: pointer;
+}
+
+.p-navigation-bar-text:active {
+    scale: 1.2;
+    text-shadow: 0 0 10px #002545 ;
+}

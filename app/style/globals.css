@@ -38,3 +38,8 @@
 .p-no-pointer-layer {
   pointer-events: none;
 }
+
+
+.p-pointer-layer {
+  pointer-events: auto;
+}
