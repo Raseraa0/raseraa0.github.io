@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .p-minimal-size {
   min-width: 320px;
   min-height: 500px;
