@@ -8,7 +8,7 @@ type Props = {
 
 function Timeline({ className = '' }: Props) {
   return (
-    <ul className={`timeline ${className}`}>
+    <ul className={`timeline lg:timeline-vertical ${className}`}>
       <li>
         <hr id="first-hr" />
         <div className="timeline-start timeline-box">ENSIMAG</div>
