@@ -41,4 +41,8 @@
         background: linear-gradient(to bottom, #f7f7f7, transparent);
     }
 
+    .timeline-box {
+        margin-bottom: 30px;
+    }
+
 }
