@@ -1,5 +1,5 @@
 import { ParallaxLayer } from "@react-spring/parallax";
-import { fontJersey15 } from "@/public/font";
+import { fontJersey15 } from "@/lib/font";
 
 import "../style/navigationBar.css"
 

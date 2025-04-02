@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./style/background.css";
 import "./style/globals.css";
-import { fontInter } from "@/public/font";
+import { fontInter } from "@/lib/font";
 
 
 export const metadata: Metadata = {

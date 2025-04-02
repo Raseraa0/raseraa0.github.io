@@ -3,7 +3,7 @@
  * @description Affiche un text au centre de l'écran
  */
 
-import { fontJersey15 } from "@/public/font";
+import { fontJersey15 } from "@/lib/font";
 import { ParallaxLayer } from "@react-spring/parallax";
 
 // Propriétés
