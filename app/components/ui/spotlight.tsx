@@ -4,12 +4,6 @@ import { motion } from "motion/react";
 
 type SpotlightProps = {
   gradientFirst?: string;
-  gradientSecond?: string;
-  gradientThird?: string;
-  translateY?: number;
-  width?: number;
-  height?: number;
-  smallWidth?: number;
   duration?: number;
   xOffset?: number;
 };
@@ -45,13 +39,10 @@ export const Spotlight = ({
         className="absolute top-0 left-0 w-screen h-screen z-40 pointer-events-none"
       >
         <div
-          style={{
-            transform: "translateY(0%) translateX(-50%) rotate(-45deg)",
-            background: gradientFirst,
-            width: "800px",
-            height: "500px",
-          }}
-          className={`absolute bottom-0 left-0`}
+          style={{ background: gradientFirst }}
+          className="absolute bottom-0 left-0 
+                    w-[800px] h-[500px] lg:w-[1200px] lg:h-[1200px] 
+                    -translate-x-1/2 rotate-[-45deg] lg:translate-x-[-40%] lg:translate-y-[20%]"
         />
       </motion.div>
 
@@ -68,25 +59,19 @@ export const Spotlight = ({
         className="absolute top-0 right-0 w-screen h-screen z-40 pointer-events-none"
       >
         <div
-          style={{
-            transform: "translateY(50%) translateX(70%) rotate(-45deg)",
-            background: gradientFirst,
-            width: "400px",
-            height: "700px",
-          }}
-          className={`absolute bottom-0 right-0`}
+          style={{ background: gradientFirst }}
+          className="absolute bottom-0 right-0 
+                    w-[400px] h-[700px] lg:w-[1400px] lg:h-[1400px] 
+                    translate-x-[70%] translate-y-1/2 rotate-[-45deg] lg:translate-x-[-10%] lg:translate-y-[70%]"
         />
 
         <div
-          style={{
-            transform: "translateY(-40%) translateX(90%) rotate(-45deg)",
-            background: gradientFirst,
-            width: "300px",
-            height: "500px",
-          }}
-          className={`absolute bottom-0 right-0`}
+          style={{ background: gradientFirst }}
+          className="absolute bottom-0 right-0 
+                    w-[300px] h-[500px] lg:w-[1000px] lg:h-[1000px] 
+                    translate-x-[90%] -translate-y-[40%] rotate-[-45deg] lg:translate-x-[30%] lg:translate-y-[0%]"
         />
-       </motion.div>
+      </motion.div>
     </motion.div>
   );
 };
