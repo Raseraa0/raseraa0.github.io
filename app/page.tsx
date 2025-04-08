@@ -9,7 +9,7 @@ import { useEffect, useRef, useState } from "react";
 import Hero from "./Hero";
 import LoadingScreen from "./components/LoadingScreen";
 import Persona from "./Persona";
-import Projects from "./Projets";
+import Projects from "./Projects";
 import Skills from "./Skills";
 
 /**
@@ -40,8 +40,8 @@ export default function Home() {
       {loading && <LoadingScreen />}
 
       {/* Conteneur parallax qui contiendra chaques pages*/}
-      {/* todo enlever le pink bg a la fin !!! */}
-      <Parallax ref={parallaxRef} pages={5} style={{ top: "0", left: "0" }} className="bg-pink-600 p-animation "> 
+      {/* todo enlever le pink bg a la fin !!! mettre blue 9 */}
+      <Parallax ref={parallaxRef} pages={5} style={{ top: "0", left: "0" }} className="bg-blue-9 p-animation ">  
 
         {/* Hero pour la page d'acceuil */}
         <Hero parallaxRef={parallaxRef} />
@@ -54,3 +54,5 @@ export default function Home() {
     </main>
   );
 }
+
+// TODO mettre dans cn pour concatener les classe partout

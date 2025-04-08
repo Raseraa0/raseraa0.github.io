@@ -4,7 +4,7 @@
 
 .p-minimal-size {
   min-width: 320px;
-  min-height: 500px;
+  min-height: 600px;
 }
 
 /* Hero */
@@ -12,7 +12,7 @@
 .p-animation {
   /* height: 100vh; */
   min-width: 320px;
-  min-height: 500px;
+  min-height: 600px;
   display: block;
   position: relative;
   z-index: 10;
@@ -22,7 +22,7 @@
 .p-background-layer {
   height: 100dvh;
   width: 100%;
-  min-height: 500px;
+  min-height: 600px;
   min-width: 320px;
   background-position: bottom center;
   background-size: auto 1038px;
@@ -42,3 +42,5 @@
 .p-pointer-layer {
   pointer-events: auto;
 }
+
+/* que des min height de 600px ( comme p-animation ) */
