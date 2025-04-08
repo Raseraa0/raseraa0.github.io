@@ -9,8 +9,8 @@ function Projects() {
       className="flex flex-col min-[600px] bg-blue-9"
     >
       <Project id={1} />
-      <Project id={1} />
-      <Project id={1} />
+      <Project id={2} />
+      <Project id={3} />
     </ParallaxLayer>
   );
 }
