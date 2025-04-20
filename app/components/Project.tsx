@@ -38,6 +38,7 @@ function Project({ id }: Props) {
         cf les note téléphone + en vrai juste mettre la mise en page des projet,
         puis adapter a l'ordinateur, puis la regarder si je met pas glar card a la place
         et ensuite je verrai pour les skills (pas de card pour les skills en vrai je pense) */}
+        {Cf note téléphone? mais en gros je pense apres le hero, tt mettre dans un level parallax pour avoir la taille des projet que je souhaite (pas trois par page)}
       </div>
     </div>
   );
