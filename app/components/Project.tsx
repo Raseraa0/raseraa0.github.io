@@ -41,6 +41,7 @@ function Project({ id }: Props) {
         background: `linear-gradient(45deg, ${darkenedColor}, ${bg_col} 20%, ${darkenedColor} 45%,${bg_col} 70%, ${darkenedColor})`,
       }}
     >
+      <div className="p-bg-lines h-full w-full">
       <div className="p-bg-lines h-full w-full flex flex-col items-center justify-evenly relative">
         {!isExpanded && (
           <span

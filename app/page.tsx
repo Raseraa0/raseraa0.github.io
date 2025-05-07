@@ -41,7 +41,7 @@ export default function Home() {
 
       {/* Conteneur parallax qui contiendra chaques pages*/}
       {/* todo enlever le pink bg a la fin !!! mettre blue 9 */}
-      <Parallax ref={parallaxRef} pages={5} style={{ top: "0", left: "0" }} className="bg-blue-9 p-animation ">  
+      <Parallax ref={parallaxRef} pages={4} style={{ top: "0", left: "0" }} className="bg-blue-9 p-animation ">  
 
         {/* Hero pour la page d'acceuil */}
         <Hero parallaxRef={parallaxRef} />
