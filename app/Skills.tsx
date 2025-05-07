@@ -1,4 +1,5 @@
 import { ParallaxLayer } from "@react-spring/parallax";
+
 import Skill from "./components/Skill";
 import CrossSkills from "./components/CrossSkills";
 
@@ -22,6 +23,8 @@ function Skills() {
         </div>
       </div>
     </ParallaxLayer>
+      className="w-full h-40 border-2 border-red-700"
+    ></ParallaxLayer>
   );
 }
 
