@@ -40,3 +40,4 @@ function Persona() {
 export default Persona;
 
 // TODO ajouter de hover au dessus de chaque case de la Timeline, pour juste expliquer quoi était quoi
+// TODO mes expérience les mettre plus en valeurs, genre dire ce que j'ai dedans et tout (limite c'est une page maintenant)

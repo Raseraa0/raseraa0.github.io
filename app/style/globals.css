@@ -44,3 +44,7 @@
 }
 
 /* que des min height de 600px ( comme p-animation ) */
+
+.debug{
+  outline: solid red 1px;
+}
