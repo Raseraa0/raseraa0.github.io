@@ -21,7 +21,7 @@ const projects = [
     id: 3,
     title: "Ray tracing",
     description:
-      "Dévleoppement d'un système de ray tracing. Le but est de simuler dans un espace en trois dimension des objects ainsi qu'une caméra, puis de reconstituer de manière réaliste ce qui serait perçu par cette caméra, en modifiant les textures, les couleurs ou les motifs.",
+      "Développement d'un système de ray tracing. Le but est de simuler dans un espace en trois dimension des objects ainsi qu'une caméra, puis de reconstituer de manière réaliste ce qui serait perçu par cette caméra, en modifiant les textures, les couleurs ou les motifs.",
     image_path: "url(./projects/RayTracing.png)",
     link: "https://github.com/Raseraa0/RayTracing",
     color: "#6d28d9",

@@ -43,8 +43,15 @@
   pointer-events: auto;
 }
 
+@media (min-width:1024px) {
+  .p-no-pointer-layer-large {
+    pointer-events: none;
+  }
+}
+
+
 /* que des min height de 600px ( comme p-animation ) */
 
-.debug{
+.debug {
   outline: solid red 1px;
 }

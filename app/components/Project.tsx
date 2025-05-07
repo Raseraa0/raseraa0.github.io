@@ -4,8 +4,7 @@ import { cn } from "@/lib/utils";
 import Button from "./Button";
 import { fontJersey15 } from "@/lib/font";
 import projects from "@/lib/data-projects";
-import { Jersey_10 } from "next/font/google";
-
+import "../style/project.css";
 type Props = {
   id: number;
   isExpanded: boolean;
@@ -35,7 +34,7 @@ function Project({ id, isExpanded, onExpand }: Props) {
 
   return (
     <div
-      className="flex-grow mx-4 my-2 rounded-md border-2 border-blue-7/50 hover:border-blue-6/80 overflow-hidden transition-all duration-500"
+      className="flex-grow mx-4 my-2 rounded-md border-2 border-blue-7/50 hover:border-blue-6/80 overflow-hidden transition-all duration-500 lg:w-80 lg:flex-grow-0"
       style={{
         background: `linear-gradient(45deg, ${darkenedColor}, ${bg_col} 20%, ${darkenedColor} 45%,${bg_col} 70%, ${darkenedColor})`,
       }}
@@ -45,7 +44,7 @@ function Project({ id, isExpanded, onExpand }: Props) {
           {!isExpanded && (
             <span
               className={cn(
-                "text-2xl text-white-1 z-10",
+                "text-2xl text-white-1 text-center z-10 lg:text-4xl",
                 fontJersey15.className
               )}
             >
@@ -61,7 +60,7 @@ function Project({ id, isExpanded, onExpand }: Props) {
           >
             <div
               className={cn(
-                "absolute inset-0 bg-center bg-cover bg-no-repeat transition-all duration-700",
+                "absolute inset-0 bg-center bg-cover bg-no-repeat transition-all duration-700 ",
                 isExpanded ? "brightness-[0.4]" : ""
               )}
               style={{ backgroundImage: selectedProject?.image_path }}
@@ -71,7 +70,7 @@ function Project({ id, isExpanded, onExpand }: Props) {
             {!isExpanded && (
               <Button
                 text="See more"
-                className="absolute scale-90 z-20 self-end mb-3"
+                className="absolute scale-90 z-20 self-end mb-3 lg:hidden"
                 onClick={() => onExpand(id)}
               />
             )}
@@ -92,6 +91,11 @@ function Project({ id, isExpanded, onExpand }: Props) {
               </div>
             )}
           </div>
+
+          <p className="text-sm text-center mx-4 p-2 rounded-md bg-[#00000033] hidden lg:inline-block">
+            {selectedProject?.description ?? "No description."}
+          </p>
+
         </div>
       </div>
     </div>
