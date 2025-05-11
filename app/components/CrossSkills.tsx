@@ -24,7 +24,7 @@ function CrossSkills() {
         className="absolute top-0 right-0 w-1/2 h-1/2 pointer-events-none"
         style={{
           background:
-            "radial-gradient(circle at bottom left, rgba(255,255,0,0.2), transparent 70%)",
+            "radial-gradient(circle at bottom left, rgba(255,255,0,0.1), transparent 70%)",
         }}
       />
 
@@ -32,7 +32,7 @@ function CrossSkills() {
         className="absolute top-0 left-0 w-1/2 h-1/2 pointer-events-none"
         style={{
           background:
-            "radial-gradient(circle at bottom right, rgba(0,255,0,0.2), transparent 70%)",
+            "radial-gradient(circle at bottom right, rgba(0,255,0,0.1), transparent 70%)",
         }}
       />
 
@@ -40,7 +40,7 @@ function CrossSkills() {
         className="absolute bottom-0 left-0 w-1/2 h-1/2 pointer-events-none"
         style={{
           background:
-            "radial-gradient(circle at top right, rgba(255,0,0,0.2), transparent 70%)",
+            "radial-gradient(circle at top right, rgba(255,0,0,0.1), transparent 70%)",
         }}
       />
 
@@ -48,7 +48,7 @@ function CrossSkills() {
         className="absolute bottom-0 right-0 w-1/2 h-1/2 pointer-events-none"
         style={{
           background:
-            "radial-gradient(circle at top left, rgba(128,0,128,0.2), transparent 70%)",
+            "radial-gradient(circle at top left, rgba(128,0,128,0.1), transparent 70%)",
         }}
       />
     </>

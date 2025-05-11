@@ -52,6 +52,7 @@ function Project({ id, isExpanded, onExpand }: Props) {
             </span>
           )}
 
+
           <div
             className={cn(
               "relative flex items-center justify-center aspect-[1920/1080] w-64 rounded-lg border border-blue-9 transition-all duration-700 overflow-hidden",
@@ -95,7 +96,6 @@ function Project({ id, isExpanded, onExpand }: Props) {
           <p className="text-sm text-center mx-4 p-2 rounded-md bg-[#00000033] hidden lg:inline-block">
             {selectedProject?.description ?? "No description."}
           </p>
-
         </div>
       </div>
     </div>
