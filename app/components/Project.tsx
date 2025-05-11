@@ -109,4 +109,4 @@ function Project({ id, isExpanded, onExpand }: Props) {
 
 export default Project;
 
-// TODO IL MANQUE GENRE UN BOUTON POUR ACCEDER AU GITHUB DU PROJET
+// TODO Il faut link tout les bouton genre que ca soit pour les social médial ou pour le cv etc

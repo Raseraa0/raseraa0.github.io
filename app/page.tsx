@@ -11,6 +11,7 @@ import LoadingScreen from "./components/LoadingScreen";
 import Persona from "./Persona";
 import Projects from "./Projects";
 import Skills from "./Skills";
+import Footer from "./Footer";
 
 /**
  * Fonction principal
@@ -49,6 +50,7 @@ export default function Home() {
         <Persona />
         <Projects />
         <Skills />
+        <Footer />
 
       </Parallax>
     </main>
