@@ -5,6 +5,7 @@ import Button from "./Button";
 import { fontJersey15 } from "@/lib/font";
 import projects from "@/lib/data-projects";
 import "../style/project.css";
+import SocialMedia from "./SocialMedia";
 type Props = {
   id: number;
   isExpanded: boolean;
@@ -34,11 +35,16 @@ function Project({ id, isExpanded, onExpand }: Props) {
 
   return (
     <div
-      className="flex-grow mx-4 my-2 rounded-md border-2 border-blue-7/50 hover:border-blue-6/80 overflow-hidden transition-all duration-500 lg:w-80 lg:flex-grow-0"
+      className="relative flex-grow mx-4 my-2 rounded-md border-2 border-blue-7/50 hover:border-blue-6/80 overflow-hidden transition-all duration-500 lg:w-80 lg:flex-grow-0"
       style={{
         background: `linear-gradient(45deg, ${darkenedColor}, ${bg_col} 20%, ${darkenedColor} 45%,${bg_col} 70%, ${darkenedColor})`,
       }}
     >
+      <SocialMedia
+        svgSrc="./SocialMedia/github-badge.svg"
+        className="absolute bottom-1 right-1 z-50 shadow-[0_0_5px] shadow-blue-1 scale-90"
+      />
+
       <div className="p-bg-lines h-full w-full">
         <div className="p-bg-lines h-full w-full flex flex-col items-center justify-evenly relative">
           {!isExpanded && (
@@ -51,7 +57,6 @@ function Project({ id, isExpanded, onExpand }: Props) {
               {selectedProject?.title}
             </span>
           )}
-
 
           <div
             className={cn(
@@ -103,3 +108,5 @@ function Project({ id, isExpanded, onExpand }: Props) {
 }
 
 export default Project;
+
+// TODO IL MANQUE GENRE UN BOUTON POUR ACCEDER AU GITHUB DU PROJET

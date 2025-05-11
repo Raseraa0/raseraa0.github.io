@@ -11,13 +11,15 @@ function Skills() {
       className="flex flex-col min-[600px] bg-blue-9 items-center"
     >
 
-      <div className=" w-5/6 aspect-square relative flex flex-col m-auto">
+      <div className=" w-5/6 aspect-[2/3] relative flex flex-col m-auto max-w-96">
         <CrossSkills />
-        <div className="grid grid-cols-2 grid-rows-2 gap-4 h-full w-full">
+        <div className="grid grid-cols-2 grid-rows-3 gap-4 h-full w-full">
           <Skill id={1} />
           <Skill id={2} />
           <Skill id={3} />
           <Skill id={4} />
+          <Skill id={5} />
+          <Skill id={6} />
         </div>
       </div>
     </ParallaxLayer>

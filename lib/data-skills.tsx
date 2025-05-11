@@ -51,7 +51,7 @@ const skills = [
   },
   {
     id: 4,
-    title: "Object-Oriented Programming",
+    title: "Object-Oriented",
     subSkills: [
       {
         name: "Java",
@@ -67,17 +67,32 @@ const skills = [
     id: 5,
     title: "SAP Development",
     subSkills: [
-      { name: "ABAP", image: "./skills/python.png" },
-      { name: "OData", image: "./skills/python.png" },
-      { name: "SAP Fiori", image: "./skills/python.png" },
+      {
+        name: "ABAP",
+        image: "./skills/python.png",
+      },
+      {
+        name: "OData",
+        image: "./skills/python.png",
+      },
+      {
+        name: "SAP Fiori",
+        image: "./skills/python.png",
+      },
     ],
   },
   {
     id: 6,
     title: "DevOps & Tools",
     subSkills: [
-      { name: "Git", image: "./skills/python.png" },
-      { name: "Docker", image: "./skills/python.png" },
+      {
+        name: "Git",
+        image: "./skills/python.png",
+      },
+      {
+        name: "Docker",
+        image: "./skills/python.png",
+      },
     ],
   },
 ];

@@ -4,7 +4,7 @@ import "../style/socialMedia.css";
 type Props = {
   svgSrc: string;
   className?: string;
-  num: string;
+  num?: string;
 };
 function SocialMedia({ svgSrc, className = "", num = "0" }: Props) {
   return (
