@@ -32,7 +32,7 @@ function Persona() {
         <Button text="Click to see my CV" className="mb-10" />
       </div>
       <Timeline className="scale-90 lg:scale-125" />
-      <Spotlight />
+      {/* <Spotlight /> */}
     </ParallaxLayer>
   );
 }

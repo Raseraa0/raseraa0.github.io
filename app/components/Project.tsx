@@ -57,7 +57,7 @@ function Project({ id, isExpanded, onExpand }: Props) {
               {selectedProject?.title}
             </span>
           )}
-          <div className="flex flex-col md:flex-row lg:flex-col items-center justify-evenly gap-12 h-full">
+          <div className="flex flex-col md:flex-row lg:flex-col items-center justify-evenly gap-12 h-full md:h-auto">
             <div
               className={cn(
                 "relative flex items-center justify-center aspect-[1920/1080] w-64 rounded-lg border border-blue-9 transition-all duration-700 overflow-hidden lg:w-80",
@@ -98,7 +98,7 @@ function Project({ id, isExpanded, onExpand }: Props) {
               )}
             </div>
 
-            <p className="text-sm text-center mx-4 p-2 rounded-md bg-[#00000033] hidden md:inline-block w-1/3 lg:w-auto">
+            <p className="text-sm text-center mx-4 p-2 rounded-md bg-[#00000033] hidden md:inline-block w-1/3 lg:w-auto lg:text-base">
               {selectedProject?.description ?? "No description."}
             </p>
           </div>

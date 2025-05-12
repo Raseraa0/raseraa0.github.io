@@ -11,7 +11,7 @@ function Skills() {
       className="flex flex-col min-[600px] bg-blue-9 items-center"
     >
 
-      <div className=" w-5/6 aspect-[2/3] relative flex flex-col m-auto max-w-96">
+      <div className=" w-5/6 aspect-[2/3] relative flex flex-col m-auto max-w-96 lg:scale-110 p-fluide-anim">
         <CrossSkills />
         <div className="grid grid-cols-2 grid-rows-3 gap-4 h-full w-full">
           <Skill id={1} />

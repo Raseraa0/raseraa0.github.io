@@ -9,10 +9,13 @@ type Props = {
 
 function Skill({ id }: Props) {
   const selectedSkill = skills.find((skill) => skill.id === id);
+  const size = 25;
 
   return (
     <div className="flex flex-col  ">
-      <span className={`text-center text-2xl/6 text-blue-1 ${fontJersey15.className}`}>
+      <span
+        className={`text-center text-2xl/6 text-blue-1 ${fontJersey15.className} lg:text-2xl`}
+      >
         {selectedSkill?.title}
       </span>
       <span className="h-px w-4/5 bg-blue-1 self-center mt-1 mb-2"></span>
@@ -22,9 +25,8 @@ function Skill({ id }: Props) {
             <Image
               alt={subSkill.name}
               src={subSkill.image}
-              width={40}
-              height={40}
-              className="w-7"
+              width={size}
+              height={size}
             />
             <span className={cn(fontInter.className, "ml-2 text-sm")}>
               {subSkill.name}

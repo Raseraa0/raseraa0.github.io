@@ -9,11 +9,11 @@ const skills = [
       },
       {
         name: "TensorFlow",
-        image: "./skills/python.png",
+        image: "./skills/tensorflow.png",
       },
       {
         name: "PyTorch",
-        image: "./skills/python.png",
+        image: "./skills/pytorch.png",
       },
     ],
   },
@@ -23,15 +23,15 @@ const skills = [
     subSkills: [
       {
         name: "TypeScript",
-        image: "./skills/python.png",
+        image: "./skills/typescript.png",
       },
       {
         name: "Node.Js",
-        image: "./skills/python.png",
+        image: "./skills/node.png",
       },
       {
         name: "React",
-        image: "./skills/python.png",
+        image: "./skills/react.png",
       },
     ],
   },
@@ -41,11 +41,7 @@ const skills = [
     subSkills: [
       {
         name: "C",
-        image: "./skills/python.png",
-      },
-      {
-        name: "VHDL",
-        image: "./skills/python.png",
+        image: "./skills/c.png",
       },
     ],
   },
@@ -55,7 +51,7 @@ const skills = [
     subSkills: [
       {
         name: "Java",
-        image: "./skills/python.png",
+        image: "./skills/java.png",
       },
       {
         name: "C++",
@@ -63,7 +59,7 @@ const skills = [
       },
       {
         name: "C#",
-        image: "./skills/python.png",
+        image: "./skills/csharp.png",
       },
     ],
   },
@@ -73,15 +69,15 @@ const skills = [
     subSkills: [
       {
         name: "ABAP",
-        image: "./skills/python.png",
+        image: "./skills/sap.png",
       },
       {
         name: "OData",
-        image: "./skills/python.png",
+        image: "./skills/odata.png",
       },
       {
         name: "SAP Fiori",
-        image: "./skills/python.png",
+        image: "./skills/sap.png",
       },
     ],
   },
@@ -91,11 +87,11 @@ const skills = [
     subSkills: [
       {
         name: "Git",
-        image: "./skills/python.png",
+        image: "./skills/git.png",
       },
       {
         name: "Docker",
-        image: "./skills/python.png",
+        image: "./skills/docker.png",
       },
     ],
   },
