@@ -11,7 +11,7 @@ function Skill({ id }: Props) {
   const selectedSkill = skills.find((skill) => skill.id === id);
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col  ">
       <span className={`text-center text-2xl/6 text-blue-1 ${fontJersey15.className}`}>
         {selectedSkill?.title}
       </span>

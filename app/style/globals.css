@@ -34,17 +34,17 @@
   transition: all 0.5s ease-in-out;
 }
 
-.p-no-pointer-layer {
+.pointer-events-none {
   pointer-events: none;
 }
 
 
-.p-pointer-layer {
+.pointer-events-auto {
   pointer-events: auto;
 }
 
 @media (min-width:1024px) {
-  .p-no-pointer-layer-large {
+  .pointer-events-none-large {
     pointer-events: none;
   }
 }

@@ -27,7 +27,7 @@ type Props = {
 function BackgroundLayer({ speed, path = "", sky }: Props) {
   if (sky) {
     return (
-      <ParallaxLayer className="p-no-pointer-layer" offset={0} speed={speed}>
+      <ParallaxLayer className="pointer-events-none" offset={0} speed={speed}>
         <div className="h-full w-full bg-blue-1"></div>
       </ParallaxLayer>
     );
@@ -35,7 +35,7 @@ function BackgroundLayer({ speed, path = "", sky }: Props) {
 
   return (
     <ParallaxLayer
-      className="p-no-pointer-layer flex flex-col items-center"
+      className="pointer-events-none flex flex-col items-center"
       offset={0}
       speed={speed}
     >

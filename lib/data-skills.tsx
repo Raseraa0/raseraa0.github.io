@@ -36,7 +36,7 @@ const skills = [
     ],
   },
   {
-    id: 3,
+    id: 5,
     title: "Low-level development",
     subSkills: [
       {
@@ -44,8 +44,8 @@ const skills = [
         image: "./skills/python.png",
       },
       {
-        name: "C++",
-        image: "./skills/cpp.svg",
+        name: "VHDL",
+        image: "./skills/python.png",
       },
     ],
   },
@@ -58,13 +58,17 @@ const skills = [
         image: "./skills/python.png",
       },
       {
+        name: "C++",
+        image: "./skills/cpp.svg",
+      },
+      {
         name: "C#",
         image: "./skills/python.png",
       },
     ],
   },
   {
-    id: 5,
+    id: 3,
     title: "SAP Development",
     subSkills: [
       {

@@ -11,18 +11,19 @@ type Props = {
 function Footer() {
   const FooterMedia = ({ name, link }: Props) => {
     return (
-      <Link
-        href={link}
-        className="p-fluide-anim hover:text-blue-6"
-      >
+      <Link href={link} className="p-fluide-anim hover:text-blue-6">
         {name}
       </Link>
     );
   };
 
   return (
-    <ParallaxLayer offset={3} speed={0} className="relative min-[600px]">
-      <div className="absolute bottom-0 w-full h-9 flex flex-row items-center justify-evenly">
+    <ParallaxLayer
+      offset={3}
+      speed={0}
+      className="relative min-[600px] pointer-events-none"
+    >
+      <div className="absolute bottom-0 w-full h-9 flex flex-row items-center justify-evenly pointer-events-auto ">
         <span className={cn(fontJersey15.className, "text-xl lg:text-3xl")}>
           Arthur Rasera
         </span>

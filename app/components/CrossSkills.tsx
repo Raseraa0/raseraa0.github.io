@@ -1,7 +1,8 @@
 function CrossSkills() {
+
   return (
     <>
-      <div className="absolute flex justify-center items-center h-full w-full">
+      <div className="absolute flex justify-center items-center h-full w-full pointer-events-none">
         <div
           className="w-[2px] h-full"
           style={{
@@ -10,7 +11,7 @@ function CrossSkills() {
           }}
         ></div>
       </div>
-      <div className="absolute flex justify-evenly items-center h-full w-full flex-col ">
+      <div className="absolute flex justify-evenly items-center h-full w-full flex-col pointer-events-none ">
         <div
           className="h-[2px] w-full"
           style={{
@@ -28,50 +29,50 @@ function CrossSkills() {
       </div>
 
       <div
-        className="absolute top-0 right-0 w-1/2 h-1/3 pointer-events-none"
+        className="absolute top-0 right-0 w-1/2 h-1/3 opacity-50 hover:opacity-100 p-fluide-anim"
         style={{
           background:
-            "radial-gradient(circle at bottom left, rgba(255,255,0,0.1), transparent 70%)",
+            "radial-gradient(circle at bottom left, rgba(255,255,0,0.3), transparent 70%)",
         }}
       />
 
       <div
-        className="absolute top-0 left-0 w-1/2 h-1/3 pointer-events-none"
+        className="absolute top-0 left-0 w-1/2 h-1/3 opacity-50 hover:opacity-100 p-fluide-anim"
         style={{
           background:
-            "radial-gradient(circle at bottom right, rgba(0,255,0,0.1), transparent 70%)",
+            "radial-gradient(circle at bottom right, rgba(0,255,0,0.3), transparent 70%)",
         }}
       />
 
       <div
-        className="absolute bottom-0 left-0 w-1/2 h-1/3 pointer-events-none"
+        className="absolute bottom-0 left-0 w-1/2 h-1/3 opacity-50 hover:opacity-100 p-fluide-anim"
         style={{
           background:
-            "radial-gradient(circle at top right, rgba(255,0,0,0.1), transparent 70%)",
+            "radial-gradient(circle at top right, rgba(255,0,0,0.3), transparent 70%)",
         }}
       />
 
       <div
-        className="absolute bottom-0 right-0 w-1/2 h-1/3 pointer-events-none"
+        className="absolute bottom-0 right-0 w-1/2 h-1/3 opacity-50 hover:opacity-100 p-fluide-anim"
         style={{
           background:
-            "radial-gradient(circle at top left, rgba(128,0,128,0.1), transparent 70%)",
+            "radial-gradient(circle at top left, rgba(128,0,128,0.4), transparent 70%)",
         }}
       />
 
       <div
-        className="absolute top-1/3 right-0 w-1/2 h-1/3 pointer-events-none"
+        className="absolute top-1/3 right-0 w-1/2 h-1/3 opacity-50 hover:opacity-100 p-fluide-anim"
         style={{
           background:
-            "linear-gradient(to right, rgba(255,128,0,0.1), transparent 90%)",
+            "linear-gradient(to right, rgba(255,128,0,0.3), transparent 90%)",
         }}
       />
 
       <div
-        className="absolute top-1/3 left-0 w-1/2 h-1/3 pointer-events-none"
+        className="absolute top-1/3 left-0 w-1/2 h-1/3 opacity-50 hover:opacity-100 p-fluide-anim"
         style={{
           background:
-            "linear-gradient(to left, rgba(0,128,255,0.1), transparent 90%)",
+            "linear-gradient(to left, rgba(0,128,255,0.3), transparent 90%)",
         }}
       />
     </>

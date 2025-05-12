@@ -24,8 +24,8 @@ function NavigationBarText({ text, className = "" }: PropsAgain) {
 
 function NavigationBar({ speed }: Props) {
     return (
-        <ParallaxLayer offset={0} speed={speed} className="flex justify-end p-no-pointer-layer">
-            <div id="navigation-bar" className="p-pointer-layer flex flex-col pr-4 pt-2 sm:pr-12 sm:pt-6">
+        <ParallaxLayer offset={0} speed={speed} className="flex justify-end pointer-events-none">
+            <div id="navigation-bar" className="pointer-events-auto flex flex-col pr-4 pt-2 sm:pr-12 sm:pt-6">
                 <NavigationBarText text={"About"}></NavigationBarText>
                 <NavigationBarText text={"Projects"}></NavigationBarText>
                 <NavigationBarText text={"Skills"}></NavigationBarText>

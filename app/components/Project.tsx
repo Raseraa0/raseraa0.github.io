@@ -35,7 +35,7 @@ function Project({ id, isExpanded, onExpand }: Props) {
 
   return (
     <div
-      className="relative flex-grow mx-4 my-2 rounded-md border-2 border-blue-7/50 hover:border-blue-6/80 overflow-hidden transition-all duration-500 lg:w-80 lg:flex-grow-0"
+      className="relative flex-grow mx-4 my-2 rounded-md border-2 border-blue-7/50 hover:border-blue-6/80 overflow-hidden transition-all duration-500 lg:w-96 lg:flex-grow-0"
       style={{
         background: `linear-gradient(45deg, ${darkenedColor}, ${bg_col} 20%, ${darkenedColor} 45%,${bg_col} 70%, ${darkenedColor})`,
       }}
@@ -57,50 +57,51 @@ function Project({ id, isExpanded, onExpand }: Props) {
               {selectedProject?.title}
             </span>
           )}
-
-          <div
-            className={cn(
-              "relative flex items-center justify-center aspect-[1920/1080] w-64 rounded-lg border border-blue-9 transition-all duration-700 overflow-hidden",
-              isExpanded ? "w-full aspect-auto h-full" : ""
-            )}
-          >
+          <div className="flex flex-col md:flex-row lg:flex-col items-center justify-evenly gap-12">
             <div
               className={cn(
-                "absolute inset-0 bg-center bg-cover bg-no-repeat transition-all duration-700 ",
-                isExpanded ? "brightness-[0.4]" : ""
+                "relative flex items-center justify-center aspect-[1920/1080] w-64 rounded-lg border border-blue-9 transition-all duration-700 overflow-hidden lg:w-80",
+                isExpanded ? "w-full aspect-auto h-full" : ""
               )}
-              style={{ backgroundImage: selectedProject?.image_path }}
-              onClick={() => onExpand(id)}
-            ></div>
-
-            {!isExpanded && (
-              <Button
-                text="See more"
-                className="absolute scale-90 z-20 self-end mb-3 lg:hidden"
+            >
+              <div
+                className={cn(
+                  "absolute inset-0 bg-center bg-cover bg-no-repeat transition-all duration-700 ",
+                  isExpanded ? "brightness-[0.4]" : ""
+                )}
+                style={{ backgroundImage: selectedProject?.image_path }}
                 onClick={() => onExpand(id)}
-              />
-            )}
+              ></div>
 
-            {isExpanded && (
-              <div className="relative z-30 text-white-1 p-4 text-center">
-                <h2
-                  className={cn(
-                    "text-2xl font-bold mb-2",
-                    fontJersey15.className
-                  )}
-                >
-                  {selectedProject?.title}
-                </h2>
-                <p className="text-sm">
-                  {selectedProject?.description ?? "No description."}
-                </p>
-              </div>
-            )}
+              {!isExpanded && (
+                <Button
+                  text="See more"
+                  className="absolute scale-90 z-20 self-end mb-3 md:hidden"
+                  onClick={() => onExpand(id)}
+                />
+              )}
+
+              {isExpanded && (
+                <div className="relative z-30 text-white-1 p-4 text-center">
+                  <h2
+                    className={cn(
+                      "text-2xl font-bold mb-2",
+                      fontJersey15.className
+                    )}
+                  >
+                    {selectedProject?.title}
+                  </h2>
+                  <p className="text-sm">
+                    {selectedProject?.description ?? "No description."}
+                  </p>
+                </div>
+              )}
+            </div>
+
+            <p className="text-sm text-center mx-4 p-2 rounded-md bg-[#00000033] hidden md:inline-block w-1/3 lg:w-auto">
+              {selectedProject?.description ?? "No description."}
+            </p>
           </div>
-
-          <p className="text-sm text-center mx-4 p-2 rounded-md bg-[#00000033] hidden lg:inline-block">
-            {selectedProject?.description ?? "No description."}
-          </p>
         </div>
       </div>
     </div>
@@ -110,4 +111,4 @@ function Project({ id, isExpanded, onExpand }: Props) {
 export default Project;
 
 // TODO Il faut link tout les bouton genre que ca soit pour les social médial ou pour le cv etc
-// TODO Améliorer la fluidité  de quand sur tel je click sur un projet, la cest bizzare 
+// TODO Améliorer la fluidité  de quand sur tel je click sur un projet, la cest bizzare

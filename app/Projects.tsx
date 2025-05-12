@@ -6,7 +6,7 @@ function Projects() {
   const [expandedProjectId, setExpandedProjectId] = useState(-1);
 
   const handleExpandProject = (id: number) => {
-    if (window.innerWidth > 1024) {
+    if (window.innerWidth > 768) {
       setExpandedProjectId(-1);
     } else {
       setExpandedProjectId(expandedProjectId === id ? -1 : id);
