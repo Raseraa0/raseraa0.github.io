@@ -3,7 +3,6 @@
  * @description Hero qui va contenir la 1ère page.
  */
 
-
 import { IParallax } from "@react-spring/parallax";
 import { RefObject } from "react";
 import BackgroundLayer from "./components/BackgroundLayer";
@@ -14,10 +13,8 @@ import NavigationBar from "./components/NavigationBar";
 
 // Propriétés
 type Props = {
-
   // Référence du conteneur parallax
   parallaxRef: RefObject<IParallax | null>;
-
 };
 
 /**
@@ -29,26 +26,42 @@ type Props = {
  *      - Des fleches invitant à scroller
  */
 function Hero({ parallaxRef }: Props) {
-
   return (
     <>
       {/* Couche pour le background */}
-      <BackgroundLayer speed={0} div_id="sky-0" />
-      <BackgroundLayer speed={-1.2} div_id="clouds-1" />
-      <BackgroundLayer speed={-1} div_id="mountains-2" />
+      <BackgroundLayer speed={0} sky />
+      <BackgroundLayer
+        speed={-1.2}
+        path="./Minimaliste/Centered_Layer/1_Clouds.png"
+      />
+      <BackgroundLayer
+        speed={-1}
+        path="./Minimaliste/Centered_Layer/2_Mountains.png"
+      />
 
       {/* Barre des réseaux sociaux */}
-      <SocialMediaBar speed={-3}/>
-
+      <SocialMediaBar speed={-3} />
 
       {/* Couche pour le background */}
-      <BackgroundLayer speed={-0.8} div_id="mountains-3" />
-      <BackgroundLayer speed={-0.6} div_id="mountains-4" />
-      <BackgroundLayer speed={0.5} div_id="birds-5" />
-      <BackgroundLayer speed={0.3} div_id="birds-6" />
+      <BackgroundLayer
+        speed={-0.8}
+        path="./Minimaliste/Centered_Layer/3_Mountains.png"
+      />
+      <BackgroundLayer
+        speed={-0.6}
+        path="./Minimaliste/Centered_Layer/4_Mountains.png"
+      />
+      <BackgroundLayer
+        speed={0.5}
+        path="./Minimaliste/Centered_Layer/5_Birds.png"
+      />
+      <BackgroundLayer
+        speed={0.3}
+        path="./Minimaliste/Centered_Layer/6_Birds.png"
+      />
 
       {/* Barre de navigation */}
-      <NavigationBar speed={-2}/>
+      <NavigationBar speed={-2} />
 
       {/* Hi */}
       <Name
@@ -56,7 +69,7 @@ function Hero({ parallaxRef }: Props) {
         text="Hi, I'm"
         className="translate-y-[-60px] lg:translate-y-[-80px] lg:translate-x-[-230px] text-4xl text-blue-9"
       />
-      
+
       {/* Nom et prénom */}
       <Name
         speed={-4}
@@ -65,13 +78,21 @@ function Hero({ parallaxRef }: Props) {
       />
 
       {/* Couche pour le background */}
-      <BackgroundLayer speed={-0.4} div_id="bridge-7" />
-      <BackgroundLayer speed={-0.2} div_id="forest-8" />
-      <BackgroundLayer speed={0} div_id="forest-9" />
+      <BackgroundLayer
+        speed={-0.4}
+        path="./Minimaliste/Centered_Layer/7_Bridge.png"
+      />
+      <BackgroundLayer
+        speed={-0.2}
+        path="./Minimaliste/Centered_Layer/8_Forest.png"
+      />
+      <BackgroundLayer
+        speed={0}
+        path="./Minimaliste/Centered_Layer/9_Forest.png"
+      />
 
       {/* Fleche qui invite à scroller */}
       <ScrollDownArrow parallaxRef={parallaxRef} />
-
     </>
   );
 }

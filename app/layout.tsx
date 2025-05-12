@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import "./style/background.css";
 import "./style/globals.css";
 import { fontInter } from "@/lib/font";
 
