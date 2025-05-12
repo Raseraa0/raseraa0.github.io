@@ -57,7 +57,7 @@ function Project({ id, isExpanded, onExpand }: Props) {
               {selectedProject?.title}
             </span>
           )}
-          <div className="flex flex-col md:flex-row lg:flex-col items-center justify-evenly gap-12">
+          <div className="flex flex-col md:flex-row lg:flex-col items-center justify-evenly gap-12 h-full">
             <div
               className={cn(
                 "relative flex items-center justify-center aspect-[1920/1080] w-64 rounded-lg border border-blue-9 transition-all duration-700 overflow-hidden lg:w-80",
@@ -66,7 +66,7 @@ function Project({ id, isExpanded, onExpand }: Props) {
             >
               <div
                 className={cn(
-                  "absolute inset-0 bg-center bg-cover bg-no-repeat transition-all duration-700 ",
+                  "absolute inset-0 bg-center bg-cover bg-no-repeat transition-all duration-700",
                   isExpanded ? "brightness-[0.4]" : ""
                 )}
                 style={{ backgroundImage: selectedProject?.image_path }}
