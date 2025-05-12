@@ -1,7 +1,7 @@
 import { ParallaxLayer } from "@react-spring/parallax";
 import Image from "next/image";
 import Timeline from "./components/Timeline";
-import { Spotlight } from "./components/ui/spotlight";
+// import { Spotlight } from "./components/ui/spotlight";
 import "./style/Persona.css";
 import Button from "./components/Button";
 
