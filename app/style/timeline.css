@@ -12,7 +12,7 @@
 
 .timeline-box {
     background-color: #003b64;
-    border: solid 1px #a2fff4;
+    border: solid 1px #6aceff;
 }
 
 .timeline-middle svg {
@@ -23,21 +23,21 @@
     background-color: #f7f7f7;
 }
 
-.timeline li #first-hr {
+.timeline li .first-hr {
     background: linear-gradient(to right, transparent, #f7f7f7);
 }
 
-.timeline li #last-hr {
+.timeline li .last-hr {
     background: linear-gradient(to right, #f7f7f7, transparent);
 }
 
 @media (min-width:1024px) {
 
-    .timeline li #first-hr {
+    .timeline li .first-hr {
         background: linear-gradient(to bottom, transparent, #f7f7f7);
     }
 
-    .timeline li #last-hr {
+    .timeline li .last-hr {
         background: linear-gradient(to bottom, #f7f7f7, transparent);
     }
 

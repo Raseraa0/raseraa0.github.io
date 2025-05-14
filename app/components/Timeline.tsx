@@ -1,85 +1,109 @@
-import "../style/timeline.css"
-
+import "../style/timeline.css";
+import { fontJersey15, fontInter } from "@/lib/font";
+import { cn } from "@/lib/utils";
 
 type Props = {
-  className?: string
-}
+  className?: string;
+};
 
+type PropsAgain = {
+  name: string;
+  desc: string;
+  right?: boolean;
+};
 
-function Timeline({ className = '' }: Props) {
+type PropsAgainAgain = {
+  name: string;
+  desc: string;
+  right?: boolean;
+  isFirst?: boolean;
+  isLast?: boolean;
+};
+
+function Timeline({ className = "" }: Props) {
+  const TimelineText = ({ name, desc, right = false }: PropsAgain) => {
+    return (
+      <div
+        className={cn(
+          "flex flex-col items-center w-20 md:w-40 hover:scale-110 p-fluide-anim",
+          right ? "timeline-end hover:translate-x-3" : "timeline-start hover:-translate-x-3"
+        )}
+      >
+        <span className={cn("text-center text-base/4", fontJersey15.className)}>
+          {name}
+        </span>
+        <div
+          className={cn(
+            "text-xs opacity-75 mt-2 text-center hidden md:inline-block",
+            fontInter.className
+          )}
+        >
+          {desc}
+        </div>
+      </div>
+    );
+  };
+
+  const TimelineMiddle = () => {
+    return (
+      <div className="timeline-middle">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          className="h-5 w-5"
+        >
+          <path
+            fillRule="evenodd"
+            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+            clipRule="evenodd"
+          />
+        </svg>
+      </div>
+    );
+  };
+
+  const TimelineStep = ({
+    name,
+    desc,
+    right = false,
+    isFirst = false,
+    isLast = false,
+  }: PropsAgainAgain) => {
+    return (
+      <li>
+        <hr className={isFirst ? "first-hr" : ""} />
+        <TimelineMiddle />
+        <TimelineText name={name} desc={desc} right={right} />
+        <hr className={isLast ? "last-hr" : ""} />
+      </li>
+    );
+  };
+
   return (
     <ul className={`timeline lg:timeline-vertical ${className}`}>
-      <li>
-        <hr id="first-hr" />
-        <div className="timeline-start timeline-box">ENSIMAG</div>
-        <div className="timeline-middle">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            className="h-5 w-5">
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-              clipRule="evenodd" />
-          </svg>
-        </div>
-        <hr />
-      </li>
-      <li>
-        <hr />
-        <div className="timeline-middle">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            className="h-5 w-5">
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-              clipRule="evenodd" />
-          </svg>
-        </div>
-        <div className="timeline-end timeline-box">Oxyl</div>
-        <hr />
-      </li>
-      <li>
-        <hr />
-        <div className="timeline-start timeline-box">UPC</div>
-        <div className="timeline-middle">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            className="h-5 w-5">
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-              clipRule="evenodd" />
-          </svg>
-        </div>
-        <hr />
-      </li>
-      <li>
-        <hr />
-        <div className="timeline-middle">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            className="h-5 w-5">
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-              clipRule="evenodd" />
-          </svg>
-        </div>
-        <div className="timeline-end timeline-box">Sopra Steria</div>
-        <hr id="last-hr" />
-      </li>
+      <TimelineStep
+        name="Ensimag"
+        desc="Filière Ingénérie des systèmes d'informations"
+        isFirst
+      />
+      <TimelineStep
+        name="Oxyl"
+        desc="Stage / intelligence artificielle / DevOps / Software Development"
+        right
+      />
+      <TimelineStep
+        name="Univerisité Polytechnique de Catalone"
+        desc="Echange universitaire / Cours en anglais"
+      />
+      <TimelineStep
+        name="Sopra Steria"
+        desc="Stage / SAP development / Intelligence artificielle"
+        right
+        isLast
+      />
     </ul>
-  )
+  );
 }
-
 
 export default Timeline;
