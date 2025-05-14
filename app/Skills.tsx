@@ -9,7 +9,6 @@ function Skills() {
       offset={3}
       speed={0}
       className="flex flex-col min-[600px] bg-blue-9 items-center"
-      id="skills-page"
     >
 
       <div className=" w-5/6 aspect-[2/3] relative flex flex-col m-auto max-w-96 lg:scale-110 p-fluide-anim">

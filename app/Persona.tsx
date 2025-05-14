@@ -14,7 +14,6 @@ function Persona() {
       offset={1}
       speed={0}
       className="bg-blue-9 flex flex-col items-center justify-evenly  min-h-[600px] lg:flex-row "
-      id="persona-page"
     >
       <div className=" flex flex-col items-center justify-evenly gap-8 lg:h-5/6 lg:gap-0">
         <Image

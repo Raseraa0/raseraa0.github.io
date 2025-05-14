@@ -27,7 +27,7 @@ type Props = {
  */
 function Hero({ parallaxRef }: Props) {
   return (
-    <div id="hero-page">
+    <div>
       {/* Couche pour le background */}
       <BackgroundLayer speed={0} sky/>
       <BackgroundLayer

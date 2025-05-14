@@ -2,9 +2,17 @@ import { fontJersey15 } from "@/lib/font";
 import { cn } from "@/lib/utils";
 
 import "../style/BackToTop.css";
+import { IParallax } from "@react-spring/parallax";
+import { RefObject } from "react";
 
-function BackToTopButton({ className = "" }: { className: string }) {
+type Props = {
+  className?: string;
+  parallaxRef: RefObject<IParallax | null>;
+};
+
+function BackToTopButton({ className = "", parallaxRef }: Props) {
   const goTop = () => {
+    parallaxRef.current?.scrollTo(0);
     const section = document.getElementById("hero-page");
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });

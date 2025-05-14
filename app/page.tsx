@@ -56,7 +56,10 @@ export default function Home() {
       {/* Ecran de chargement; visible uniquement avant le 1er rendu du Hero */}
       {loading && <LoadingScreen />}
 
-      <BackToTopButton className={isTop ? "opacity-0 translate-x-20" : "opacity-100"} />
+      <BackToTopButton
+        parallaxRef={parallaxRef}
+        className={isTop ? "opacity-0 translate-x-20" : "opacity-100"}
+      />
       {/* Conteneur parallax qui contiendra chaques pages*/}
       <Parallax
         ref={parallaxRef}

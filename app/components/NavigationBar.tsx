@@ -64,3 +64,5 @@ function NavigationBar({ speed }: Props) {
 }
 
 export default NavigationBar;
+
+TODO FAIRE LE SCROLL TO DE LA NAV BAR COMME JAI FAIS AVEC LE GO TO TOP
