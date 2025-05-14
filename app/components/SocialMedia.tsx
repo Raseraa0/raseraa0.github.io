@@ -20,4 +20,4 @@ function SocialMedia({ svgSrc, className = "", num = "0" }: Props) {
 
 export default SocialMedia;
 
-//TODO rajouter des drop shadow un peu partout ??
+

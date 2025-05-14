@@ -41,7 +41,6 @@ export default function Home() {
       {loading && <LoadingScreen />}
 
       {/* Conteneur parallax qui contiendra chaques pages*/}
-      {/* todo enlever le pink bg a la fin !!! mettre blue 9 */}
       <Parallax ref={parallaxRef} pages={4} style={{ top: "0", left: "0" }} className="bg-blue-9 p-animation ">  
 
         {/* Hero pour la page d'acceuil */}
@@ -56,5 +55,3 @@ export default function Home() {
     </main>
   );
 }
-
-// TODO mettre dans cn pour concatener les classe partout

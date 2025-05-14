@@ -29,5 +29,3 @@ const projects = [
 ];
 
 export default projects;
-
-// TODO mettre en anglais les descriptions

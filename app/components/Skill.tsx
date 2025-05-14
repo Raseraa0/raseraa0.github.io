@@ -40,5 +40,3 @@ function Skill({ id }: Props) {
 
 export default Skill;
 
-// mettre les iamge au skills qui sont associé
-// TODO faire un footer

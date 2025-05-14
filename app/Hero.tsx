@@ -98,5 +98,3 @@ function Hero({ parallaxRef }: Props) {
 }
 
 export default Hero;
-
-// TODO aller sur la vidéo yt Using Images in Next.Js (next/image examples)

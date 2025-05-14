@@ -109,6 +109,3 @@ function Project({ id, isExpanded, onExpand }: Props) {
 }
 
 export default Project;
-
-// TODO Il faut link tout les bouton genre que ca soit pour les social médial ou pour le cv etc
-// TODO Améliorer la fluidité  de quand sur tel je click sur un projet, la cest bizzare
