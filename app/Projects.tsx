@@ -21,6 +21,7 @@ function Projects() {
       offset={2}
       speed={0}
       className="h-min-[600px] bg-blue-9 flex justify-center items-center"
+      id="projects-page"
     >
       <div className=" h-full w-full flex flex-col lg:flex-row lg:py-20 justify-center">
         <Project

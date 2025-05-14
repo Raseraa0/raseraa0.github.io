@@ -35,7 +35,7 @@ function Project({ id, isExpanded, onExpand }: Props) {
 
   return (
     <div
-      className="relative group flex-grow mx-4 my-2 rounded-md border-2 border-blue-7/50 hover:border-blue-6/80 overflow-hidden transition-all duration-500 lg:w-96 lg:flex-grow-0 lg:hover:-translate-y-7 lg:hover:scale-105 overflow-visible"
+      className="relative group flex-grow mx-4 my-2 rounded-md border-2 border-blue-7/50 hover:border-blue-6/80 overflow-hidden transition-all duration-500 lg:w-96 lg:flex-grow-0 lg:hover:-translate-y-7 lg:hover:scale-105"
       style={{
         background: `linear-gradient(45deg, ${darkenedColor}, ${bg_col} 20%, ${darkenedColor} 45%,${bg_col} 70%, ${darkenedColor})`,
       }}
@@ -43,6 +43,7 @@ function Project({ id, isExpanded, onExpand }: Props) {
       <SocialMedia
         svgSrc="./SocialMedia/github-badge.svg"
         className="absolute bottom-1 right-1 z-50 shadow-[0_0_5px] shadow-blue-1 scale-90"
+        href={selectedProject?.link}
       />
 
       <div className="p-bg-lines h-full w-full">

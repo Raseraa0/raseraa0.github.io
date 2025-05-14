@@ -5,14 +5,15 @@ import Link from "next/link";
 
 type Props = {
   name: string;
-  link: string;
+  href: string;
 };
 
 function Footer() {
-  const FooterMedia = ({ name, link }: Props) => {
+  const FooterMedia = ({ name, href }: Props) => {
     return (
       <Link
-        href={link}
+        href={href}
+        target="_blank"
         className="p-fluide-anim hover:text-blue-6 transform hover:scale-105 hover:shadow-2xl"
       >
         {name}
@@ -36,9 +37,12 @@ function Footer() {
             "flex flex-row gap-3 text-sm lg:text:md lg:gap-16"
           )}
         >
-          <FooterMedia name={"Linkedin"} link="www.google.come" />
-          <FooterMedia name={"GitHub"} link="www.google.come" />
-          <FooterMedia name={"E-mail"} link="www.google.come" />
+          <FooterMedia name={"GitHub"} href="https://github.com/Raseraa0/" />
+          <FooterMedia
+            name={"Linkedin"}
+            href="https://fr.linkedin.com/in/arthur-rasera"
+          />
+          <FooterMedia name={"E-mail"} href="mailto:raserarthur71@gmail.com" />
         </div>
       </div>
     </ParallaxLayer>
