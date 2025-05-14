@@ -11,7 +11,10 @@ type Props = {
 function Footer() {
   const FooterMedia = ({ name, link }: Props) => {
     return (
-      <Link href={link} className="p-fluide-anim hover:text-blue-6">
+      <Link
+        href={link}
+        className="p-fluide-anim hover:text-blue-6 transform hover:scale-105 hover:shadow-2xl"
+      >
         {name}
       </Link>
     );
