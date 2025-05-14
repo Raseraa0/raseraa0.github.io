@@ -21,7 +21,7 @@ function NavigationBarText({
   return (
     <span
       onClick={onClick}
-      className={`p-navigation-bar-text text-end text-3xl text-blue-9 sm:text-4xl ${fontJersey15.className} ${className}`}
+      className={`p-navigation-bar-text text-end text-3xl text-blue-9 lg:text-4xl ${fontJersey15.className} ${className}`}
     >
       {text}
     </span>

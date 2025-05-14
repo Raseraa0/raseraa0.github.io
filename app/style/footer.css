@@ -1,0 +1,7 @@
+.p-footer-text {
+    text-shadow: 0 0 7px #a2fff4AA;
+}
+
+.p-footer-text:hover {
+    text-shadow: 0 0 25px #a2fff4;
+}

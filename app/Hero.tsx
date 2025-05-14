@@ -27,9 +27,9 @@ type Props = {
  */
 function Hero({ parallaxRef }: Props) {
   return (
-    <>
+    <div id="hero-page">
       {/* Couche pour le background */}
-      <BackgroundLayer speed={0} sky />
+      <BackgroundLayer speed={0} sky/>
       <BackgroundLayer
         speed={-1.2}
         path="./Minimaliste/Centered_Layer/1_Clouds.png"
@@ -93,7 +93,7 @@ function Hero({ parallaxRef }: Props) {
 
       {/* Fleche qui invite à scroller */}
       <ScrollDownArrow parallaxRef={parallaxRef} />
-    </>
+    </div>
   );
 }
 

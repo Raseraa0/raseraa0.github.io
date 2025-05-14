@@ -12,37 +12,58 @@ import Persona from "./Persona";
 import Projects from "./Projects";
 import Skills from "./Skills";
 import Footer from "./Footer";
+import BackToTopButton from "./components/BackToTopButton";
 
 /**
  * Fonction principal
  * @returns
- *      - Ecran de chargement temporaire 
+ *      - Ecran de chargement temporaire
  *      - Hero (1ère page)
  *      - Block temporaire
  */
 export default function Home() {
-
   // Booléen qui indique si la page est entrain de se charger
   const [loading, setLoading] = useState(true);
 
   // Référence de l'objet parallax
-  const parallaxRef = useRef<IParallax>(null)
+  const parallaxRef = useRef<IParallax>(null);
 
   // Lorsque la page se charge, la variable est à false
   useEffect(() => {
     setLoading(false);
   }, []);
 
+  const [isTop, setIsTop] = useState(true);
+
+  const handleScroll = () => {
+    if (parallaxRef.current) {
+      const scrollTop = parallaxRef.current.container.current.scrollTop;
+      const pageHeight = parallaxRef.current.space;
+      setIsTop(scrollTop < pageHeight);
+    }
+  };
+
+  useEffect(() => {
+    const container = parallaxRef.current?.container.current;
+    if (container) {
+      container.addEventListener("scroll", handleScroll);
+      return () => container.removeEventListener("scroll", handleScroll);
+    }
+  }, []);
 
   return (
     <main>
-
       {/* Ecran de chargement; visible uniquement avant le 1er rendu du Hero */}
       {loading && <LoadingScreen />}
 
+      <BackToTopButton className={isTop ? "opacity-0" : "opacity-100"} />
       {/* Conteneur parallax qui contiendra chaques pages*/}
-      <Parallax ref={parallaxRef} pages={4} style={{ top: "0", left: "0" }} className="bg-blue-9 p-animation ">  
-
+      <Parallax
+        ref={parallaxRef}
+        pages={4}
+        style={{ top: "0", left: "0" }}
+        className="bg-blue-9 p-animation "
+      >
         {/* Hero pour la page d'acceuil */}
         <Hero parallaxRef={parallaxRef} />
 
@@ -50,7 +71,6 @@ export default function Home() {
         <Projects />
         <Skills />
         <Footer />
-
       </Parallax>
     </main>
   );

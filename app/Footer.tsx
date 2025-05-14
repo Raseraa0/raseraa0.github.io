@@ -3,6 +3,8 @@ import { fontJersey15, fontInter } from "@/lib/font";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
+import "./style/footer.css"
+
 type Props = {
   name: string;
   href: string;
@@ -14,7 +16,7 @@ function Footer() {
       <Link
         href={href}
         target="_blank"
-        className="p-fluide-anim hover:text-blue-6 transform hover:scale-105 hover:shadow-2xl"
+        className="p-fluide-anim p-footer-text hover:text-blue-1 transform hover:scale-105"
       >
         {name}
       </Link>

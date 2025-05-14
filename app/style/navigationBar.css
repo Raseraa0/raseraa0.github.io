@@ -10,23 +10,22 @@
   9: "#00131c", */
 
 
-  .p-navigation-bar-text{
-    transition: all 0.2s ease-in-out;
-  }
+.p-navigation-bar-text {
+  transition: all 0.2s ease-in-out;
+}
 
-#navigation-bar:has(.p-navigation-bar-text:hover) 
-.p-navigation-bar-text:not(:hover) {
-    color: #003b64;
-    scale: 0.8;
+#navigation-bar:has(.p-navigation-bar-text:hover) .p-navigation-bar-text:not(:hover) {
+  color: #003b64;
+  scale: 0.8;
 }
 
 .p-navigation-bar-text:hover {
-    scale: 1.1;
-    text-shadow: 0 0 30px #002545 ;
-    cursor: pointer;
+  scale: 1.1;
+  text-shadow: 0 0 30px #002545;
+  cursor: pointer;
 }
 
 .p-navigation-bar-text:active {
-    scale: 1.2;
-    text-shadow: 0 0 10px #002545 ;
+  scale: 1.2;
+  text-shadow: 0 0 10px #002545;
 }
