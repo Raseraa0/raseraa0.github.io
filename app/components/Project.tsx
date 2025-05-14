@@ -35,7 +35,7 @@ function Project({ id, isExpanded, onExpand }: Props) {
 
   return (
     <div
-      className="relative flex-grow mx-4 my-2 rounded-md border-2 border-blue-7/50 hover:border-blue-6/80 overflow-hidden transition-all duration-500 lg:w-96 lg:flex-grow-0"
+      className="relative group flex-grow mx-4 my-2 rounded-md border-2 border-blue-7/50 hover:border-blue-6/80 overflow-hidden transition-all duration-500 lg:w-96 lg:flex-grow-0 lg:hover:-translate-y-7 lg:hover:scale-105 overflow-visible"
       style={{
         background: `linear-gradient(45deg, ${darkenedColor}, ${bg_col} 20%, ${darkenedColor} 45%,${bg_col} 70%, ${darkenedColor})`,
       }}
@@ -60,7 +60,7 @@ function Project({ id, isExpanded, onExpand }: Props) {
           <div className="flex flex-col md:flex-row lg:flex-col items-center justify-evenly gap-12 h-full md:h-auto">
             <div
               className={cn(
-                "relative flex items-center justify-center aspect-[1920/1080] w-64 rounded-lg border border-blue-9 transition-all duration-700 overflow-hidden lg:w-80",
+                "relative flex items-center justify-center aspect-[1920/1080] w-64 rounded-lg border border-blue-9 lg:group-hover:scale-110 transition-all duration-700 overflow-hidden lg:w-80",
                 isExpanded ? "w-full aspect-auto h-full" : ""
               )}
             >

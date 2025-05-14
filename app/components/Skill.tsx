@@ -12,7 +12,7 @@ function Skill({ id }: Props) {
   const size = 25;
 
   return (
-    <div className="flex flex-col  ">
+    <div className="flex flex-col z-50 pointer-events-none">
       <span
         className={`text-center text-2xl/6 text-blue-1 ${fontJersey15.className} lg:text-2xl`}
       >
