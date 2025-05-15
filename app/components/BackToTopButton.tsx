@@ -13,10 +13,6 @@ type Props = {
 function BackToTopButton({ className = "", parallaxRef }: Props) {
   const goTop = () => {
     parallaxRef.current?.scrollTo(0);
-    const section = document.getElementById("hero-page");
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
   };
 
   return (

@@ -1,10 +1,12 @@
-import { ParallaxLayer } from "@react-spring/parallax";
+import { IParallax, ParallaxLayer } from "@react-spring/parallax";
 import { fontJersey15 } from "@/lib/font";
 
 import "../style/navigationBar.css";
+import { RefObject } from "react";
 
 type Props = {
   speed: number;
+  parallaxRef: RefObject<IParallax | null>;
 };
 
 type PropsAgain = {
@@ -28,12 +30,9 @@ function NavigationBarText({
   );
 }
 
-function NavigationBar({ speed }: Props) {
-  const scrollToSection = (sectionId: string) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
+function NavigationBar({ speed, parallaxRef }: Props) {
+  const scrollToSection = (sectionOffset: number) => {
+    parallaxRef.current?.scrollTo(sectionOffset);
   };
 
   return (
@@ -48,15 +47,15 @@ function NavigationBar({ speed }: Props) {
       >
         <NavigationBarText
           text={"About"}
-          onClick={() => scrollToSection("persona-page")}
+          onClick={() => scrollToSection(1)}
         ></NavigationBarText>
         <NavigationBarText
           text={"Projects"}
-          onClick={() => scrollToSection("projects-page")}
+          onClick={() => scrollToSection(2)}
         ></NavigationBarText>
         <NavigationBarText
           text={"Skills"}
-          onClick={() => scrollToSection("skills-page")}
+          onClick={() => scrollToSection(3)}
         ></NavigationBarText>
       </div>
     </ParallaxLayer>
@@ -64,5 +63,3 @@ function NavigationBar({ speed }: Props) {
 }
 
 export default NavigationBar;
-
-TODO FAIRE LE SCROLL TO DE LA NAV BAR COMME JAI FAIS AVEC LE GO TO TOP

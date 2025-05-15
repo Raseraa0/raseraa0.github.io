@@ -61,7 +61,7 @@ function Hero({ parallaxRef }: Props) {
       />
 
       {/* Barre de navigation */}
-      <NavigationBar speed={-2} />
+      <NavigationBar speed={-2} parallaxRef={parallaxRef}/>
 
       {/* Hi */}
       <Name
