@@ -46,7 +46,7 @@ const texts = {
     altProjects: "Illustration of project",
   },
   skills: {
-    altSkills: "Icon of"
+    altSkills: "Icon of",
   },
   footer: {
     mail: "E-mail",

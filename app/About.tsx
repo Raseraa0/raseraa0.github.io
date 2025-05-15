@@ -2,12 +2,12 @@ import { ParallaxLayer } from "@react-spring/parallax";
 import Image from "next/image";
 import Timeline from "./components/Timeline";
 // import { Spotlight } from "./components/ui/spotlight";
-import "./style/Persona.css";
+import "./style/about.css";
 import Button from "./components/Button";
 import Link from "next/link";
 import texts from "@/lib/data-texts";
 
-function Persona() {
+function About() {
   const imageSize = 200;
 
   return (
@@ -37,4 +37,4 @@ function Persona() {
   );
 }
 
-export default Persona;
+export default About;

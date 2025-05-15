@@ -1,7 +1,7 @@
 import { fontJersey15 } from "@/lib/font";
 import { cn } from "@/lib/utils";
 
-import "../style/BackToTop.css";
+import "../style/backToTop.css";
 import { IParallax } from "@react-spring/parallax";
 import { RefObject } from "react";
 import texts from "@/lib/data-texts";
@@ -25,7 +25,7 @@ function BackToTopButton({ className = "", parallaxRef }: Props) {
       )}
       onClick={goTop}
     >
-      {texts.hero.navBackToTop}
+      {texts.hero.nav.backToTop}
     </button>
   );
 }

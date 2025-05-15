@@ -8,7 +8,7 @@ import { IParallax, Parallax } from "@react-spring/parallax";
 import { useEffect, useRef, useState } from "react";
 import Hero from "./Hero";
 import LoadingScreen from "./components/LoadingScreen";
-import Persona from "./Persona";
+import About from "./About";
 import Projects from "./Projects";
 import Skills from "./Skills";
 import Footer from "./Footer";
@@ -70,7 +70,7 @@ export default function Home() {
         {/* Hero pour la page d'acceuil */}
         <Hero parallaxRef={parallaxRef} />
 
-        <Persona />
+        <About />
         <Projects />
         <Skills />
         <Footer />
