@@ -3,6 +3,7 @@ import { fontJersey15 } from "@/lib/font";
 
 import "../style/navigationBar.css";
 import { RefObject } from "react";
+import { cn } from "@/lib/utils";
 
 type Props = {
   speed: number;
@@ -23,7 +24,11 @@ function NavigationBarText({
   return (
     <span
       onClick={onClick}
-      className={`p-navigation-bar-text text-end text-3xl text-blue-9 lg:text-4xl ${fontJersey15.className} ${className}`}
+      className={cn(
+        "p-navigation-bar-text text-end text-3xl text-blue-9 lg:text-4xl",
+        fontJersey15.className,
+        className,
+      )}
     >
       {text}
     </span>

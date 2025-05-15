@@ -83,7 +83,7 @@ function Timeline({ className = "" }: Props) {
   };
 
   return (
-    <ul className={`timeline lg:timeline-vertical ${className}`}>
+    <ul className={cn("timeline lg:timeline-vertical", className)}>
       <TimelineStep
         name="Ensimag"
         desc="Filière Ingénérie des systèmes d'informations"

@@ -1,3 +1,5 @@
+import { cn } from "@/lib/utils";
+
 type Props = {
   text: string;
   className?: string;
@@ -6,7 +8,7 @@ type Props = {
 
 function Button({ text, className = "", onClick = () => {} }: Props) {
   return (
-    <button className={`relative p-[2px] ${className}`} onClick={onClick}>
+    <button className={cn("relative p-[2px]", className)} onClick={onClick}>
       <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-blue-4 to-blue-5" />
       <div className="group relative rounded-[6px] bg-blue-9 px-8 py-2 text-xs font-semibold transition duration-200 hover:bg-transparent hover:text-blue-9 active:blur-sm lg:text-base">
         {text}

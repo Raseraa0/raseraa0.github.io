@@ -2,6 +2,7 @@ import Image from "next/image";
 import { RefObject, useEffect, useState } from "react";
 import { IParallax, ParallaxLayer } from "@react-spring/parallax";
 import "../style/scrollDownArrow.css";
+import { cn } from "@/lib/utils";
 
 type Props = {
   margin_bottom?: number;
@@ -32,7 +33,10 @@ function Chevron({ size, className = " " }: PropsAgain) {
 function ThreeChevron({ size, className = " " }: PropsAgain) {
   return (
     <div
-      className={`p-fluide-anim absolute bottom-0 px-7 py-5 sm:px-12 sm:py-7 ${className}`}
+      className={cn(
+        "p-fluide-anim absolute bottom-0 px-7 py-5 sm:px-12 sm:py-7",
+        className,
+      )}
     >
       <Chevron size={size} className="chevron-1" />
       <Chevron size={size} className="chevron-2" />
@@ -66,9 +70,10 @@ function ScrollDownArrow({
   return (
     <ParallaxLayer className="pointer-events-none">
       <div
-        className={`p-fluide-anim relative h-dvh ${
-          isVisible ? "opacity-100" : "opacity-0"
-        }`}
+        className={cn(
+          "p-fluide-anim relative h-dvh",
+          isVisible ? "opacity-100" : "opacity-0",
+        )}
       >
         <ThreeChevron size={size} className="left-0" />
         <ThreeChevron size={size} className="right-0" />

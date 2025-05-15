@@ -14,7 +14,10 @@ function Skill({ id }: Props) {
   return (
     <div className="pointer-events-none z-50 flex flex-col">
       <span
-        className={`text-center text-2xl/6 text-blue-1 ${fontJersey15.className} lg:text-2xl`}
+        className={cn(
+          "text-center text-2xl/6 text-blue-1 lg:text-2xl",
+          fontJersey15.className,
+        )}
       >
         {selectedSkill?.title}
       </span>

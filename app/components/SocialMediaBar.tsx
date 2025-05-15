@@ -48,7 +48,7 @@ export default function SocialMediaBar({ speed }: Props) {
       speed={speed}
       className="flex justify-start sm:ml-0 sm:justify-center"
     >
-      <div id="social-media-outer" className={`flex flex-col gap-2 p-3`}>
+      <div id="social-media-outer" className="flex flex-col gap-2 p-3">
         <div className="flex flex-row gap-7 sm:gap-10">
           <SocialMedia
             svgSrc="./SocialMedia/github-badge.svg"

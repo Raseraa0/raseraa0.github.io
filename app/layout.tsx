@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./style/globals.css";
 import { fontInter } from "@/lib/font";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Arthur Portfolio",
@@ -14,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${fontInter.className} p-minimal-size text-white-1`}>
+      <body className={cn(fontInter.className, "p-minimal-size text-white-1")}>
         {children}
       </body>
     </html>
