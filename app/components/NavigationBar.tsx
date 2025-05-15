@@ -4,6 +4,7 @@ import { fontJersey15 } from "@/lib/font";
 import "../style/navigationBar.css";
 import { RefObject } from "react";
 import { cn } from "@/lib/utils";
+import texts from "@/lib/data-texts";
 
 type Props = {
   speed: number;
@@ -51,15 +52,15 @@ function NavigationBar({ speed, parallaxRef }: Props) {
         className="pointer-events-auto flex flex-col pr-4 pt-2 sm:pr-12 sm:pt-6"
       >
         <NavigationBarText
-          text={"About"}
+          text={texts.hero.nav.about}
           onClick={() => scrollToSection(1)}
         ></NavigationBarText>
         <NavigationBarText
-          text={"Projects"}
+          text={texts.hero.nav.projects}
           onClick={() => scrollToSection(2)}
         ></NavigationBarText>
         <NavigationBarText
-          text={"Skills"}
+          text={texts.hero.nav.skills}
           onClick={() => scrollToSection(3)}
         ></NavigationBarText>
       </div>

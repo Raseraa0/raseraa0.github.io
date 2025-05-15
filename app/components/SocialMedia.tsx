@@ -8,8 +8,16 @@ type Props = {
   className?: string;
   num?: string;
   href?: string;
+  alt?: string;
 };
-function SocialMedia({ svgSrc, className = "", num = "0", href = "#" }: Props) {
+
+function SocialMedia({
+  svgSrc,
+  className = "",
+  num = "0",
+  href = "#",
+  alt = "Social media icon",
+}: Props) {
   return (
     <Link href={href} target={href === "#" ? "" : "_blank"} passHref>
       <button
@@ -20,7 +28,7 @@ function SocialMedia({ svgSrc, className = "", num = "0", href = "#" }: Props) {
         data-num={parseInt(num)}
         id={`social-media-badge-${num}`}
       >
-        <Image src={svgSrc} alt="" width={200} height={200} priority />
+        <Image src={svgSrc} alt={alt} width={200} height={200} priority />
       </button>
     </Link>
   );

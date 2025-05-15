@@ -1,6 +1,7 @@
 import { ParallaxLayer } from "@react-spring/parallax";
 import { useEffect } from "react";
 import SocialMedia from "./SocialMedia";
+import texts from "@/lib/data-texts";
 
 type Props = {
   speed: number;
@@ -54,16 +55,19 @@ export default function SocialMediaBar({ speed }: Props) {
             svgSrc="./SocialMedia/github-badge.svg"
             num="1"
             href="https://github.com/Raseraa0/"
+            alt={texts.hero.social.altGit}
           />
           <SocialMedia
             svgSrc="./SocialMedia/linkedin-badge.svg"
             num="2"
             href="https://fr.linkedin.com/in/arthur-rasera"
+            alt={texts.hero.social.altLinkedin}
           />
           <SocialMedia
             svgSrc="./SocialMedia/mail-badge.svg"
             num="3"
             href="mailto:raserarthur71@gmail.com"
+            alt={texts.hero.social.altMail}
           />
         </div>
         <div id="social-media-selecteur" className="rounded-full"></div>

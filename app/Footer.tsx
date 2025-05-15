@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 import "./style/footer.css";
+import texts from "@/lib/data-texts";
 
 type Props = {
   name: string;
@@ -39,12 +40,18 @@ function Footer() {
             "lg:text:md flex flex-row gap-3 text-sm lg:gap-16",
           )}
         >
-          <FooterMedia name={"GitHub"} href="https://github.com/Raseraa0/" />
           <FooterMedia
-            name={"Linkedin"}
+            name={texts.footer.git}
+            href="https://github.com/Raseraa0/"
+          />
+          <FooterMedia
+            name={texts.footer.linkedin}
             href="https://fr.linkedin.com/in/arthur-rasera"
           />
-          <FooterMedia name={"E-mail"} href="mailto:raserarthur71@gmail.com" />
+          <FooterMedia
+            name={texts.footer.mail}
+            href="mailto:raserarthur71@gmail.com"
+          />
         </div>
       </div>
     </ParallaxLayer>

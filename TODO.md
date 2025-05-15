@@ -9,7 +9,7 @@
 
 ===== Secondaire:
 
-- Mettre des cn pour concaténer les classes
+- rajouter date pour la timeline ??
 
 - Tout commenter
 
@@ -32,3 +32,7 @@
 - Cohérence de tout les nom de fichier genre majuscule pas majuscule et tt
 
 - utiliser des animation plutot que des simple hover (genre par exemple faire genre que le texte rebondie quand on passe la souris dessus)
+
+- en dessous de la social medi bar rajouter Github ou Linkedin d'écrit en dessous de la barre
+
+- changer personna en about

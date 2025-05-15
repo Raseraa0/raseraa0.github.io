@@ -5,6 +5,7 @@ import Timeline from "./components/Timeline";
 import "./style/Persona.css";
 import Button from "./components/Button";
 import Link from "next/link";
+import texts from "@/lib/data-texts";
 
 function Persona() {
   const imageSize = 200;
@@ -19,23 +20,19 @@ function Persona() {
         <Image
           id="img-selfie"
           src={"./selfie_v1.jpg"}
-          alt=""
+          alt={texts.about.altPicture}
           width={imageSize}
           height={imageSize}
           className="lg:w-50 w-40 rounded-full"
-        />
+       />
         <div className="mx-12 max-w-[400px] text-sm lg:text-base">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe natus,
-          animi illo laudantium temporibus vel recusandae. Iure modi quaerat
-          magnam et repudiandae, mollitia expedita molestiae ab amet consequatur
-          omnis vero.{" "}
+          {texts.about.desc}
         </div>
         <Link href="/CV_RASERA_Arthur_FR.pdf" target="_blank">
-          <Button text="Click to see my CV" />
+          <Button text={texts.about.seeCV}/>
         </Link>
       </div>
       <Timeline className="scale-90 lg:scale-125" />
-      {/* <Spotlight /> */}
     </ParallaxLayer>
   );
 }

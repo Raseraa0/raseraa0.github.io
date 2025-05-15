@@ -2,6 +2,7 @@ import { fontJersey15, fontInter } from "@/lib/font";
 import skills from "@/lib/data-skills";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import texts from "@/lib/data-texts";
 
 type Props = {
   id: number;
@@ -26,7 +27,7 @@ function Skill({ id }: Props) {
         {selectedSkill?.subSkills?.map((subSkill, index) => (
           <div key={index} className="mb-2 flex flex-row items-center">
             <Image
-              alt={subSkill.name}
+              alt={`${texts.skills.altSkills} ${subSkill.name}`}
               src={subSkill.image}
               width={size}
               height={size}

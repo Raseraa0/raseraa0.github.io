@@ -1,3 +1,4 @@
+import texts from "@/lib/data-texts";
 import "../style/timeline.css";
 import { fontJersey15, fontInter } from "@/lib/font";
 import { cn } from "@/lib/utils";
@@ -85,22 +86,22 @@ function Timeline({ className = "" }: Props) {
   return (
     <ul className={cn("timeline lg:timeline-vertical", className)}>
       <TimelineStep
-        name="Ensimag"
-        desc="Filière Ingénérie des systèmes d'informations"
+        name={texts.about.timeline.ensimag.name}
+        desc={texts.about.timeline.ensimag.desc}
         isFirst
       />
       <TimelineStep
-        name="Oxyl"
-        desc="Stage / intelligence artificielle / DevOps / Software Development"
+        name={texts.about.timeline.oxyl.name}
+        desc={texts.about.timeline.oxyl.desc}
         right
       />
       <TimelineStep
-        name="Univerisité Polytechnique de Catalone"
-        desc="Echange universitaire / Cours en anglais"
+        name={texts.about.timeline.upc.name}
+        desc={texts.about.timeline.upc.desc}
       />
       <TimelineStep
-        name="Sopra Steria"
-        desc="Stage / SAP development / Intelligence artificielle"
+        name={texts.about.timeline.sopra.name}
+        desc={texts.about.timeline.sopra.desc}
         right
         isLast
       />

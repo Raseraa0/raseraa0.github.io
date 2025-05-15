@@ -10,6 +10,7 @@ import Name from "./components/Name";
 import ScrollDownArrow from "./components/ScrollDownArrow";
 import SocialMediaBar from "./components/SocialMediaBar";
 import NavigationBar from "./components/NavigationBar";
+import texts from "@/lib/data-texts";
 
 // Propriétés
 type Props = {
@@ -66,14 +67,14 @@ function Hero({ parallaxRef }: Props) {
       {/* Hi */}
       <Name
         speed={-2.5}
-        text="Hi, I'm"
+        text={texts.hero.hi}
         className="translate-y-[-60px] text-4xl text-blue-9 lg:translate-x-[-230px] lg:translate-y-[-80px]"
       />
 
       {/* Nom et prénom */}
       <Name
         speed={-4}
-        text="Arthur Rasera"
+        text={texts.hero.arthur}
         className="translate-y-[-20px] text-6xl text-blue-7 lg:translate-y-[-30px] lg:text-8xl"
       />
 

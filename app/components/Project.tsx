@@ -6,6 +6,7 @@ import { fontJersey15 } from "@/lib/font";
 import projects from "@/lib/data-projects";
 import "../style/project.css";
 import SocialMedia from "./SocialMedia";
+import texts from "@/lib/data-texts";
 type Props = {
   id: number;
   isExpanded: boolean;
@@ -44,6 +45,7 @@ function Project({ id, isExpanded, onExpand }: Props) {
         svgSrc="./SocialMedia/github-badge.svg"
         className="absolute bottom-1 right-1 z-50 scale-90 shadow-[0_0_5px] shadow-blue-1"
         href={selectedProject?.link}
+        alt={`${texts.projects.altProjects} ${selectedProject?.title}`}
       />
 
       <div className="p-bg-lines h-full w-full">
@@ -76,7 +78,7 @@ function Project({ id, isExpanded, onExpand }: Props) {
 
               {!isExpanded && (
                 <Button
-                  text="See more"
+                  text={texts.projects.seeMore}
                   className="absolute z-20 mb-3 scale-90 self-end md:hidden"
                   onClick={() => onExpand(id)}
                 />
@@ -93,14 +95,15 @@ function Project({ id, isExpanded, onExpand }: Props) {
                     {selectedProject?.title}
                   </h2>
                   <p className="text-sm">
-                    {selectedProject?.description ?? "No description."}
+                    {selectedProject?.description ??
+                      texts.projects.noDescription}
                   </p>
                 </div>
               )}
             </div>
 
             <p className="mx-4 hidden w-1/3 rounded-md bg-[#00000033] p-2 text-center text-sm md:inline-block lg:w-auto lg:text-base">
-              {selectedProject?.description ?? "No description."}
+              {selectedProject?.description ?? texts.projects.noDescription}
             </p>
           </div>
         </div>

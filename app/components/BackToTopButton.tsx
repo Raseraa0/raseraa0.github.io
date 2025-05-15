@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import "../style/BackToTop.css";
 import { IParallax } from "@react-spring/parallax";
 import { RefObject } from "react";
+import texts from "@/lib/data-texts";
 
 type Props = {
   className?: string;
@@ -24,7 +25,7 @@ function BackToTopButton({ className = "", parallaxRef }: Props) {
       )}
       onClick={goTop}
     >
-      Go to top
+      {texts.hero.navBackToTop}
     </button>
   );
 }
