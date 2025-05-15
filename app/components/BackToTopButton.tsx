@@ -18,9 +18,9 @@ function BackToTopButton({ className = "", parallaxRef }: Props) {
   return (
     <button
       className={cn(
-        "p-backtotop fixed top-2 right-4 lg:top-5 lg:right-10 z-50 text-blue-1 text-3xl shadow-blue-1 transition duration-200 ease-in-out hover:scale-110 lg:text-4xl active:scale-[1.2]",
+        "p-backtotop fixed right-4 top-2 z-50 text-3xl text-blue-1 shadow-blue-1 transition duration-200 ease-in-out hover:scale-110 active:scale-[1.2] lg:right-10 lg:top-5 lg:text-4xl",
         className,
-        fontJersey15.className
+        fontJersey15.className,
       )}
       onClick={goTop}
     >

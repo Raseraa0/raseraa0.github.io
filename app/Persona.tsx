@@ -13,18 +13,18 @@ function Persona() {
     <ParallaxLayer
       offset={1}
       speed={0}
-      className="bg-blue-9 flex flex-col items-center justify-evenly  min-h-[600px] lg:flex-row "
+      className="flex min-h-[600px] flex-col items-center justify-evenly bg-blue-9 lg:flex-row"
     >
-      <div className=" flex flex-col items-center justify-evenly gap-8 lg:h-5/6 lg:gap-0">
+      <div className="flex flex-col items-center justify-evenly gap-8 lg:h-5/6 lg:gap-0">
         <Image
           id="img-selfie"
           src={"./selfie_v1.jpg"}
           alt=""
           width={imageSize}
           height={imageSize}
-          className="rounded-full w-40 lg:w-50"
+          className="lg:w-50 w-40 rounded-full"
         />
-        <div className="mx-12 text-sm max-w-[400px] lg:text-base">
+        <div className="mx-12 max-w-[400px] text-sm lg:text-base">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe natus,
           animi illo laudantium temporibus vel recusandae. Iure modi quaerat
           magnam et repudiandae, mollitia expedita molestiae ab amet consequatur

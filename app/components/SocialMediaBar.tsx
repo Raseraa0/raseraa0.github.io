@@ -15,7 +15,7 @@ export default function SocialMediaBar({ speed }: Props) {
     const selecteur = document.getElementById("social-media-selecteur");
 
     const allSocialMedia = document.getElementsByClassName(
-      "p-social-media-badge"
+      "p-social-media-badge",
     );
     for (const socialMedia of Array.from(allSocialMedia) as HTMLElement[]) {
       socialMedia.addEventListener("mouseenter", () => {
@@ -46,7 +46,7 @@ export default function SocialMediaBar({ speed }: Props) {
       id="social-media-layer"
       offset={0}
       speed={speed}
-      className="flex justify-start sm:justify-center sm:ml-0 "
+      className="flex justify-start sm:ml-0 sm:justify-center"
     >
       <div id="social-media-outer" className={`flex flex-col gap-2 p-3`}>
         <div className="flex flex-row gap-7 sm:gap-10">

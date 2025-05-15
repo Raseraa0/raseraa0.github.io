@@ -39,7 +39,7 @@ function BackgroundLayer({ speed, path = "", sky }: Props) {
       offset={0}
       speed={speed}
     >
-      <div className="h-full aspect-[1920/1080]">
+      <div className="aspect-[1920/1080] h-full">
         <Image src={path} alt="" fill className="object-cover"></Image>
       </div>
     </ParallaxLayer>

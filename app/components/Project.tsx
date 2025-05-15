@@ -35,40 +35,40 @@ function Project({ id, isExpanded, onExpand }: Props) {
 
   return (
     <div
-      className="relative group flex-grow mx-4 my-2 rounded-md border-2 border-blue-7/50 hover:border-blue-6/80 overflow-hidden transition-all duration-500 lg:w-96 lg:flex-grow-0 lg:hover:-translate-y-7 lg:hover:scale-105"
+      className="group relative mx-4 my-2 flex-grow overflow-hidden rounded-md border-2 border-blue-7/50 transition-all duration-500 hover:border-blue-6/80 lg:w-96 lg:flex-grow-0 lg:hover:-translate-y-7 lg:hover:scale-105"
       style={{
         background: `linear-gradient(45deg, ${darkenedColor}, ${bg_col} 20%, ${darkenedColor} 45%,${bg_col} 70%, ${darkenedColor})`,
       }}
     >
       <SocialMedia
         svgSrc="./SocialMedia/github-badge.svg"
-        className="absolute bottom-1 right-1 z-50 shadow-[0_0_5px] shadow-blue-1 scale-90"
+        className="absolute bottom-1 right-1 z-50 scale-90 shadow-[0_0_5px] shadow-blue-1"
         href={selectedProject?.link}
       />
 
       <div className="p-bg-lines h-full w-full">
-        <div className="p-bg-lines h-full w-full flex flex-col items-center justify-evenly relative">
+        <div className="p-bg-lines relative flex h-full w-full flex-col items-center justify-evenly">
           {!isExpanded && (
             <span
               className={cn(
-                "text-2xl text-white-1 text-center z-10 lg:text-4xl",
-                fontJersey15.className
+                "z-10 text-center text-2xl text-white-1 lg:text-4xl",
+                fontJersey15.className,
               )}
             >
               {selectedProject?.title}
             </span>
           )}
-          <div className="flex flex-col md:flex-row lg:flex-col items-center justify-evenly gap-12 h-full md:h-auto">
+          <div className="flex h-full flex-col items-center justify-evenly gap-12 md:h-auto md:flex-row lg:flex-col">
             <div
               className={cn(
-                "relative flex items-center justify-center aspect-[1920/1080] w-64 rounded-lg border border-blue-9 lg:group-hover:scale-110 transition-all duration-700 overflow-hidden lg:w-80",
-                isExpanded ? "w-full aspect-auto h-full" : ""
+                "relative flex aspect-[1920/1080] w-64 items-center justify-center overflow-hidden rounded-lg border border-blue-9 transition-all duration-700 lg:w-80 lg:group-hover:scale-110",
+                isExpanded ? "aspect-auto h-full w-full" : "",
               )}
             >
               <div
                 className={cn(
-                  "absolute inset-0 bg-center bg-cover bg-no-repeat transition-all duration-700",
-                  isExpanded ? "brightness-[0.4]" : ""
+                  "absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-700",
+                  isExpanded ? "brightness-[0.4]" : "",
                 )}
                 style={{ backgroundImage: selectedProject?.image_path }}
                 onClick={() => onExpand(id)}
@@ -77,17 +77,17 @@ function Project({ id, isExpanded, onExpand }: Props) {
               {!isExpanded && (
                 <Button
                   text="See more"
-                  className="absolute scale-90 z-20 self-end mb-3 md:hidden"
+                  className="absolute z-20 mb-3 scale-90 self-end md:hidden"
                   onClick={() => onExpand(id)}
                 />
               )}
 
               {isExpanded && (
-                <div className="relative z-30 text-white-1 p-4 text-center">
+                <div className="relative z-30 p-4 text-center text-white-1">
                   <h2
                     className={cn(
-                      "text-2xl font-bold mb-2",
-                      fontJersey15.className
+                      "mb-2 text-2xl font-bold",
+                      fontJersey15.className,
                     )}
                   >
                     {selectedProject?.title}
@@ -99,7 +99,7 @@ function Project({ id, isExpanded, onExpand }: Props) {
               )}
             </div>
 
-            <p className="text-sm text-center mx-4 p-2 rounded-md bg-[#00000033] hidden md:inline-block w-1/3 lg:w-auto lg:text-base">
+            <p className="mx-4 hidden w-1/3 rounded-md bg-[#00000033] p-2 text-center text-sm md:inline-block lg:w-auto lg:text-base">
               {selectedProject?.description ?? "No description."}
             </p>
           </div>

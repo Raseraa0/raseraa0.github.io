@@ -15,14 +15,14 @@ function Projects() {
 
   window.addEventListener("resize", () => {
     handleExpandProject(-1);
-  })
+  });
   return (
     <ParallaxLayer
       offset={2}
       speed={0}
-      className="h-min-[600px] bg-blue-9 flex justify-center items-center"
+      className="h-min-[600px] flex items-center justify-center bg-blue-9"
     >
-      <div className=" h-full w-full flex flex-col lg:flex-row lg:py-20 justify-center">
+      <div className="flex h-full w-full flex-col justify-center lg:flex-row lg:py-20">
         <Project
           id={1}
           isExpanded={expandedProjectId === 1}

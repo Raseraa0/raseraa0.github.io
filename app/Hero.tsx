@@ -29,7 +29,7 @@ function Hero({ parallaxRef }: Props) {
   return (
     <div>
       {/* Couche pour le background */}
-      <BackgroundLayer speed={0} sky/>
+      <BackgroundLayer speed={0} sky />
       <BackgroundLayer
         speed={-1.2}
         path="./Minimaliste/Centered_Layer/1_Clouds.png"
@@ -61,20 +61,20 @@ function Hero({ parallaxRef }: Props) {
       />
 
       {/* Barre de navigation */}
-      <NavigationBar speed={-2} parallaxRef={parallaxRef}/>
+      <NavigationBar speed={-2} parallaxRef={parallaxRef} />
 
       {/* Hi */}
       <Name
         speed={-2.5}
         text="Hi, I'm"
-        className="translate-y-[-60px] lg:translate-y-[-80px] lg:translate-x-[-230px] text-4xl text-blue-9"
+        className="translate-y-[-60px] text-4xl text-blue-9 lg:translate-x-[-230px] lg:translate-y-[-80px]"
       />
 
       {/* Nom et prénom */}
       <Name
         speed={-4}
         text="Arthur Rasera"
-        className="translate-y-[-20px] lg:translate-y-[-30px] text-6xl lg:text-8xl text-blue-7"
+        className="translate-y-[-20px] text-6xl text-blue-7 lg:translate-y-[-30px] lg:text-8xl"
       />
 
       {/* Couche pour le background */}

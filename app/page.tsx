@@ -58,14 +58,14 @@ export default function Home() {
 
       <BackToTopButton
         parallaxRef={parallaxRef}
-        className={isTop ? "opacity-0 translate-x-20" : "opacity-100"}
+        className={isTop ? "translate-x-20 opacity-0" : "opacity-100"}
       />
       {/* Conteneur parallax qui contiendra chaques pages*/}
       <Parallax
         ref={parallaxRef}
         pages={4}
         style={{ top: "0", left: "0" }}
-        className="bg-blue-9 p-animation "
+        className="p-animation bg-blue-9"
       >
         {/* Hero pour la page d'acceuil */}
         <Hero parallaxRef={parallaxRef} />

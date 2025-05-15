@@ -3,7 +3,7 @@ import { fontJersey15, fontInter } from "@/lib/font";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
-import "./style/footer.css"
+import "./style/footer.css";
 
 type Props = {
   name: string;
@@ -16,7 +16,7 @@ function Footer() {
       <Link
         href={href}
         target="_blank"
-        className="p-fluide-anim p-footer-text hover:text-blue-1 transform hover:scale-105"
+        className="p-fluide-anim p-footer-text transform hover:scale-105 hover:text-blue-1"
       >
         {name}
       </Link>
@@ -27,16 +27,16 @@ function Footer() {
     <ParallaxLayer
       offset={3}
       speed={0}
-      className="relative min-[600px] pointer-events-none"
+      className="min-[600px] pointer-events-none relative"
     >
-      <div className="absolute bottom-0 w-full h-9 flex flex-row items-center justify-evenly pointer-events-auto ">
+      <div className="pointer-events-auto absolute bottom-0 flex h-9 w-full flex-row items-center justify-evenly">
         <span className={cn(fontJersey15.className, "text-xl lg:text-3xl")}>
           Arthur Rasera
         </span>
         <div
           className={cn(
             fontInter.className,
-            "flex flex-row gap-3 text-sm lg:text:md lg:gap-16"
+            "lg:text:md flex flex-row gap-3 text-sm lg:gap-16",
           )}
         >
           <FooterMedia name={"GitHub"} href="https://github.com/Raseraa0/" />

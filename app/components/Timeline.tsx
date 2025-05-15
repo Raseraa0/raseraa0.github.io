@@ -25,8 +25,10 @@ function Timeline({ className = "" }: Props) {
     return (
       <div
         className={cn(
-          "flex flex-col items-center w-20 md:w-40 hover:scale-110 p-fluide-anim",
-          right ? "timeline-end hover:translate-x-3" : "timeline-start hover:-translate-x-3"
+          "p-fluide-anim flex w-20 flex-col items-center hover:scale-110 md:w-40",
+          right
+            ? "timeline-end hover:translate-x-3"
+            : "timeline-start hover:-translate-x-3",
         )}
       >
         <span className={cn("text-center text-base/4", fontJersey15.className)}>
@@ -34,8 +36,8 @@ function Timeline({ className = "" }: Props) {
         </span>
         <div
           className={cn(
-            "text-xs opacity-75 mt-2 text-center hidden md:inline-block",
-            fontInter.className
+            "mt-2 hidden text-center text-xs opacity-75 md:inline-block",
+            fontInter.className,
           )}
         >
           {desc}

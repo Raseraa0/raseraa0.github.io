@@ -16,7 +16,7 @@ type PropsAgain = {
   className?: string;
 };
 
-function Chevron({ size, className = ' ' }: PropsAgain) {
+function Chevron({ size, className = " " }: PropsAgain) {
   return (
     <Image
       src="./chevron.svg"
@@ -29,22 +29,17 @@ function Chevron({ size, className = ' ' }: PropsAgain) {
   );
 }
 
-function ThreeChevron({
-  size,
-  className = ' '
-}: PropsAgain) {
+function ThreeChevron({ size, className = " " }: PropsAgain) {
   return (
-
     <div
-      className={`absolute py-5 px-7 bottom-0 sm:py-7 sm:px-12 p-fluide-anim ${className}`}
+      className={`p-fluide-anim absolute bottom-0 px-7 py-5 sm:px-12 sm:py-7 ${className}`}
     >
       <Chevron size={size} className="chevron-1" />
       <Chevron size={size} className="chevron-2" />
       <Chevron size={size} className="chevron-3" />
     </div>
-  )
+  );
 }
-
 
 function ScrollDownArrow({
   size = 20,
@@ -69,14 +64,14 @@ function ScrollDownArrow({
   }, [scrollThreshold, parallaxRef]);
 
   return (
-
     <ParallaxLayer className="pointer-events-none">
       <div
-        className={`h-dvh p-fluide-anim relative ${isVisible ? "opacity-100" : "opacity-0"
-          }`}
+        className={`p-fluide-anim relative h-dvh ${
+          isVisible ? "opacity-100" : "opacity-0"
+        }`}
       >
-        <ThreeChevron size={size} className="left-0"/>
-        <ThreeChevron size={size} className="right-0"/>
+        <ThreeChevron size={size} className="left-0" />
+        <ThreeChevron size={size} className="right-0" />
       </div>
     </ParallaxLayer>
   );

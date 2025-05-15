@@ -12,16 +12,16 @@ function Skill({ id }: Props) {
   const size = 25;
 
   return (
-    <div className="flex flex-col z-50 pointer-events-none">
+    <div className="pointer-events-none z-50 flex flex-col">
       <span
         className={`text-center text-2xl/6 text-blue-1 ${fontJersey15.className} lg:text-2xl`}
       >
         {selectedSkill?.title}
       </span>
-      <span className="h-px w-4/5 bg-blue-1 self-center mt-1 mb-2"></span>
-      <div className="flex flex-col ml-2">
+      <span className="mb-2 mt-1 h-px w-4/5 self-center bg-blue-1"></span>
+      <div className="ml-2 flex flex-col">
         {selectedSkill?.subSkills?.map((subSkill, index) => (
-          <div key={index} className="flex flex-row items-center mb-2">
+          <div key={index} className="mb-2 flex flex-row items-center">
             <Image
               alt={subSkill.name}
               src={subSkill.image}
@@ -39,4 +39,3 @@ function Skill({ id }: Props) {
 }
 
 export default Skill;
-

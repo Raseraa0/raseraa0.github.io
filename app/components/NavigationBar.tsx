@@ -39,7 +39,7 @@ function NavigationBar({ speed, parallaxRef }: Props) {
     <ParallaxLayer
       offset={0}
       speed={speed}
-      className="flex justify-end pointer-events-none"
+      className="pointer-events-none flex justify-end"
     >
       <div
         id="navigation-bar"
