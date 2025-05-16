@@ -38,7 +38,12 @@ function Timeline({ className = "" }: Props) {
             : "timeline-start hover:-translate-x-3",
         )}
       >
-        <span className={cn("text-center text-base/4 lg:text-xl/5", fontJersey15.className)}>
+        <span
+          className={cn(
+            "text-center text-base/4 opacity-90 lg:text-xl/5",
+            fontJersey15.className,
+          )}
+        >
           {name}
         </span>
         <div
@@ -74,7 +79,12 @@ function Timeline({ className = "" }: Props) {
 
   const TimelineDate = ({ date, right = false }: PropsAgainReally) => {
     return (
-      <div className={cn("text-xs opacity-75", right ? "timeline-start" : "timeline-end")}>
+      <div
+        className={cn(
+          "text-xs opacity-75",
+          right ? "timeline-start" : "timeline-end",
+        )}
+      >
         {date}
       </div>
     );

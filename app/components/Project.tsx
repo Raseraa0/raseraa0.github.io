@@ -63,13 +63,13 @@ function Project({ id, isExpanded, onExpand }: Props) {
           <div className="flex h-full flex-col items-center justify-evenly gap-12 md:h-auto md:flex-row lg:flex-col">
             <div
               className={cn(
-                "relative flex aspect-[1920/1080] w-64 items-center justify-center overflow-hidden rounded-lg border border-blue-9 transition-all duration-700 lg:w-80 lg:group-hover:scale-110",
+                "relative flex aspect-[1920/1080] w-64 items-center justify-center overflow-hidden rounded-lg border border-blue-9 transition-all duration-0 lg:w-80 lg:group-hover:scale-110",
                 isExpanded ? "aspect-auto h-full w-full" : "",
               )}
             >
               <div
                 className={cn(
-                  "absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-700",
+                  "absolute inset-0 bg-cover bg-center bg-no-repeat duration-700",
                   isExpanded ? "brightness-[0.4]" : "",
                 )}
                 style={{ backgroundImage: selectedProject?.image_path }}

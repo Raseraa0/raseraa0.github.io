@@ -6,9 +6,9 @@ import "./style/about.css";
 import Button from "./components/Button";
 import Link from "next/link";
 import texts from "@/lib/data-texts";
+import selfie_v1 from "../public/selfie_v1.jpg"
 
 function About() {
-  const imageSize = 200;
 
   return (
     <ParallaxLayer
@@ -19,11 +19,9 @@ function About() {
       <div className="flex flex-col items-center justify-evenly gap-8 lg:h-5/6 lg:gap-0">
         <Image
           id="img-selfie"
-          src={"./selfie_v1.jpg"}
+          src={selfie_v1}
           alt={texts.about.altPicture}
-          width={imageSize}
-          height={imageSize}
-          className="lg:w-50 w-40 rounded-full"
+          className="lg:w-64 w-40 rounded-full"
         />
         <div className="mx-12 max-w-[400px] text-sm lg:text-base">
           {texts.about.desc}

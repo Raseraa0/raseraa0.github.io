@@ -14,6 +14,9 @@ export default function SocialMediaBar({ speed }: Props) {
 
   function headerSetup() {
     const selecteur = document.getElementById("social-media-selecteur");
+    const selecteurText = document.getElementById(
+      "social-media-selecteur-text",
+    );
 
     const allSocialMedia = document.getElementsByClassName(
       "p-social-media-badge",
@@ -31,12 +34,28 @@ export default function SocialMediaBar({ speed }: Props) {
           selecteur.style.width = `${socialMedia.clientWidth}px`;
           selecteur.style.left = `${offset - offset_first}px`;
         }
+        if (selecteurText) {
+          switch (num) {
+            case 1:
+              selecteurText.textContent = texts.footer.git;
+              break;
+            case 2:
+              selecteurText.textContent = texts.footer.linkedin;
+              break;
+            case 3:
+              selecteurText.textContent = texts.footer.mail;
+              break;
+          }
+        }
       });
 
       socialMedia.addEventListener("mouseleave", () => {
         if (selecteur) {
           selecteur.style.width = `100%`;
           selecteur.style.left = `0`;
+        }
+        if (selecteurText) {
+          selecteurText.textContent = " ";
         }
       });
     }
@@ -70,7 +89,15 @@ export default function SocialMediaBar({ speed }: Props) {
             alt={texts.hero.social.altMail}
           />
         </div>
-        <div id="social-media-selecteur" className="rounded-full"></div>
+        <div
+          id="social-media-selecteur"
+          className="flex flex-col items-center rounded-full"
+        >
+          <div
+            id="social-media-selecteur-text"
+            className="mt-2 text-nowrap text-center text-sm text-blue-8"
+          ></div>
+        </div>
       </div>
     </ParallaxLayer>
   );

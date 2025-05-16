@@ -22,7 +22,7 @@ function Projects() {
       speed={0}
       className="h-min-[600px] flex items-center justify-center bg-blue-9"
     >
-      <div className="flex h-full w-full flex-col justify-center lg:flex-row lg:py-20">
+      <div className="flex h-full w-full flex-col justify-center lg:flex-row lg:py-36">
         <Project
           id={1}
           isExpanded={expandedProjectId === 1}
