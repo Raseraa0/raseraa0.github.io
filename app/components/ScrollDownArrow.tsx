@@ -4,33 +4,31 @@ import { IParallax, ParallaxLayer } from "@react-spring/parallax";
 import "../style/scrollDownArrow.css";
 import { cn } from "@/lib/utils";
 
+import chevronImg from "../../public/chevron.svg";
+
 type Props = {
   margin_bottom?: number;
   margin_side?: number;
-  size?: number;
   scrollThreshold?: number;
   parallaxRef: RefObject<IParallax | null>;
 };
 
 type PropsAgain = {
-  size: number;
   className?: string;
 };
 
-function Chevron({ size, className = " " }: PropsAgain) {
+function Chevron({ className = " " }: PropsAgain) {
   return (
     <Image
-      src="./chevron.svg"
+      src={chevronImg}
       alt=""
-      width={size}
-      height={size}
-      className={`${className}`}
-      style={{ transform: "rotateZ(90deg)" }}
+      className={cn(className, "rotate-90 w-5 h-5")}
+      
     />
   );
 }
 
-function ThreeChevron({ size, className = " " }: PropsAgain) {
+function ThreeChevron({ className = " " }: PropsAgain) {
   return (
     <div
       className={cn(
@@ -38,18 +36,14 @@ function ThreeChevron({ size, className = " " }: PropsAgain) {
         className,
       )}
     >
-      <Chevron size={size} className="chevron-1" />
-      <Chevron size={size} className="chevron-2" />
-      <Chevron size={size} className="chevron-3" />
+      <Chevron className="chevron-1" />
+      <Chevron className="chevron-2" />
+      <Chevron className="chevron-3" />
     </div>
   );
 }
 
-function ScrollDownArrow({
-  size = 20,
-  scrollThreshold = 30,
-  parallaxRef,
-}: Props) {
+function ScrollDownArrow({ scrollThreshold = 30, parallaxRef }: Props) {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
@@ -75,8 +69,8 @@ function ScrollDownArrow({
           isVisible ? "opacity-100" : "opacity-0",
         )}
       >
-        <ThreeChevron size={size} className="left-0" />
-        <ThreeChevron size={size} className="right-0" />
+        <ThreeChevron className="left-0" />
+        <ThreeChevron className="right-0" />
       </div>
     </ParallaxLayer>
   );

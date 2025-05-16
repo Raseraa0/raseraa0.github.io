@@ -3,6 +3,10 @@ import { useEffect } from "react";
 import SocialMedia from "./SocialMedia";
 import texts from "@/lib/data-texts";
 
+import githubBadge from "../../public/SocialMedia/github-badge.svg";
+import linkedinBadge from "../../public/SocialMedia/linkedin-badge.svg";
+import mailBadge from "../../public/SocialMedia/mail-badge.svg";
+
 type Props = {
   speed: number;
 };
@@ -71,19 +75,19 @@ export default function SocialMediaBar({ speed }: Props) {
       <div id="social-media-outer" className="flex flex-col gap-2 p-3">
         <div className="flex flex-row gap-7 sm:gap-10">
           <SocialMedia
-            svgSrc="./SocialMedia/github-badge.svg"
+            svgSrc={githubBadge}
             num="1"
             href="https://github.com/Raseraa0/"
             alt={texts.hero.social.altGit}
           />
           <SocialMedia
-            svgSrc="./SocialMedia/linkedin-badge.svg"
+            svgSrc={linkedinBadge}
             num="2"
             href="https://fr.linkedin.com/in/arthur-rasera"
             alt={texts.hero.social.altLinkedin}
           />
           <SocialMedia
-            svgSrc="./SocialMedia/mail-badge.svg"
+            svgSrc={mailBadge}
             num="3"
             href="mailto:raserarthur71@gmail.com"
             alt={texts.hero.social.altMail}

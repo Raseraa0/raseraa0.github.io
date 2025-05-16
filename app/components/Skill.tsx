@@ -10,7 +10,6 @@ type Props = {
 
 function Skill({ id }: Props) {
   const selectedSkill = skills.find((skill) => skill.id === id);
-  const size = 25;
 
   return (
     <div className="pointer-events-none z-50 flex flex-col">
@@ -29,8 +28,8 @@ function Skill({ id }: Props) {
             <Image
               alt={`${texts.skills.altSkills} ${subSkill.name}`}
               src={subSkill.image}
-              width={size}
-              height={size}
+              placeholder="blur"
+              className="w-7"
             />
             <span className={cn(fontInter.className, "ml-2 text-sm")}>
               {subSkill.name}

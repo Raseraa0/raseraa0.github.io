@@ -8,6 +8,9 @@ import "../style/project.css";
 import SocialMedia from "./SocialMedia";
 import texts from "@/lib/data-texts";
 import Image from "next/image";
+
+import githubBadge from "../../public/SocialMedia/github-badge.svg";
+
 type Props = {
   id: number;
   isExpanded: boolean;
@@ -43,7 +46,7 @@ function Project({ id, isExpanded, onExpand }: Props) {
       }}
     >
       <SocialMedia
-        svgSrc="./SocialMedia/github-badge.svg"
+        svgSrc={githubBadge}
         className="absolute bottom-1 right-1 z-50 scale-90 shadow-[0_0_5px] shadow-blue-1"
         href={selectedProject?.link}
         alt={`${texts.projects.altProjects} ${selectedProject?.title}`}
@@ -68,17 +71,20 @@ function Project({ id, isExpanded, onExpand }: Props) {
                 isExpanded ? "aspect-auto h-full w-full" : "",
               )}
             >
-                <Image
-                  src={selectedProject?.image_path ?? ""}
-                  width={1920}
-                  height={1080}
-                  alt=""
-                  className={cn(
-                    "absolute inset-0 duration-700",
-                    isExpanded ? "brightness-[0.4] object-fill h-full w-full" : "",
-                  )}
+              <Image
+                src={selectedProject?.image_path ?? ""}
+                width={1920}
+                height={1080}
+                placeholder="blur"
+                alt=""
+                className={cn(
+                  "absolute inset-0 duration-700",
+                  isExpanded
+                    ? "h-full w-full object-fill brightness-[0.4]"
+                    : "",
+                )}
                 onClick={() => onExpand(id)}
-                ></Image>
+              ></Image>
 
               {!isExpanded && (
                 <Button

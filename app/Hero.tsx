@@ -13,15 +13,15 @@ import SocialMediaBar from "./components/SocialMediaBar";
 import NavigationBar from "./components/NavigationBar";
 import texts from "@/lib/data-texts";
 
-import img_9_Forest from "../public/Minimaliste/Centered_Layer/9_Forest.png";
-import img_8_Forest from "../public/Minimaliste/Centered_Layer/8_Forest.png";
-import img_7_Bridge from "../public/Minimaliste/Centered_Layer/7_Bridge.png";
-import img_6_Birds from "../public/Minimaliste/Centered_Layer/6_Birds.png";
-import img_5_Birds from "../public/Minimaliste/Centered_Layer/5_Birds.png";
-import img_4_Mountains from "../public/Minimaliste/Centered_Layer/4_Mountains.png";
-import img_3_Mountains from "../public/Minimaliste/Centered_Layer/3_Mountains.png";
-import img_2_Mountains from "../public/Minimaliste/Centered_Layer/2_Mountains.png";
-import img_1_Clouds from "../public/Minimaliste/Centered_Layer/1_Clouds.png";
+import img9Forest from "../public/Minimaliste/Centered_Layer/9_Forest.png";
+import img8Forest from "../public/Minimaliste/Centered_Layer/8_Forest.png";
+import img7Bridge from "../public/Minimaliste/Centered_Layer/7_Bridge.png";
+import img6Birds from "../public/Minimaliste/Centered_Layer/6_Birds.png";
+import img5Birds from "../public/Minimaliste/Centered_Layer/5_Birds.png";
+import img4Mountains from "../public/Minimaliste/Centered_Layer/4_Mountains.png";
+import img3Mountains from "../public/Minimaliste/Centered_Layer/3_Mountains.png";
+import img2Mountains from "../public/Minimaliste/Centered_Layer/2_Mountains.png";
+import img1Clouds from "../public/Minimaliste/Centered_Layer/1_Clouds.png";
 
 // Propriétés
 type Props = {
@@ -42,17 +42,17 @@ function Hero({ parallaxRef }: Props) {
     <div>
       {/* Couche pour le background */}
       <BackgroundLayer speed={0} sky />
-      <BackgroundLayer speed={-1.2} path={img_1_Clouds} />
-      <BackgroundLayer speed={-1} path={img_2_Mountains} />
+      <BackgroundLayer speed={-1.2} path={img1Clouds} />
+      <BackgroundLayer speed={-1} path={img2Mountains} />
 
       {/* Barre des réseaux sociaux */}
       <SocialMediaBar speed={-3} />
 
       {/* Couche pour le background */}
-      <BackgroundLayer speed={-0.8} path={img_3_Mountains} />
-      <BackgroundLayer speed={-0.6} path={img_4_Mountains} />
-      <BackgroundLayer speed={0.5} path={img_5_Birds} />
-      <BackgroundLayer speed={0.3} path={img_6_Birds} />
+      <BackgroundLayer speed={-0.8} path={img3Mountains} />
+      <BackgroundLayer speed={-0.6} path={img4Mountains} />
+      <BackgroundLayer speed={0.5} path={img5Birds} />
+      <BackgroundLayer speed={0.3} path={img6Birds} />
 
       {/* Barre de navigation */}
       <NavigationBar speed={-2} parallaxRef={parallaxRef} />
@@ -72,9 +72,9 @@ function Hero({ parallaxRef }: Props) {
       />
 
       {/* Couche pour le background */}
-      <BackgroundLayer speed={-0.4} path={img_7_Bridge} />
-      <BackgroundLayer speed={-0.2} path={img_8_Forest} />
-      <BackgroundLayer speed={0} path={img_9_Forest} />
+      <BackgroundLayer speed={-0.4} path={img7Bridge} />
+      <BackgroundLayer speed={-0.2} path={img8Forest} />
+      <BackgroundLayer speed={0} path={img9Forest} />
 
       {/* Fleche qui invite à scroller */}
       <ScrollDownArrow parallaxRef={parallaxRef} />

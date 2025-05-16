@@ -1,10 +1,10 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import "../style/socialMedia.css";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 type Props = {
-  svgSrc: string;
+  svgSrc: StaticImageData;
   className?: string;
   num?: string;
   href?: string;
@@ -28,7 +28,7 @@ function SocialMedia({
         data-num={parseInt(num)}
         id={`social-media-badge-${num}`}
       >
-        <Image src={svgSrc} alt={alt} width={200} height={200} priority />
+        <Image src={svgSrc} alt={alt} priority />
       </button>
     </Link>
   );

@@ -1,3 +1,18 @@
+import dockerImg from "../public/skills/docker.png";
+import gitImg from "../public/skills/git.png";
+import odataImg from "../public/skills/odata.png";
+import sapImg from "../public/skills/sap.png";
+import csharpImg from "../public/skills/csharp.png";
+import cppImg from "../public/skills/cpp.png";
+import javaImg from "../public/skills/java.png";
+import cImg from "../public/skills/c.png";
+import reactImg from "../public/skills/react.png";
+import nodeImg from "../public/skills/node.png";
+import typescriptImg from "../public/skills/typescript.png";
+import pytorchImg from "../public/skills/pytorch.png";
+import tensorflowImg from "../public/skills/tensorflow.png";
+import pythonImg from "../public/skills/python.png";
+
 const skills = [
   {
     id: 1,
@@ -5,15 +20,15 @@ const skills = [
     subSkills: [
       {
         name: "Python",
-        image: "./skills/python.png",
+        image: pythonImg,
       },
       {
         name: "TensorFlow",
-        image: "./skills/tensorflow.png",
+        image: tensorflowImg,
       },
       {
         name: "PyTorch",
-        image: "./skills/pytorch.png",
+        image: pytorchImg,
       },
     ],
   },
@@ -23,15 +38,15 @@ const skills = [
     subSkills: [
       {
         name: "TypeScript",
-        image: "./skills/typescript.png",
+        image: typescriptImg,
       },
       {
         name: "Node.Js",
-        image: "./skills/node.png",
+        image: nodeImg,
       },
       {
         name: "React",
-        image: "./skills/react.png",
+        image: reactImg,
       },
     ],
   },
@@ -41,7 +56,7 @@ const skills = [
     subSkills: [
       {
         name: "C",
-        image: "./skills/c.png",
+        image: cImg,
       },
     ],
   },
@@ -51,15 +66,15 @@ const skills = [
     subSkills: [
       {
         name: "Java",
-        image: "./skills/java.png",
+        image: javaImg,
       },
       {
         name: "C++",
-        image: "./skills/cpp.svg",
+        image: cppImg,
       },
       {
         name: "C#",
-        image: "./skills/csharp.png",
+        image: csharpImg,
       },
     ],
   },
@@ -69,15 +84,15 @@ const skills = [
     subSkills: [
       {
         name: "ABAP",
-        image: "./skills/sap.png",
+        image: sapImg,
       },
       {
         name: "OData",
-        image: "./skills/odata.png",
+        image: odataImg,
       },
       {
         name: "SAP Fiori",
-        image: "./skills/sap.png",
+        image: sapImg,
       },
     ],
   },
@@ -87,11 +102,11 @@ const skills = [
     subSkills: [
       {
         name: "Git",
-        image: "./skills/git.png",
+        image: gitImg,
       },
       {
         name: "Docker",
-        image: "./skills/docker.png",
+        image: dockerImg,
       },
     ],
   },
