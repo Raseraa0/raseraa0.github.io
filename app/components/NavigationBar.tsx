@@ -26,7 +26,7 @@ function NavigationBarText({
     <span
       onClick={onClick}
       className={cn(
-        "p-navigation-bar-text text-end text-3xl text-blue-9 lg:text-4xl",
+        "p-navigation-bar-text px-4 py-1 text-end text-3xl text-blue-9 lg:px-12 lg:text-4xl",
         fontJersey15.className,
         className,
       )}
@@ -49,7 +49,7 @@ function NavigationBar({ speed, parallaxRef }: Props) {
     >
       <div
         id="navigation-bar"
-        className="pointer-events-auto flex flex-col pr-4 pt-2 sm:pr-12 sm:pt-6"
+        className="pointer-events-auto flex flex-col pt-4 lg:pt-8"
       >
         <NavigationBarText
           text={texts.hero.nav.about}
