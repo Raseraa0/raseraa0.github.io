@@ -6,14 +6,14 @@
  */
 
 import { ParallaxLayer } from "@react-spring/parallax";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 // Propriétés
 type Props = {
   // Vitesse à transmettre à la couche parallax
   speed: number;
 
-  path?: string;
+  path?: StaticImageData;
 
   sky?: boolean;
 };
@@ -24,7 +24,7 @@ type Props = {
  *      - Couche parallax qui va contenir la div à
  *        laquelle on va assigner le background image
  */
-function BackgroundLayer({ speed, path = "", sky }: Props) {
+function BackgroundLayer({ speed, path, sky }: Props) {
   if (sky) {
     return (
       <ParallaxLayer className="pointer-events-none" offset={0} speed={speed}>
@@ -40,7 +40,13 @@ function BackgroundLayer({ speed, path = "", sky }: Props) {
       speed={speed}
     >
       <div className="aspect-[1920/1080] h-full">
-        <Image src={path} alt="" fill className="object-cover"></Image>
+        <Image
+          src={path ?? ""}
+          placeholder="blur"
+          alt=""
+          fill
+          className="object-cover"
+        ></Image>
       </div>
     </ParallaxLayer>
   );

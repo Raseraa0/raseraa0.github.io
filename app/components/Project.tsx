@@ -7,6 +7,7 @@ import projects from "@/lib/data-projects";
 import "../style/project.css";
 import SocialMedia from "./SocialMedia";
 import texts from "@/lib/data-texts";
+import Image from "next/image";
 type Props = {
   id: number;
   isExpanded: boolean;
@@ -67,14 +68,17 @@ function Project({ id, isExpanded, onExpand }: Props) {
                 isExpanded ? "aspect-auto h-full w-full" : "",
               )}
             >
-              <div
-                className={cn(
-                  "absolute inset-0 bg-cover bg-center bg-no-repeat duration-700",
-                  isExpanded ? "brightness-[0.4]" : "",
-                )}
-                style={{ backgroundImage: selectedProject?.image_path }}
+                <Image
+                  src={selectedProject?.image_path ?? ""}
+                  width={1920}
+                  height={1080}
+                  alt=""
+                  className={cn(
+                    "absolute inset-0 duration-700",
+                    isExpanded ? "brightness-[0.4] object-fill h-full w-full" : "",
+                  )}
                 onClick={() => onExpand(id)}
-              ></div>
+                ></Image>
 
               {!isExpanded && (
                 <Button
