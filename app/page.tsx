@@ -39,7 +39,7 @@ export default function Home() {
     if (parallaxRef.current) {
       const scrollTop = parallaxRef.current.container.current.scrollTop;
       const pageHeight = parallaxRef.current.space;
-      setIsTop(scrollTop < pageHeight);
+      setIsTop(10 * scrollTop < 9 * pageHeight);
     }
   };
 
@@ -58,7 +58,7 @@ export default function Home() {
 
       <BackToTopButton
         parallaxRef={parallaxRef}
-        className={isTop ? "translate-x-20 opacity-0" : "opacity-100"}
+        className={isTop ? "translate-x-40 opacity-0" : "opacity-100"}
       />
       {/* Conteneur parallax qui contiendra chaques pages*/}
       <Parallax

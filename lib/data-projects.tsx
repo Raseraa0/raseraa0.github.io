@@ -14,7 +14,7 @@ const projects = [
     description:
       "Mise en place d'un réseaux de neuronne sans s'aider des bibliotèques d'intelligence artificielle déjà existante. Le but est de s'appuyer sur le même principe que l'outils keras associé à TensorFlow sur python, avec différentes couche que l'on peut aisément manipuler",
     image_path: "url(./projects/NeuralNetwork.png)",
-    link: "https://github.com/Raseraa0/NeuralNetworkFromScratch)",
+    link: "https://github.com/Raseraa0/NeuralNetworkFromScratch",
     color: "#0f766e",
   },
   {

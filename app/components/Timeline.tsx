@@ -16,9 +16,15 @@ type PropsAgain = {
 type PropsAgainAgain = {
   name: string;
   desc: string;
+  date: string;
   right?: boolean;
   isFirst?: boolean;
   isLast?: boolean;
+};
+
+type PropsAgainReally = {
+  date: string;
+  right?: boolean;
 };
 
 function Timeline({ className = "" }: Props) {
@@ -32,7 +38,7 @@ function Timeline({ className = "" }: Props) {
             : "timeline-start hover:-translate-x-3",
         )}
       >
-        <span className={cn("text-center text-base/4", fontJersey15.className)}>
+        <span className={cn("text-center text-base/4 lg:text-xl/5", fontJersey15.className)}>
           {name}
         </span>
         <div
@@ -66,9 +72,18 @@ function Timeline({ className = "" }: Props) {
     );
   };
 
+  const TimelineDate = ({ date, right = false }: PropsAgainReally) => {
+    return (
+      <div className={cn("text-xs opacity-75", right ? "timeline-start" : "timeline-end")}>
+        {date}
+      </div>
+    );
+  };
+
   const TimelineStep = ({
     name,
     desc,
+    date,
     right = false,
     isFirst = false,
     isLast = false,
@@ -78,6 +93,8 @@ function Timeline({ className = "" }: Props) {
         <hr className={isFirst ? "first-hr" : ""} />
         <TimelineMiddle />
         <TimelineText name={name} desc={desc} right={right} />
+        <TimelineDate date={date} right={right} />
+
         <hr className={isLast ? "last-hr" : ""} />
       </li>
     );
@@ -88,20 +105,24 @@ function Timeline({ className = "" }: Props) {
       <TimelineStep
         name={texts.about.timeline.ensimag.name}
         desc={texts.about.timeline.ensimag.desc}
+        date={texts.about.timeline.ensimag.date}
         isFirst
       />
       <TimelineStep
         name={texts.about.timeline.oxyl.name}
         desc={texts.about.timeline.oxyl.desc}
+        date={texts.about.timeline.oxyl.date}
         right
       />
       <TimelineStep
         name={texts.about.timeline.upc.name}
         desc={texts.about.timeline.upc.desc}
+        date={texts.about.timeline.upc.date}
       />
       <TimelineStep
         name={texts.about.timeline.sopra.name}
         desc={texts.about.timeline.sopra.desc}
+        date={texts.about.timeline.sopra.date}
         right
         isLast
       />

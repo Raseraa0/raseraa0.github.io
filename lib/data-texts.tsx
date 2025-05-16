@@ -25,18 +25,22 @@ const texts = {
       ensimag: {
         name: "Ensimag",
         desc: "Filière Ingénérie des systèmes d'informations",
+        date: "2022 - 2025"
       },
       oxyl: {
         name: "Oxyl",
         desc: "Stage / intelligence artificielle / DevOps / Software Development",
+        date: "2024"
       },
       upc: {
         name: "Univerisité Polytechnique de Catalone",
         desc: "Echange universitaire / Cours en anglais",
+        date: "2024 - 2025"
       },
       sopra: {
         name: "Sopra Steria",
         desc: "Stage / SAP development / Intelligence artificielle",
+        date: "2025"
       },
     },
   },

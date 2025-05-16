@@ -24,12 +24,12 @@ function About() {
           width={imageSize}
           height={imageSize}
           className="lg:w-50 w-40 rounded-full"
-       />
+        />
         <div className="mx-12 max-w-[400px] text-sm lg:text-base">
           {texts.about.desc}
         </div>
         <Link href="/CV_RASERA_Arthur_FR.pdf" target="_blank">
-          <Button text={texts.about.seeCV}/>
+          <Button text={texts.about.seeCV} />
         </Link>
       </div>
       <Timeline className="scale-90 lg:scale-125" />
