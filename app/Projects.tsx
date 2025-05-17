@@ -20,7 +20,7 @@ function Projects() {
     <ParallaxLayer
       offset={2}
       speed={0}
-      className="h-min-[600px] flex items-center justify-center bg-blue-9"
+      className="h-min-[600px] flex items-center justify-center "
     >
       <div className="flex h-full w-full flex-col justify-center lg:flex-row lg:py-36">
         <Project

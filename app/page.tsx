@@ -13,6 +13,8 @@ import Projects from "./Projects";
 import Skills from "./Skills";
 import Footer from "./Footer";
 import BackToTopButton from "./components/BackToTopButton";
+// import ElementBackground from "./ElementBackground";
+import BackgroundColor from "./BackgroundColor";
 
 /**
  * Fonction principal
@@ -69,6 +71,12 @@ export default function Home() {
       >
         {/* Hero pour la page d'acceuil */}
         <Hero parallaxRef={parallaxRef} />
+
+        <BackgroundColor color="#00131c" offset={1} />
+        <BackgroundColor color="#00131c" offset={2} />
+        <BackgroundColor color="#00131c" offset={3} />
+
+        {/* <ElementBackground /> */}
 
         <About />
         <Projects />

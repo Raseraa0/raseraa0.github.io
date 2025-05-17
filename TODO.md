@@ -2,19 +2,16 @@
 
 1.2- utiliser des animation plutot que des simple hover (genre par exemple faire genre que le texte rebondie quand on passe la souris dessus)
 
-1.3- Rajouter effet au scrolling (genre effet de parallax ??)
-
-1- Rajouter des élémenents (oiseau ou jsp quoi) autour genre sur pc ca fait vide sur les côté
+1.3- Rajouter effet au scrolling 
 
 ======== CODE
 
 4(((- Tout commenter)))
 
-2(((- Tt les warning du au dimension d'images dans la console)))
-
 2.5- Tout mettre en anglais ? ou tout mettre en francais ? et en meme temps faire tout le texte et gêter les fautes d'ortographes
 
-2(((- Optimiser le chargement des images (Vidéo youtube Using Images in Next.js (next/image examples)))))
+tout passer en svg ????
+
 
 ======== EXTERN
 

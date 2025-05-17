@@ -8,7 +8,7 @@ function Skills() {
     <ParallaxLayer
       offset={3}
       speed={0}
-      className="min-[600px] flex flex-col items-center bg-blue-9"
+      className="min-[600px] flex flex-col items-center"
     >
       <div className="p-fluide-anim relative m-auto flex aspect-[2/3] w-5/6 max-w-96 flex-col lg:scale-110">
         <CrossSkills />

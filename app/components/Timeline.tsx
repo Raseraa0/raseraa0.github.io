@@ -32,7 +32,7 @@ function Timeline({ className = "" }: Props) {
     return (
       <div
         className={cn(
-          "p-fluide-anim flex w-20 flex-col items-center hover:scale-110 md:w-40",
+          "p-fluide-anim flex w-20 flex-col items-center hover:scale-110 md:w-40 lg:h-32",
           right
             ? "timeline-end hover:translate-x-3"
             : "timeline-start hover:-translate-x-3",
