@@ -4,6 +4,8 @@
 
 1.3- Rajouter effet au scrolling 
 
+apres click sur see more sur projet sur téléphone, l'image est déformé, a cause du w full et h full, peut etre rajouter un aspect ratio ? regarder comme jai fais pour background layer
+
 ======== CODE
 
 4(((- Tout commenter)))
