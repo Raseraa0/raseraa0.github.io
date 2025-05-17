@@ -80,7 +80,7 @@ function Project({ id, isExpanded, onExpand }: Props) {
                 className={cn(
                   "absolute inset-0 duration-700",
                   isExpanded
-                    ? "h-full w-full object-fill brightness-[0.4]"
+                    ? "h-full w-full object-cover brightness-[0.4]"
                     : "",
                 )}
                 onClick={() => onExpand(id)}
