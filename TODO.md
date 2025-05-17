@@ -14,6 +14,7 @@ apres click sur see more sur projet sur téléphone, l'image est déformé, a ca
 
 tout passer en svg ????
 
+image background layer faire arriver progressive par le bas cf conv chat gpt
 
 ======== EXTERN
 
