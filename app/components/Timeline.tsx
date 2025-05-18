@@ -2,6 +2,7 @@ import texts from "@/lib/data-texts";
 import "../style/timeline.css";
 import { fontJersey15, fontInter } from "@/lib/font";
 import { cn } from "@/lib/utils";
+import { useOnScreen } from "@/lib/useOnScreen";
 
 type Props = {
   className?: string;
@@ -28,6 +29,9 @@ type PropsAgainReally = {
 };
 
 function Timeline({ className = "" }: Props) {
+
+  const [lineRef, lineVisible] = useOnScreen<HTMLUListElement>();
+
   const TimelineText = ({ name, desc, right = false }: PropsAgain) => {
     return (
       <div
@@ -111,7 +115,7 @@ function Timeline({ className = "" }: Props) {
   };
 
   return (
-    <ul className={cn("timeline lg:timeline-vertical", className)}>
+    <ul ref={lineRef} className={cn("timeline lg:timeline-vertical transition-all duration-1000 ease-in-out ", className, lineVisible ? "" : "translate-x-80 scale-50 opacity-0")}>
       <TimelineStep
         name={texts.about.timeline.ensimag.name}
         desc={texts.about.timeline.ensimag.desc}

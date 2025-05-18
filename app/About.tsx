@@ -7,28 +7,57 @@ import Button from "./components/Button";
 import Link from "next/link";
 import texts from "@/lib/data-texts";
 import selfieImg from "../public/selfie_v1.jpg";
+import { useOnScreen } from "@/lib/useOnScreen";
+import { cn } from "@/lib/utils";
 
 function About() {
+  const [aboutRef, aboutVisible] = useOnScreen<HTMLDivElement>();
+  const [imgRef, imgVisible] = useOnScreen<HTMLImageElement>();
+  const [descRef, descVisible] = useOnScreen<HTMLDivElement>();
+  const [cvRef, cvVisible] = useOnScreen<HTMLButtonElement>();
   return (
     <ParallaxLayer
       offset={1}
       speed={0}
       className="flex min-h-[600px] flex-col items-center justify-evenly lg:flex-row"
     >
-      <div className="flex flex-col items-center justify-center rounded-2xl bg-gradient-to-b from-white-1/65 to-blue-5/45 lg:h-5/6 mx-4 lg:mx-0">
-        <div className="m-px flex flex-col items-center justify-evenly gap-8 rounded-2xl bg-blue-9/95 lg:h-full lg:gap-0 py-8 lg:py-0">
+      <div
+        ref={aboutRef}
+        className={cn(
+          "mx-4 flex flex-col items-center justify-center rounded-2xl bg-gradient-to-b from-white-1/65 to-blue-5/45 transition-all duration-1000 ease-in-out lg:mx-0 lg:h-5/6",
+          aboutVisible ? "" : "-translate-x-40 opacity-0",
+        )}
+      >
+        <div className="m-px flex flex-col items-center justify-evenly gap-8 rounded-2xl bg-blue-9/95 py-8 lg:h-full lg:gap-0 lg:py-0">
           <Image
+            ref={imgRef}
             id="img-selfie"
             src={selfieImg}
             alt={texts.about.altPicture}
             placeholder="blur"
-            className="w-40 rounded-full lg:w-64"
+            className={cn(
+              "w-40 rounded-full transition-all delay-100 duration-1000 ease-in-out lg:w-64",
+              imgVisible ? "" : "translate-x-40 opacity-0",
+            )}
           />
-          <div className="mx-12 max-w-[400px] text-sm lg:text-base">
+          <div
+            ref={descRef}
+            className={cn(
+              "mx-12 max-w-[400px] text-sm transition-all delay-200 duration-1000 ease-in-out lg:text-base",
+              descVisible ? "" : "-translate-x-40 opacity-0",
+            )}
+          >
             {texts.about.desc}
           </div>
           <Link href="/CV_RASERA_Arthur_FR.pdf" target="_blank">
-            <Button text={texts.about.seeCV} />
+            <Button
+              ref={cvRef}
+              text={texts.about.seeCV}
+              className={cn(
+                "transition-all delay-300 duration-1000 ease-in-out",
+                cvVisible ? "" : "translate-x-40 opacity-0",
+              )}
+            />
           </Link>
         </div>
       </div>

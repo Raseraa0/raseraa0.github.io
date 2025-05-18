@@ -6,13 +6,14 @@ import texts from "@/lib/data-texts";
 
 type Props = {
   id: number;
+  className?: string;
 };
 
-function Skill({ id }: Props) {
+function Skill({ id, className = "" }: Props) {
   const selectedSkill = skills.find((skill) => skill.id === id);
 
   return (
-    <div className="pointer-events-none z-50 flex flex-col">
+    <div className={cn("pointer-events-none z-50 flex flex-col",className)}>
       <span
         className={cn(
           "text-center text-2xl/6 text-blue-1 lg:text-2xl",

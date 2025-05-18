@@ -1,9 +1,6 @@
 ======== STYLE
 
-1.2- utiliser des animation plutot que des simple hover (genre par exemple faire genre que le texte rebondie quand on passe la souris dessus)
-
 1.3- Rajouter effet au scrolling 
-
 
 ======== CODE
 

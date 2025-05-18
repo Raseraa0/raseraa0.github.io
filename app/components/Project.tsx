@@ -10,14 +10,17 @@ import texts from "@/lib/data-texts";
 import Image from "next/image";
 
 import githubBadge from "../../public/SocialMedia/github-badge.svg";
+import { Ref } from "react";
 
 type Props = {
+  ref?: Ref<HTMLDivElement>;
   id: number;
   isExpanded: boolean;
   onExpand: (id: number) => void;
+  className?: string;
 };
 
-function Project({ id, isExpanded, onExpand }: Props) {
+function Project({ ref, id, isExpanded, onExpand, className }: Props) {
   const selectedProject = projects.find((project) => project.id === id);
   const bg_col = selectedProject?.color ?? "#000000";
 
@@ -38,9 +41,14 @@ function Project({ id, isExpanded, onExpand }: Props) {
 
   const darkenedColor = darkenColor(bg_col, 0.2);
 
+
   return (
     <div
-      className="group relative mx-4 my-2 flex-grow overflow-hidden rounded-md border-2 border-blue-7/50 transition-all duration-500 hover:border-blue-6/80 lg:w-96 lg:flex-grow-0 lg:hover:-translate-y-7 lg:hover:scale-105"
+      ref={ref}
+      className={cn(
+        "group relative mx-4 my-2 flex-grow overflow-hidden rounded-md border-2 border-blue-7/50 transition-all duration-500 hover:border-blue-6/80 lg:w-96 lg:flex-grow-0 lg:hover:-translate-y-7 lg:hover:scale-105",
+        className,
+      )}
       style={{
         background: `linear-gradient(45deg, ${darkenedColor}, ${bg_col} 20%, ${darkenedColor} 45%,${bg_col} 70%, ${darkenedColor})`,
       }}
@@ -67,7 +75,7 @@ function Project({ id, isExpanded, onExpand }: Props) {
           <div className="flex h-full flex-col items-center justify-evenly gap-12 md:h-auto md:flex-row lg:flex-col">
             <div
               className={cn(
-                "relative flex aspect-[1920/1080] w-64 items-center justify-center overflow-hidden rounded-lg border border-blue-9 transition-all duration-0 lg:w-80 lg:group-hover:scale-110",
+                "relative flex aspect-[1920/1080] w-64 items-center justify-center overflow-hidden rounded-lg border border-blue-9 transition-all duration-0 lg:w-80 lg:duration-200 lg:group-hover:scale-110",
                 isExpanded ? "aspect-auto h-full w-full" : "",
               )}
             >
