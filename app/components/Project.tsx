@@ -47,7 +47,7 @@ function Project({ id, isExpanded, onExpand }: Props) {
     >
       <SocialMedia
         svgSrc={githubBadge}
-        className="absolute bottom-1 right-1 z-50 scale-90 shadow-[0_0_5px] shadow-blue-1"
+        className="p-fluide-anim absolute bottom-1 right-1 z-50 scale-90 shadow-[0_0_5px] shadow-blue-1 lg:bottom-4 lg:right-4 lg:scale-125"
         href={selectedProject?.link}
         alt={`${texts.projects.altProjects} ${selectedProject?.title}`}
       />
