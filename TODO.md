@@ -10,11 +10,6 @@ tout passer en svg ???? genre les skills ? mais pas les projet mdr
 
 ======== EXTERN
 
--3 Mettre le porte folio sur porte folio old, genre tout copier et mettre sur un nouveau repos, puis ensuite sur le raseraa mettre le nouveau porte folio - Sur la machine, 2 repos, un old et un new - sur git 3 repos, old new et raseraa pour deploy sur la bonne page
-  -> ensuite s'assurer que tt se depoile bien
-
--3.1 Mettre le project wallpaper sur github...
-
 -3.2 Faire tout les README ? genre essayer d'avoir un github qui est propre quoi,
 Essayer d'avoir sur le fichier d'acceuil un lien vers tout les repos, (et sur le readme de chaque repos un truc qui renvoie a la page principale ?)
 enfait sur le readme principal, mettre d'abord genre tout les liens des repos pusi ensuite je me présente, les gens veulent voir ce que j'ai fais
@@ -25,6 +20,3 @@ intermediate
 - travailler sur le referencement de mon github et de mon porte folio( meta data mmot clé ?)
 
 3.6- homogéniser les photo de profil
-
-
-
