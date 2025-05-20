@@ -2,7 +2,7 @@ import { ParallaxLayer } from "@react-spring/parallax";
 
 import Skill from "./components/Skill";
 import CrossSkills from "./components/CrossSkills";
-import { useOnScreen } from "@/lib/useOnScreen";
+import { useOnScreen } from "./hooks/useOnScreen";
 import { cn } from "@/lib/utils";
 
 function Skills() {

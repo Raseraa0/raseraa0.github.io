@@ -7,7 +7,7 @@ import Button from "./components/Button";
 import Link from "next/link";
 import texts from "@/lib/data-texts";
 import selfieImg from "../public/selfie_v1.jpg";
-import { useOnScreen } from "@/lib/useOnScreen";
+import { useOnScreen } from "./hooks/useOnScreen";
 import { cn } from "@/lib/utils";
 
 function About() {
@@ -25,7 +25,7 @@ function About() {
         ref={aboutRef}
         className={cn(
           "mx-4 flex flex-col items-center justify-center rounded-2xl bg-gradient-to-b from-white-1/65 to-blue-5/45 transition-all duration-1000 ease-in-out lg:mx-0 lg:h-5/6",
-          aboutVisible ? "" : "-translate-x-40 opacity-0",
+          aboutVisible ? "" : "opacity-0",
         )}
       >
         <div className="m-px flex flex-col items-center justify-evenly gap-8 rounded-2xl bg-blue-9/95 py-8 lg:h-full lg:gap-0 lg:py-0">

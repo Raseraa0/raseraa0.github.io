@@ -41,7 +41,6 @@ function Project({ ref, id, isExpanded, onExpand, className }: Props) {
 
   const darkenedColor = darkenColor(bg_col, 0.2);
 
-
   return (
     <div
       ref={ref}
@@ -61,7 +60,7 @@ function Project({ ref, id, isExpanded, onExpand, className }: Props) {
       />
 
       <div className="p-bg-lines h-full w-full">
-        <div className="p-bg-lines  relative flex h-full w-full flex-col items-center justify-around">
+        <div className="p-bg-lines relative flex h-full w-full flex-col items-center justify-around">
           {!isExpanded && (
             <span
               className={cn(
@@ -75,7 +74,7 @@ function Project({ ref, id, isExpanded, onExpand, className }: Props) {
           <div className="flex h-full flex-col items-center justify-evenly gap-12 md:h-auto md:flex-row lg:flex-col">
             <div
               className={cn(
-                "relative flex aspect-[1920/1080] w-64 items-center justify-center overflow-hidden rounded-lg border border-blue-9 transition-all duration-0 lg:w-80 lg:duration-200 lg:group-hover:scale-110",
+                "relative flex aspect-[1920/1080] w-64 items-center justify-center overflow-hidden rounded-lg border border-blue-9 transition-all duration-0 lg:w-80 lg:duration-300 lg:group-hover:scale-110",
                 isExpanded ? "aspect-auto h-full w-full" : "",
               )}
             >
@@ -85,7 +84,7 @@ function Project({ ref, id, isExpanded, onExpand, className }: Props) {
                 height={1080}
                 placeholder="blur"
                 alt=""
-                className={cn( 
+                className={cn(
                   "absolute inset-0 duration-700",
                   isExpanded
                     ? "h-full w-full object-cover brightness-[0.4]"

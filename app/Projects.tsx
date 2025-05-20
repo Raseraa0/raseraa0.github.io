@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ParallaxLayer } from "@react-spring/parallax";
 import Project from "./components/Project";
-import { useOnScreen } from "@/lib/useOnScreen";
+import { useOnScreen } from "./hooks/useOnScreen";
 import { cn } from "@/lib/utils";
 
 function Projects() {
@@ -36,10 +36,8 @@ function Projects() {
           isExpanded={expandedProjectId === 1}
           onExpand={handleExpandProject}
           className={cn(
-            "transition-all duration-1000 ease-in-out",
-            project1Visible
-              ? ""
-              : "pointer-events-none -translate-x-full opacity-0",
+            "transition-all duration-1000 ease-in-out hover:duration-300",
+            project1Visible ? "" : "pointer-events-none opacity-0",
           )}
         />
         <Project
@@ -48,8 +46,8 @@ function Projects() {
           isExpanded={expandedProjectId === 2}
           onExpand={handleExpandProject}
           className={cn(
-            "transition-all duration-1000 ease-in-out",
-            project2Visible ? "" : "-translate-x-[200%] opacity-0",
+            "transition-all delay-300 duration-1000 ease-in-out hover:delay-0 hover:duration-300",
+            project2Visible ? "" : "opacity-0",
           )}
         />
         <Project
@@ -58,8 +56,8 @@ function Projects() {
           isExpanded={expandedProjectId === 3}
           onExpand={handleExpandProject}
           className={cn(
-            "transition-all duration-1000 ease-in-out",
-            project3Visible ? "" : "-translate-x-[300%] opacity-0",
+            "transition-all delay-[600ms] duration-1000 ease-in-out hover:delay-0 hover:duration-300",
+            project3Visible ? "" : "opacity-0",
           )}
         />
       </div>
