@@ -1,7 +1,5 @@
 ======== STYLE
 
-1.3- Rajouter effet au scrolling 
-
 ======== CODE
 
 4(((- Tout commenter)))
@@ -9,8 +7,6 @@
 2.5- Tout mettre en anglais ? ou tout mettre en francais ? et en meme temps faire tout le texte et gêter les fautes d'ortographes
 
 tout passer en svg ????
-
-image background layer faire arriver progressive par le bas cf conv chat gpt
 
 ======== EXTERN
 
