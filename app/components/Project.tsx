@@ -61,7 +61,7 @@ function Project({ ref, id, isExpanded, onExpand, className }: Props) {
       />
 
       <div className="p-bg-lines h-full w-full">
-        <div className="p-bg-lines relative flex h-full w-full flex-col items-center justify-evenly">
+        <div className="p-bg-lines  relative flex h-full w-full flex-col items-center justify-around">
           {!isExpanded && (
             <span
               className={cn(
@@ -85,7 +85,7 @@ function Project({ ref, id, isExpanded, onExpand, className }: Props) {
                 height={1080}
                 placeholder="blur"
                 alt=""
-                className={cn(
+                className={cn( 
                   "absolute inset-0 duration-700",
                   isExpanded
                     ? "h-full w-full object-cover brightness-[0.4]"

@@ -29,7 +29,7 @@ function Projects() {
       speed={0}
       className="h-min-[600px] flex items-center justify-center"
     >
-      <div className="flex h-full w-full flex-col justify-center lg:flex-row lg:py-36">
+      <div className="flex h-full w-full flex-col justify-center lg:h-4/5 lg:min-h-[600px] lg:flex-row">
         <Project
           ref={project1Ref}
           id={1}
@@ -37,7 +37,9 @@ function Projects() {
           onExpand={handleExpandProject}
           className={cn(
             "transition-all duration-1000 ease-in-out",
-            project1Visible ? "" : "-translate-x-full opacity-0 pointer-events-none",
+            project1Visible
+              ? ""
+              : "pointer-events-none -translate-x-full opacity-0",
           )}
         />
         <Project
@@ -64,16 +66,5 @@ function Projects() {
     </ParallaxLayer>
   );
 }
-TODO PROBLEME AVEC LES ANIMATION AU SCROLL POUR PROJET ET LA TIMELINE PUIS MEME AVEC LES AUTRE? LE PB C4EST QUE SI JE DIT ANIMATION TRANSLATE, BAS CA PEUT NE JAMAIS RE APARAITRE
-SOLUTION
-SOLUTION
-SOLUTION
-SOLUTION
---------------------->>> ne mettre que des transition de opacité ???????????????
-SOLUTION
-SOLUTION
-SOLUTION
-SOLUTION
-SOLUTION
 
 export default Projects;
