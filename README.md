@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<p align="center">
+  <a href="https://github.com.Raseraa0">
+   🏠 Go back to my GitHub home page 🏠 
+  </a>
+</p>
 
-## Getting Started
+---
 
-First, run the development server:
+# 📌 Portfolio
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![Project preview](./public/img/preview.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📝 Overview
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Portfolio deployed on `GitHub Pages`. The main idea behind this portfolio was to use the `parallax` effect. I decided to use an image from the game Firewatch and build my color palette around it. I created the different parallax layers myself.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This site is animated and responsive, but nothing beats visiting it to see for yourself.
+- 🚀 [Go to my portfolio](https://raseraa0.github.io)
 
-## Learn More
+## 🧰 Toolbox
 
-To learn more about Next.js, take a look at the following resources:
+- Node.js  
+- React.js  
+- Next.js  
+- TypeScript  
+- Tailwind.css  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+<p align="center">
+  <a href="https://github.com.Raseraa0">
+   🏠 Go back to my GitHub home page 🏠 
+  </a>
+</p>
