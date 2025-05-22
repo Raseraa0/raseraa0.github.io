@@ -13,8 +13,10 @@ type Props = {
   // Vitesse à transmettre à la couche parallax
   speed: number;
 
+  // Chemin static de l'image
   path?: StaticImageData;
 
+  // Si l'image en question est le ciel
   sky?: boolean;
 };
 
@@ -25,6 +27,7 @@ type Props = {
  *        laquelle on va assigner le background image
  */
 function BackgroundLayer({ speed, path, sky }: Props) {
+  // Si c'est le ciel, on return une couleur unie
   if (sky) {
     return (
       <ParallaxLayer className="pointer-events-none" offset={0} speed={speed}>
@@ -42,7 +45,7 @@ function BackgroundLayer({ speed, path, sky }: Props) {
       <div className="aspect-[1920/1080] h-full">
         <Image
           src={path ?? ""}
-          placeholder="blur"
+          // placeholder="blur"
           alt=""
           fill
           className="object-cover"
