@@ -10,8 +10,8 @@ const projects = [
   {
     id: 1,
     title: "Wallpaper generator",
-    description:
-      "Permet de générer une image constituée d'une mosaïque d'images données, ici des pochettes d'album de musique. Les pochettes sont trié par couleur et placé dans un certaine ordre afin d'obtenir le resultat final.",
+ description:
+    "Generates an image composed of a mosaic of given images, in this case, music album covers. The covers are sorted by color and arranged in a specific order to produce the final result.",
     image_path: wallpaperGeneratorImg,
     link: "https://github.com/Raseraa0/Wallpaper",
     color: "#c2410c",
@@ -19,8 +19,9 @@ const projects = [
   {
     id: 2,
     title: "Neural Network from scratch",
-    description:
-      "Mise en place d'un réseaux de neuronne sans s'aider des bibliotèques d'intelligence artificielle déjà existante. Le but est de s'appuyer sur le même principe que l'outils keras associé à TensorFlow sur python, avec différentes couche que l'on peut aisément manipuler",
+  description:
+    "Implementation of a neural network without using existing AI libraries. The goal is to follow the same principles as Keras with TensorFlow in Python, using various layers that can be easily manipulated.",
+ 
     image_path: neuralNetworkFromScratchImg,
     link: "https://github.com/Raseraa0/NeuralNetworkFromScratch",
     color: "#0f766e",
@@ -28,8 +29,9 @@ const projects = [
   {
     id: 3,
     title: "Ray tracing",
-    description:
-      "Développement d'un système de ray tracing. Le but est de simuler dans un espace en trois dimension des objects ainsi qu'une caméra, puis de reconstituer de manière réaliste ce qui serait perçu par cette caméra, en modifiant les textures, les couleurs ou les motifs.",
+  description:
+    "Development of a ray tracing system. The aim is to simulate objects and a camera in a 3D space, then realistically reconstruct what the camera would perceive by adjusting textures, colors, or patterns.",
+ 
     image_path: rayTracingImg,
     link: "https://github.com/Raseraa0/RayTracing",
     color: "#6d28d9",

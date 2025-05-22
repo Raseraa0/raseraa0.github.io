@@ -1,5 +1,5 @@
 /**
- * Contient tous les texts
+ * Contains all texts
  */
 
 const texts = {
@@ -8,12 +8,12 @@ const texts = {
   },
   hero: {
     social: {
-      altGit: "Social media Github icon",
-      altLinkedin: "Social media Linkedin icon",
-      altMail: "Social media Mail icon",
+      altGit: "GitHub social media icon",
+      altLinkedin: "LinkedIn social media icon",
+      altMail: "Email social media icon",
     },
     nav: {
-      backToTop: "Go to top",
+      backToTop: "Back to top",
       about: "About",
       projects: "Projects",
       skills: "Skills",
@@ -22,44 +22,44 @@ const texts = {
     arthur: "Arthur Rasera",
   },
   about: {
-    altPicture: "Profil picture",
-    desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe natus, animi illo laudantium temporibus vel recusandae. Iure modi quaerat magnam et repudiandae, mollitia expedita molestiae ab amet consequatur omnis vero.",
-    seeCV: "Click to see my CV",
+    altPicture: "Profile picture",
+    desc: "Hi, I’m a young software engineer, graduated from Ensimag. I enjoy working on various projects to explore different technical environments and solve all kinds of problems.",
+    seeCV: "Click to view my CV",
     timeline: {
       ensimag: {
         name: "Ensimag",
-        desc: "Filière Ingénérie des systèmes d'informations",
-        date: "2022 - 2025"
+        desc: "Information Systems Engineering specialization",
+        date: "2022 - 2025",
       },
       oxyl: {
         name: "Oxyl",
-        desc: "Stage / intelligence artificielle / DevOps / Software Development",
-        date: "2024"
+        desc: "Internship / Artificial Intelligence / DevOps / Software Development",
+        date: "2024",
       },
       upc: {
-        name: "Univerisité Polytechnique de Catalone",
-        desc: "Echange universitaire / Cours en anglais",
-        date: "2024 - 2025"
+        name: "Polytechnic University of Catalonia",
+        desc: "University exchange / Courses in English",
+        date: "2024 - 2025",
       },
       sopra: {
         name: "Sopra Steria",
-        desc: "Stage / SAP development / Intelligence artificielle",
-        date: "2025"
+        desc: "Internship / SAP Development / Artificial Intelligence",
+        date: "2025",
       },
     },
   },
   projects: {
     seeMore: "Click to expand",
-    noDescription: "No description.",
-    altProjects: "Illustration of project",
+    noDescription: "No description available.",
+    altProjects: "Project illustration",
   },
   skills: {
-    altSkills: "Icon of",
+    altSkills: "Icon representing",
   },
   footer: {
-    mail: "E-mail",
+    mail: "Email",
     git: "GitHub",
-    linkedin: "Linkedin",
+    linkedin: "LinkedIn",
   },
 };
 
