@@ -55,8 +55,9 @@ function Footer() {
       <div className="pointer-events-auto absolute bottom-0 flex h-9 w-full flex-row items-center justify-evenly">
         {/* Nom Prénom */}
         <span className={cn(fontJersey15.className, "text-xl lg:text-3xl")}>
-        {texts.hero.arthur}
+          {texts.hero.arthur}
         </span>
+        <div className="h-1/2 w-px bg-white-1 md:opacity-0"></div>
         <div
           className={cn(
             fontInter.className,
