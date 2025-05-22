@@ -49,7 +49,7 @@ const texts = {
     },
   },
   projects: {
-    seeMore: "See more",
+    seeMore: "Click to expand",
     noDescription: "No description.",
     altProjects: "Illustration of project",
   },
