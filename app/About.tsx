@@ -38,11 +38,11 @@ function About() {
       <div
         ref={aboutRef}
         className={cn(
-          "mx-4 flex flex-col items-center justify-center rounded-2xl bg-gradient-to-b from-white-1/65 to-blue-5/45 transition-all duration-1000 ease-in-out lg:mx-0 lg:h-5/6",
+          "mx-4 flex flex-col items-center justify-center rounded-2xl bg-gradient-to-b from-white-1/65 to-blue-5/45 transition-all duration-500 ease-in-out lg:mx-0 lg:h-5/6",
           aboutVisible ? "" : "opacity-0",
         )}
       >
-        <div className="m-px flex flex-col items-center justify-evenly gap-8 rounded-2xl bg-blue-9/95 py-8 lg:h-full lg:gap-0 lg:py-0">
+        <div className="m-px flex flex-col items-center justify-evenly gap-8 rounded-2xl bg-blue-9/95 py-8 lg:h-full lg:gap0 lg:py-0">
           {/* Photo de profil */}
           <Image
             ref={imgRef}
@@ -51,7 +51,7 @@ function About() {
             alt={texts.about.altPicture}
             placeholder="blur"
             className={cn(
-              "w-40 rounded-full transition-all delay-100 duration-1000 ease-in-out lg:w-64",
+              "w-40 rounded-full transition-all delay-100 duration-500 ease-in-out lg:w-64",
               imgVisible ? "" : "translate-x-40 opacity-0",
             )}
           />
@@ -60,7 +60,7 @@ function About() {
           <div
             ref={descRef}
             className={cn(
-              "mx-12 max-w-[400px] text-sm transition-all delay-200 duration-1000 ease-in-out lg:text-base",
+              "mx-12 max-w-[400px] text-sm transition-all delay-200 duration-500 ease-in-out lg:text-base",
               descVisible ? "" : "-translate-x-40 opacity-0",
             )}
           >
@@ -73,7 +73,7 @@ function About() {
               ref={cvRef}
               text={texts.about.seeCV}
               className={cn(
-                "transition-all delay-300 duration-1000 ease-in-out",
+                "transition-all delay-300 duration-500 ease-in-out",
                 cvVisible ? "" : "translate-x-40 opacity-0",
               )}
             />
