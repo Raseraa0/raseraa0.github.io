@@ -91,7 +91,6 @@ function ScrollDownArrow({ scrollThreshold = 30, parallaxRef }: Props) {
      */
     const checkScrollPosition = () => {
       if (parallaxRef.current) {
-        console.log("azeaze")
         const currentScrollPos = parallaxRef.current.current;
         setIsVisible(currentScrollPos < scrollThreshold);
       }
