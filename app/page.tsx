@@ -13,7 +13,7 @@ import Projects from "./Projects";
 import Skills from "./Skills";
 import Footer from "./Footer";
 import BackToTopButton from "./components/BackToTopButton";
-import BackgroundColor from "./BackgroundColor";
+import BackgroundColor from "./components/BackgroundColor";
 
 /**
  * @Home

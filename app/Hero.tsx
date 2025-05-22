@@ -11,7 +11,7 @@ import ScrollDownArrow from "./components/ScrollDownArrow";
 import SocialMediaBar from "./components/SocialMediaBar";
 import NavigationBar from "./components/NavigationBar";
 import texts from "@/lib/data-texts";
-import BackgroundColor from "./BackgroundColor";
+import BackgroundColor from "./components/BackgroundColor";
 
 import img9Forest from "../public/Minimaliste/Centered_Layer/9_Forest.png";
 import img8Forest from "../public/Minimaliste/Centered_Layer/8_Forest.png";
