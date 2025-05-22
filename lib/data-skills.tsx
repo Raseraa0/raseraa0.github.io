@@ -2,20 +2,20 @@
  * Contient toutes les informations relatives au skills.
  */
 
-import dockerImg from "../public/skills/docker.svg";
-import gitImg from "../public/skills/git.svg";
-import odataImg from "../public/skills/odata.svg";
-import sapImg from "../public/skills/sap.svg";
-import csharpImg from "../public/skills/csharp.svg";
-import cppImg from "../public/skills/cpp.svg";
-import javaImg from "../public/skills/java.svg";
-import cImg from "../public/skills/c.svg";
-import reactImg from "../public/skills/react.svg";
-import nodeImg from "../public/skills/node.svg";
-import typescriptImg from "../public/skills/typescript.svg";
-import pytorchImg from "../public/skills/pytorch.svg";
-import tensorflowImg from "../public/skills/tensorflow.svg";
-import pythonImg from "../public/skills/python.svg";
+import dockerImg from "../public/img/skills/docker.svg";
+import gitImg from "../public/img/skills/git.svg";
+import odataImg from "../public/img/skills/odata.svg";
+import sapImg from "../public/img/skills/sap.svg";
+import csharpImg from "../public/img/skills/csharp.svg";
+import cppImg from "../public/img/skills/cpp.svg";
+import javaImg from "../public/img/skills/java.svg";
+import cImg from "../public/img/skills/c.svg";
+import reactImg from "../public/img/skills/react.svg";
+import nodeImg from "../public/img/skills/node.svg";
+import typescriptImg from "../public/img/skills/typescript.svg";
+import pytorchImg from "../public/img/skills/pytorch.svg";
+import tensorflowImg from "../public/img/skills/tensorflow.svg";
+import pythonImg from "../public/img/skills/python.svg";
 
 const skills = [
   {

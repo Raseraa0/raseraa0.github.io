@@ -8,9 +8,9 @@ import { useEffect } from "react";
 import SocialMedia from "./SocialMedia";
 import texts from "@/lib/data-texts";
 
-import githubBadge from "../../public/SocialMedia/github-badge.svg";
-import linkedinBadge from "../../public/SocialMedia/linkedin-badge.svg";
-import mailBadge from "../../public/SocialMedia/mail-badge.svg";
+import githubBadge from "../../public/img/social_media/github-badge.svg";
+import linkedinBadge from "../../public/img/social_media/linkedin-badge.svg";
+import mailBadge from "../../public/img/social_media/mail-badge.svg";
 
 // Propriétés
 type Props = {

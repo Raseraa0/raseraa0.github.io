@@ -15,7 +15,7 @@ import texts from "@/lib/data-texts";
 import Image from "next/image";
 import { Ref } from "react";
 
-import githubBadge from "../../public/SocialMedia/github-badge.svg";
+import githubBadge from "../../public/img/social_media/github-badge.svg";
 
 // Propriétés
 type Props = {

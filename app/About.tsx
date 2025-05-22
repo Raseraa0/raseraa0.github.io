@@ -10,9 +10,10 @@ import "./style/about.css";
 import Button from "./components/Button";
 import Link from "next/link";
 import texts from "@/lib/data-texts";
-import selfieImg from "../public/selfie_v1.jpg";
 import { useOnScreen } from "./hooks/useOnScreen";
 import { cn } from "@/lib/utils";
+
+import selfieImg from "../public/img/selfie_v1.jpg";
 
 /**
  * @About

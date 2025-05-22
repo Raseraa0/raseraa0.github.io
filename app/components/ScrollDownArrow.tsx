@@ -9,7 +9,7 @@ import { IParallax, ParallaxLayer } from "@react-spring/parallax";
 import "../style/scrollDownArrow.css";
 import { cn } from "@/lib/utils";
 
-import chevronImg from "../../public/chevron.svg";
+import chevronImg from "../../public/img/chevron.svg";
 
 // Propriétés de ScrollDownArrow
 type Props = {

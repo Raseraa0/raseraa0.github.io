@@ -13,15 +13,15 @@ import NavigationBar from "./components/NavigationBar";
 import texts from "@/lib/data-texts";
 import BackgroundColor from "./components/BackgroundColor";
 
-import img9Forest from "../public/Minimaliste/Centered_Layer/9_Forest.png";
-import img8Forest from "../public/Minimaliste/Centered_Layer/8_Forest.png";
-import img7Bridge from "../public/Minimaliste/Centered_Layer/7_Bridge.png";
-import img6Birds from "../public/Minimaliste/Centered_Layer/6_Birds.png";
-import img5Birds from "../public/Minimaliste/Centered_Layer/5_Birds.png";
-import img4Mountains from "../public/Minimaliste/Centered_Layer/4_Mountains.png";
-import img3Mountains from "../public/Minimaliste/Centered_Layer/3_Mountains.png";
-import img2Mountains from "../public/Minimaliste/Centered_Layer/2_Mountains.png";
-import img1Clouds from "../public/Minimaliste/Centered_Layer/1_Clouds.png";
+import img9Forest from "../public/img/background_layer/9_Forest.png";
+import img8Forest from "../public/img/background_layer/8_Forest.png";
+import img7Bridge from "../public/img/background_layer/7_Bridge.png";
+import img6Birds from "../public/img/background_layer/6_Birds.png";
+import img5Birds from "../public/img/background_layer/5_Birds.png";
+import img4Mountains from "../public/img/background_layer/4_Mountains.png";
+import img3Mountains from "../public/img/background_layer/3_Mountains.png";
+import img2Mountains from "../public/img/background_layer/2_Mountains.png";
+import img1Clouds from "../public/img/background_layer/1_Clouds.png";
 
 // Propriétés
 type Props = {

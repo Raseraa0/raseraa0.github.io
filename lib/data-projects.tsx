@@ -2,9 +2,9 @@
  * Contient toutes les informations relatives au projets.
  */
 
-import wallpaperGeneratorImg from "../public/projects/WallpaperGenerator.png";
-import neuralNetworkFromScratchImg from "../public/projects/NeuralNetwork.png";
-import rayTracingImg from "../public/projects/RayTracing.png";
+import wallpaperGeneratorImg from "../public/img/projects/WallpaperGenerator.png";
+import neuralNetworkFromScratchImg from "../public/img/projects/NeuralNetwork.png";
+import rayTracingImg from "../public/img/projects/RayTracing.png";
 
 const projects = [
   {
