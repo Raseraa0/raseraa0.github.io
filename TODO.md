@@ -2,11 +2,7 @@
 
 ======== CODE
 
-4(((- Tout commenter)))
-
 2.5- Tout mettre en anglais ? ou tout mettre en francais ? et en meme temps faire tout le texte et gêter les fautes d'ortographes
-
-tout passer en svg ???? genre les skills ? mais pas les projet mdr
 
 ======== EXTERN
 
