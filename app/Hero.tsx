@@ -1,7 +1,6 @@
 /**
- *
- * @name Hero
- * @description Hero qui va contenir la 1ère page.
+ * @name Hero.tsx
+ * @type Page
  */
 
 import { IParallax } from "@react-spring/parallax";
@@ -22,26 +21,26 @@ import img4Mountains from "../public/Minimaliste/SVG_Layer/4_Mountains.svg";
 import img3Mountains from "../public/Minimaliste/SVG_Layer/3_Mountains.svg";
 import img2Mountains from "../public/Minimaliste/SVG_Layer/2_Mountains.svg";
 import img1Clouds from "../public/Minimaliste/SVG_Layer/1_Clouds.svg";
+import BackgroundColor from "./BackgroundColor";
 
 // Propriétés
 type Props = {
-  // Référence du conteneur parallax
   parallaxRef: RefObject<IParallax | null>;
 };
 
 /**
- * Fonction principale
- * @returns
- *      - Les images pour l'effet parallax du background
- *      - La barre des réseaux sociaux
- *      - Mon nom, avec la mention "Hi, I'm" devant
- *      - Des fleches invitant à scroller
+ * @Hero
+ * 
+ * @description Page Hero.
+ * 
+ * @param parallaxRef: Référence de l'élément global parallax
+ * 
  */
 function Hero({ parallaxRef }: Props) {
   return (
     <div>
-      {/* Couche pour le background */}
-      <BackgroundLayer speed={0} sky />
+      {/* Couches pour le background */}
+      <BackgroundColor color="#a2fff4" offset={0} />
       <BackgroundLayer speed={-1.2} path={img1Clouds} />
       <BackgroundLayer speed={-1} path={img2Mountains} />
 
@@ -71,12 +70,12 @@ function Hero({ parallaxRef }: Props) {
         className="translate-y-[-20px] text-6xl text-blue-7 lg:translate-y-[-30px] lg:text-8xl"
       />
 
-      {/* Couche pour le background */}
+      {/* Couches pour le background */}
       <BackgroundLayer speed={-0.4} path={img7Bridge} />
       <BackgroundLayer speed={-0.2} path={img8Forest} />
       <BackgroundLayer speed={0} path={img9Forest} />
 
-      {/* Fleche qui invite à scroller */}
+      {/* Fleches qui invite à scroller */}
       <ScrollDownArrow parallaxRef={parallaxRef} />
     </div>
   );

@@ -1,12 +1,32 @@
+/**
+ * @name Projects.tsx
+ * @type Page
+ */
+
 import { useState } from "react";
 import { ParallaxLayer } from "@react-spring/parallax";
 import Project from "./components/Project";
 import { useOnScreen } from "./hooks/useOnScreen";
 import { cn } from "@/lib/utils";
 
+/**
+ * @Projects
+ * Fonction principale
+ *
+ * @description Page Projects.
+ *
+ */
 function Projects() {
+  // Id du project qui est extand (-1 signifie que aucun n'est expand)
   const [expandedProjectId, setExpandedProjectId] = useState(-1);
 
+  /**
+   *
+   * Si grand écran, rien n'est expand.
+   * Si petit écran, on expand si pas déjà expand et on dé expand sinon
+   *
+   * @param id: id du projet que l'on expand
+   */
   const handleExpandProject = (id: number) => {
     if (window.innerWidth > 768) {
       setExpandedProjectId(-1);
@@ -15,10 +35,12 @@ function Projects() {
     }
   };
 
+  // Lorsque l'on resize la fenêtre, on dé expand tout
   window.addEventListener("resize", () => {
     handleExpandProject(-1);
   });
 
+  // Références pour l'apparition au scroll
   const [project1Ref, project1Visible] = useOnScreen<HTMLDivElement>();
   const [project2Ref, project2Visible] = useOnScreen<HTMLDivElement>();
   const [project3Ref, project3Visible] = useOnScreen<HTMLDivElement>();

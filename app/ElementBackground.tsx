@@ -1,3 +1,7 @@
+/**
+ * @Unused
+ */
+
 import { ParallaxLayer } from "@react-spring/parallax";
 
 // import Bird from "../public/bird/bird3.svg";

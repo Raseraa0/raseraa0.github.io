@@ -1,11 +1,23 @@
-import { ParallaxLayer } from "@react-spring/parallax";
+/**
+ * @name Skills.tsx
+ * @type Page
+ */
 
+import { ParallaxLayer } from "@react-spring/parallax";
 import Skill from "./components/Skill";
 import CrossSkills from "./components/CrossSkills";
 import { useOnScreen } from "./hooks/useOnScreen";
 import { cn } from "@/lib/utils";
 
+/**
+ * @Skills
+ * Fonction principale
+ *
+ * @description Page Skills.
+ *
+ */
 function Skills() {
+  // Référence pour l'apparition au scroll
   const [skillsRef, skillsVisible] = useOnScreen<HTMLDivElement>();
 
   return (
@@ -24,42 +36,42 @@ function Skills() {
             id={1}
             className={cn(
               "transition-all duration-1000 ease-in-out",
-              skillsVisible ? "" : "opacity-0 scale-0",
+              skillsVisible ? "" : "scale-0 opacity-0",
             )}
           />
           <Skill
             id={2}
             className={cn(
               "transition-all delay-100 duration-1000 ease-in-out",
-              skillsVisible ? "" : "opacity-0 scale-0",
+              skillsVisible ? "" : "scale-0 opacity-0",
             )}
           />
           <Skill
             id={3}
             className={cn(
               "transition-all delay-200 duration-1000 ease-in-out",
-              skillsVisible ? "" : "opacity-0 scale-0",
+              skillsVisible ? "" : "scale-0 opacity-0",
             )}
           />
           <Skill
             id={4}
             className={cn(
               "transition-all delay-300 duration-1000 ease-in-out",
-              skillsVisible ? "" : "opacity-0 scale-0",
+              skillsVisible ? "" : "scale-0 opacity-0",
             )}
           />
           <Skill
             id={5}
             className={cn(
               "transition-all delay-[400] duration-1000 ease-in-out",
-              skillsVisible ? "" : "opacity-0 scale-0",
+              skillsVisible ? "" : "scale-0 opacity-0",
             )}
           />
           <Skill
             id={6}
             className={cn(
               "transition-all delay-500 duration-1000 ease-in-out",
-              skillsVisible ? "" : "opacity-0 scale-0",
+              skillsVisible ? "" : "scale-0 opacity-0",
             )}
           />
         </div>

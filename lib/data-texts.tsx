@@ -1,3 +1,7 @@
+/**
+ * Contient tous les texts
+ */
+
 const texts = {
   loading: {
     text: "Loading...",

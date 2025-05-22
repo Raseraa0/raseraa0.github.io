@@ -1,7 +1,11 @@
+/**
+ * @name About.tsx
+ * @type Page
+ */
+
 import { ParallaxLayer } from "@react-spring/parallax";
 import Image from "next/image";
 import Timeline from "./components/Timeline";
-// import { Spotlight } from "./components/ui/spotlight";
 import "./style/about.css";
 import Button from "./components/Button";
 import Link from "next/link";
@@ -10,7 +14,15 @@ import selfieImg from "../public/selfie_v1.jpg";
 import { useOnScreen } from "./hooks/useOnScreen";
 import { cn } from "@/lib/utils";
 
+/**
+ * @About
+ * Fonction principale
+ *
+ * @description Page About.
+ *
+ */
 function About() {
+  // Références pour l'apparition au scroll
   const [aboutRef, aboutVisible] = useOnScreen<HTMLDivElement>();
   const [imgRef, imgVisible] = useOnScreen<HTMLImageElement>();
   const [descRef, descVisible] = useOnScreen<HTMLDivElement>();
@@ -21,6 +33,7 @@ function About() {
       speed={0}
       className="flex min-h-[600px] flex-col items-center justify-evenly lg:flex-row"
     >
+      {/* Cadre contenant les infos principales */}
       <div
         ref={aboutRef}
         className={cn(
@@ -29,6 +42,7 @@ function About() {
         )}
       >
         <div className="m-px flex flex-col items-center justify-evenly gap-8 rounded-2xl bg-blue-9/95 py-8 lg:h-full lg:gap-0 lg:py-0">
+          {/* Photo de profil */}
           <Image
             ref={imgRef}
             id="img-selfie"
@@ -40,6 +54,8 @@ function About() {
               imgVisible ? "" : "translate-x-40 opacity-0",
             )}
           />
+
+          {/* Description de moi même */}
           <div
             ref={descRef}
             className={cn(
@@ -49,6 +65,8 @@ function About() {
           >
             {texts.about.desc}
           </div>
+
+          {/* Bouton qui fait télécharger le CV */}
           <Link href="/CV_RASERA_Arthur_FR.pdf" target="_blank">
             <Button
               ref={cvRef}
@@ -61,7 +79,9 @@ function About() {
           </Link>
         </div>
       </div>
-      <Timeline className="scale-90 lg:scale-125" />
+
+      {/* Timeline sur mon parcours */}
+      <Timeline className="scale-90 lg:scale-110" />
     </ParallaxLayer>
   );
 }

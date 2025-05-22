@@ -170,7 +170,7 @@ const TimelineStep = ({
  *
  */
 function Timeline({ className = "" }: Props) {
-  // Référence Pour l'apparition au scroll
+  // Référence pour l'apparition au scroll
   const [lineRef, lineVisible] = useOnScreen<HTMLUListElement>();
 
   return (

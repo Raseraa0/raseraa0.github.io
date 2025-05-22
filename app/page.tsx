@@ -1,6 +1,6 @@
 /**
- * @name page
- * @description Composant principal qui va contenir tout les pages.
+ * @name page.tsx
+ * @type All
  */
 
 "use client";
@@ -13,15 +13,14 @@ import Projects from "./Projects";
 import Skills from "./Skills";
 import Footer from "./Footer";
 import BackToTopButton from "./components/BackToTopButton";
-// import ElementBackground from "./ElementBackground";
 import BackgroundColor from "./BackgroundColor";
 
 /**
- * Fonction principal
- * @returns
- *      - Ecran de chargement temporaire
- *      - Hero (1ère page)
- *      - Block temporaire
+ * @Home
+ * Fonction d'entrée
+ *
+ * @description Contient l'entièreté du porte folio.
+ *
  */
 export default function Home() {
   // Booléen qui indique si la page est entrain de se charger
@@ -35,8 +34,13 @@ export default function Home() {
     setLoading(false);
   }, []);
 
+  // Indicateur pour savoir si on est en haut de la page
   const [isTop, setIsTop] = useState(true);
 
+  /**
+   * Lorsque l'on scroll, on vérifié si on est au top pour afficher
+   * ou pas le bouton go to top
+   */
   const handleScroll = () => {
     if (parallaxRef.current) {
       const scrollTop = parallaxRef.current.container.current.scrollTop;
@@ -45,6 +49,7 @@ export default function Home() {
     }
   };
 
+  // Déclenché uniquement au début
   useEffect(() => {
     const container = parallaxRef.current?.container.current;
     if (container) {
@@ -72,6 +77,7 @@ export default function Home() {
         {/* Hero pour la page d'acceuil */}
         <Hero parallaxRef={parallaxRef} />
 
+        {/* Fond uni */}
         <BackgroundColor color="#00131c" offset={1} />
         <BackgroundColor color="#00131c" offset={2} />
         <BackgroundColor color="#00131c" offset={3} />

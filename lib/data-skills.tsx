@@ -1,3 +1,7 @@
+/**
+ * Contient toutes les informations relatives au skills.
+ */
+
 import dockerImg from "../public/skills/docker.png";
 import gitImg from "../public/skills/git.png";
 import odataImg from "../public/skills/odata.png";

@@ -1,3 +1,7 @@
+/**
+ * Contient toutes les informations relatives au projets.
+ */
+
 import wallpaperGeneratorImg from "../public/projects/WallpaperGenerator.png";
 import neuralNetworkFromScratchImg from "../public/projects/NeuralNetwork.png";
 import rayTracingImg from "../public/projects/RayTracing.png";

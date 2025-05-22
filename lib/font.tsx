@@ -1,3 +1,7 @@
+/**
+ * Fonts
+ */
+
 import { Inter } from "next/font/google";
 import { Jersey_15 } from "next/font/google";
 
