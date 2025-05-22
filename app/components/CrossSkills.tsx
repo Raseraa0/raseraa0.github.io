@@ -1,6 +1,19 @@
+/**
+ * @name CrossSkills.tsx
+ * @type Component
+ */
+
+/**
+ * @CrossSkills
+ * Fonction principale
+ *
+ * @description Affiche 6 compartiements de couleurs séparés de lignes.
+ *
+ */
 function CrossSkills() {
   return (
     <>
+      {/* Trait vertical */}
       <div className="pointer-events-none absolute flex h-full w-full items-center justify-center">
         <div
           className="h-full w-[2px]"
@@ -10,6 +23,8 @@ function CrossSkills() {
           }}
         ></div>
       </div>
+
+      {/* Traits horizontaux */}
       <div className="pointer-events-none absolute flex h-full w-full flex-col items-center justify-evenly">
         <div
           className="h-[2px] w-full"
@@ -27,6 +42,7 @@ function CrossSkills() {
         ></div>
       </div>
 
+      {/* Les 6 compartiments */}
       <div
         className="p-fluide-anim absolute right-0 top-0 h-1/3 w-1/2 opacity-50 hover:opacity-100"
         style={{

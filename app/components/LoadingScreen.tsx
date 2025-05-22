@@ -1,16 +1,18 @@
 /**
- * @name LoadindScreen
- * @description Ecran de chargement
- * Cet écran ne sera affiché que temporairement
+ * @name LoadindScreen.tsx
+ * @type Component
  */
 
 import texts from "@/lib/data-texts";
 import React from "react";
 
 /**
+ * @loadingScreen
  * Fonction principale
- * @returns
- *      - Simple écran blanc avec Loading d'écrit
+ *
+ * @description Ecran de chargement affiché temporarement
+ * avant que le reste soit généré, simple texte en milieu de page.
+ *
  */
 const LoadingScreen: React.FC = () => {
   return (

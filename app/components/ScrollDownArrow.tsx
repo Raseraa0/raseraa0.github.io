@@ -1,3 +1,8 @@
+/**
+ * @name ScrollDownArrow.tsx
+ * @type Component
+ */
+
 import Image from "next/image";
 import { RefObject, useEffect, useState } from "react";
 import { IParallax, ParallaxLayer } from "@react-spring/parallax";
@@ -6,6 +11,7 @@ import { cn } from "@/lib/utils";
 
 import chevronImg from "../../public/chevron.svg";
 
+// Propriétés de ScrollDownArrow
 type Props = {
   margin_bottom?: number;
   margin_side?: number;
@@ -13,10 +19,19 @@ type Props = {
   parallaxRef: RefObject<IParallax | null>;
 };
 
+// Propriétés de Chevron et ThreeChevron
 type PropsAgain = {
   className?: string;
 };
 
+/**
+ * @Chevron
+ *
+ * @description Simple chevron.
+ *
+ * @param className: Classe supplémentaire à appliquer au bouton
+ *
+ */
 function Chevron({ className = " " }: PropsAgain) {
   return (
     <Image
@@ -28,6 +43,14 @@ function Chevron({ className = " " }: PropsAgain) {
   );
 }
 
+/**
+ * @ThreeChevron
+ *
+ * @description Trois chevron les uns au dessus des autres.
+ *
+ * @param className: Classe supplémentaire à appliquer au bouton
+ *
+ */
 function ThreeChevron({ className = " " }: PropsAgain) {
   return (
     <div
@@ -43,18 +66,39 @@ function ThreeChevron({ className = " " }: PropsAgain) {
   );
 }
 
+/**
+ * @ScrollDownArrow
+ * Fonction principale
+ *
+ * @description A droite et à gauche, en bas de l'écran, des chevrons animé
+ * indique a l'utilisateur qu'il peut scroll vers le bas,
+ * ces chevron disparaissent lorsque l'on quitte la 1ère page.
+ *
+ * @param scrollThreshold: Seuil avant que les chevrons disparaissent 
+ * @param parallaxRef: Référence de l'élément global parallax
+ *
+ */
 function ScrollDownArrow({ scrollThreshold = 30, parallaxRef }: Props) {
+
+  // Défini si le threshold doit être visible ou pas
   const [isVisible, setIsVisible] = useState(true);
 
+  // Exécuté uniquement au début
   useEffect(() => {
+    /**
+     * Check la position du scroll et set visible à true uniquement
+     * si l'on ne dépasse pas le threshold.
+     */
     const checkScrollPosition = () => {
       if (parallaxRef.current) {
+        console.log("azeaze")
         const currentScrollPos = parallaxRef.current.current;
         setIsVisible(currentScrollPos < scrollThreshold);
       }
     };
 
-    const intervalId = setInterval(checkScrollPosition, 100);
+    // Appel cette fonction toute les secondes
+    const intervalId = setInterval(checkScrollPosition, 1000);
 
     return () => {
       clearInterval(intervalId);

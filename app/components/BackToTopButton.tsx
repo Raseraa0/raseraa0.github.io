@@ -1,17 +1,38 @@
-import { fontJersey15 } from "@/lib/font";
-import { cn } from "@/lib/utils";
+/**
+ * @name BackToTopButton.tsx
+ * @type Component
+ */
 
 import "../style/backToTop.css";
+import { fontJersey15 } from "@/lib/font";
+import { cn } from "@/lib/utils";
 import { IParallax } from "@react-spring/parallax";
 import { RefObject } from "react";
 import texts from "@/lib/data-texts";
 
+// Propriétés
 type Props = {
   className?: string;
   parallaxRef: RefObject<IParallax | null>;
 };
 
+/**
+ * @BackToTopButton
+ * Fonction principale
+ *
+ * @description Bouton qui permet de revenir à la première page,
+ * ce bouton n'apparait que lorsque l'on quitte la première page
+ * et est toujours positionné en haut à droite.
+ * 
+ * @param className: Classe supplémentaire à appliquer au bouton 
+ * @param parallaxRef: Référence de l'élément global parallax
+ * 
+ */
 function BackToTopButton({ className = "", parallaxRef }: Props) {
+
+  /**
+   * Permet un retour à la première page de façon fluide
+   */
   const goTop = () => {
     parallaxRef.current?.scrollTo(0);
   };

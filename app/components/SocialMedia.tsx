@@ -1,8 +1,13 @@
+/**
+ * @name SocialMedia.tsx
+ * @type Component
+ */
 import Image, { StaticImageData } from "next/image";
 import "../style/socialMedia.css";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
+// Propriétés
 type Props = {
   svgSrc: StaticImageData;
   className?: string;
@@ -11,6 +16,20 @@ type Props = {
   alt?: string;
 };
 
+/**
+ * @SocialMedia
+ * Fonction principale
+ *
+ * @description Icone redirigant vers un lien correspondant à 
+ * un de mes réseaux sociaux, avec image associée.
+ * 
+ * @param svgSrc: Image static du réseaux concerné
+ * @param className: Classe supplémentaire à appliquer au bouton 
+ * @param num: Numéro du badge afin de pouvoir l'identifier
+ * @param href: Lien correspondant 
+ * @param alt: Alt correspondant 
+ * 
+ */
 function SocialMedia({
   svgSrc,
   className = "",

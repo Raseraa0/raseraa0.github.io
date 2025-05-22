@@ -1,6 +1,6 @@
 /**
- * @name name
- * @description Affiche un text au centre de l'écran
+ * @name Name.tsx
+ * @type Component
  */
 
 import { fontJersey15 } from "@/lib/font";
@@ -9,20 +9,22 @@ import { ParallaxLayer } from "@react-spring/parallax";
 
 // Propriétés
 type Props = {
-  // Vitesse à transmettre à la couche parallax
   speed: number;
-
-  // Texte à afficher
   text: string;
-
-  // Class supplémentaire
   className?: string;
 };
 
 /**
+ * @Name
  * Fonction principale
- * @returns
- *      - Couche parallax qui va contenir le texte
+ *
+ * @description Affiche un text au centre de l'écran sur
+ * une couche parallax.
+ *
+ * @param speed: Vitesse à transmettre à la couche parallax
+ * @param text: Texte à afficher
+ * @param className: Classe supplémentaire à appliquer au bouton
+ * 
  */
 function Name({ speed, text, className = "" }: Props) {
   return (
@@ -32,7 +34,11 @@ function Name({ speed, text, className = "" }: Props) {
       className="pointer-events-none flex justify-center"
     >
       <p
-        className={cn("flex items-center transition-all duration-200 ease-in-out", fontJersey15.className, className)}
+        className={cn(
+          "flex items-center transition-all duration-200 ease-in-out",
+          fontJersey15.className,
+          className,
+        )}
       >
         <span className="pointer-events-auto">{text}</span>
       </p>
