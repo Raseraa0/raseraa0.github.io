@@ -11,17 +11,17 @@ import ScrollDownArrow from "./components/ScrollDownArrow";
 import SocialMediaBar from "./components/SocialMediaBar";
 import NavigationBar from "./components/NavigationBar";
 import texts from "@/lib/data-texts";
-
-import img9Forest from "../public/Minimaliste/SVG_Layer/9_Forest.svg";
-import img8Forest from "../public/Minimaliste/SVG_Layer/8_Forest.svg";
-import img7Bridge from "../public/Minimaliste/SVG_Layer/7_Bridge.svg";
-import img6Birds from "../public/Minimaliste/SVG_Layer/6_Birds.svg";
-import img5Birds from "../public/Minimaliste/SVG_Layer/5_Birds.svg";
-import img4Mountains from "../public/Minimaliste/SVG_Layer/4_Mountains.svg";
-import img3Mountains from "../public/Minimaliste/SVG_Layer/3_Mountains.svg";
-import img2Mountains from "../public/Minimaliste/SVG_Layer/2_Mountains.svg";
-import img1Clouds from "../public/Minimaliste/SVG_Layer/1_Clouds.svg";
 import BackgroundColor from "./BackgroundColor";
+
+import img9Forest from "../public/Minimaliste/Centered_Layer/9_Forest.png";
+import img8Forest from "../public/Minimaliste/Centered_Layer/8_Forest.png";
+import img7Bridge from "../public/Minimaliste/Centered_Layer/7_Bridge.png";
+import img6Birds from "../public/Minimaliste/Centered_Layer/6_Birds.png";
+import img5Birds from "../public/Minimaliste/Centered_Layer/5_Birds.png";
+import img4Mountains from "../public/Minimaliste/Centered_Layer/4_Mountains.png";
+import img3Mountains from "../public/Minimaliste/Centered_Layer/3_Mountains.png";
+import img2Mountains from "../public/Minimaliste/Centered_Layer/2_Mountains.png";
+import img1Clouds from "../public/Minimaliste/Centered_Layer/1_Clouds.png";
 
 // Propriétés
 type Props = {
