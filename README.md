@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com.Raseraa0">
+  <a href="https://github.com/Raseraa0">
    🏠 Go back to my GitHub home page 🏠 
   </a>
 </p>
@@ -27,7 +27,7 @@ This site is animated and responsive, but nothing beats visiting it to see for y
 
 ---
 <p align="center">
-  <a href="https://github.com.Raseraa0">
+  <a href="https://github.com/Raseraa0">
    🏠 Go back to my GitHub home page 🏠 
   </a>
 </p>
