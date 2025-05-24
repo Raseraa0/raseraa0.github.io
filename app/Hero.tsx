@@ -23,7 +23,6 @@ import img3Mountains from "../public/img/background_layer/3_Mountains.png";
 import img2Mountains from "../public/img/background_layer/2_Mountains.png";
 import img1Clouds from "../public/img/background_layer/1_Clouds.png";
 import LangSwitch from "./components/LangSwitch";
-import DarkSwitch from "./components/DarkSwitch";
 import { useLanguage } from "./contexts/language-context";
 
 // Propriétés

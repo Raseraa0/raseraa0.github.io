@@ -12,7 +12,7 @@ function LangSwitch({ speed }: Props) {
   return (
     <ParallaxLayer offset={0} speed={speed} className="pointer-events-none">
       <div
-        className="pointer-events-auto absolute bottom-1/3 left-[20%] m-px flex h-10 md:left-8 md:bottom-auto md:top-8 cursor-pointer flex-row items-center gap-2 rounded-full border border-blue-9 px-4 text-xl duration-300 hover:scale-110 active:scale-90 hover:bg-blue-7/20 active:border-blue-1 active:bg-blue-7/80"
+        className="pointer-events-auto absolute top-40 right-2 m-px flex h-10 md:left-8 md:right-auto md:top-8 cursor-pointer flex-row items-center gap-2 rounded-full border border-blue-9 px-4 text-xl duration-300 hover:scale-110 active:scale-90 hover:bg-blue-7/20 active:border-blue-1 active:bg-blue-7/80"
         onClick={toggleLanguage}
       >
         <span
