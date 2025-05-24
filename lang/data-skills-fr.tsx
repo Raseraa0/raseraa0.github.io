@@ -1,5 +1,5 @@
 /**
- * Contient toutes les informations relatives au skills.
+ * Contient toutes les informations relatives aux compétences.
  */
 
 import dockerImg from "../public/img/skills/docker.svg";
@@ -20,7 +20,7 @@ import pythonImg from "../public/img/skills/python.svg";
 const skills = [
   {
     id: 1,
-    title: "Artificial Intelligence",
+    title: "Intelligence Artificielle",
     subSkills: [
       {
         name: "Python",
@@ -34,11 +34,11 @@ const skills = [
         name: "PyTorch",
         image: pytorchImg,
       },
-    ],
+   ],
   },
   {
     id: 2,
-    title: "Web development",
+    title: "Développement Web",
     subSkills: [
       {
         name: "TypeScript",
@@ -56,7 +56,7 @@ const skills = [
   },
   {
     id: 5,
-    title: "Low-level development",
+    title: "Développement bas niveau",
     subSkills: [
       {
         name: "C",
@@ -66,7 +66,7 @@ const skills = [
   },
   {
     id: 4,
-    title: "Object-Oriented",
+    title: "Programmation Orientée Objet",
     subSkills: [
       {
         name: "Java",
@@ -84,7 +84,7 @@ const skills = [
   },
   {
     id: 3,
-    title: "SAP Development",
+    title: "Développement SAP",
     subSkills: [
       {
         name: "ABAP",
@@ -102,7 +102,7 @@ const skills = [
   },
   {
     id: 6,
-    title: "DevOps & Tools",
+    title: "DevOps & Outils",
     subSkills: [
       {
         name: "Git",

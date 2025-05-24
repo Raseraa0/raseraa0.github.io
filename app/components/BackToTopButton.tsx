@@ -8,7 +8,7 @@ import { fontJersey15 } from "@/lib/font";
 import { cn } from "@/lib/utils";
 import { IParallax } from "@react-spring/parallax";
 import { RefObject } from "react";
-import texts from "@/lib/data-texts";
+import { useLanguage } from "../contexts/language-context";
 
 // Propriétés
 type Props = {
@@ -23,13 +23,12 @@ type Props = {
  * @description Bouton qui permet de revenir à la première page,
  * ce bouton n'apparait que lorsque l'on quitte la première page
  * et est toujours positionné en haut à droite.
- * 
- * @param className: Classe supplémentaire à appliquer au bouton 
+ *
+ * @param className: Classe supplémentaire à appliquer au bouton
  * @param parallaxRef: Référence de l'élément global parallax
- * 
+ *
  */
 function BackToTopButton({ className = "", parallaxRef }: Props) {
-
   /**
    * Permet un retour à la première page de façon fluide
    */
@@ -37,10 +36,13 @@ function BackToTopButton({ className = "", parallaxRef }: Props) {
     parallaxRef.current?.scrollTo(0);
   };
 
+  // Récupération du textes
+  const { texts } = useLanguage();
+
   return (
     <button
       className={cn(
-        "p-backtotop fixed right-0 top-0 z-50 px-4 pt-5 text-3xl text-blue-1 shadow-blue-1 transition duration-200 ease-in-out hover:scale-110 active:scale-[1.2] lg:px-12 lg:pt-9 lg:text-4xl",
+        "p-backtotop fixed right-0 top-0 z-50 px-4 pt-5 text-3xl text-blue-1 shadow-blue-1 transition duration-200 ease-in-out hover:scale-110 active:scale-[1.2] dark:text-blue-9 dark:shadow-blue-9 lg:px-12 lg:pt-9 lg:text-4xl",
         className,
         fontJersey15.className,
       )}

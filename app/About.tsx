@@ -9,7 +9,6 @@ import Timeline from "./components/Timeline";
 import "./style/about.css";
 import Button from "./components/Button";
 import Link from "next/link";
-import texts from "@/lib/data-texts";
 import { useOnScreen } from "./hooks/useOnScreen";
 import { cn } from "@/lib/utils";
 import SocialMedia from "./components/SocialMedia";
@@ -18,6 +17,7 @@ import selfieImg from "../public/img/selfie_v1.jpg";
 import githubBadge from "../public/img/social_media/github-badge.svg";
 import linkedinBadge from "../public/img/social_media/linkedin-badge.svg";
 import mailBadge from "../public/img/social_media/mail-badge.svg";
+import { useLanguage } from "./contexts/language-context";
 
 /**
  * @About
@@ -34,21 +34,32 @@ function About() {
   const [cvRef, cvVisible] = useOnScreen<HTMLButtonElement>();
   const [contactRef, contactVisible] = useOnScreen<HTMLDivElement>();
 
+  // Récupération du textes
+  const { texts } = useLanguage();
+
   return (
     <ParallaxLayer
       offset={1}
       speed={0}
-      className="flex min-h-[600px] flex-col items-center justify-evenly lg:flex-row"
+      className="relative flex min-h-[600px] flex-col items-center justify-evenly bg-blue-9 dark:bg-blue-4 lg:flex-row"
     >
+      <div className="absolute top-0 -z-10 hidden h-32 w-full flex-col items-center bg-blue-9 dark:flex">
+        <div className="half-ellipse absolute bg-blue-8"></div>
+        <div className="half-ellipse absolute top-2 bg-blue-7"></div>
+        <div className="half-ellipse absolute top-4 bg-blue-5"></div>
+        <div className="half-ellipse absolute top-6 bg-blue-6"></div>
+        <div className="half-ellipse absolute top-8 bg-blue-4"></div>
+      </div>
+
       {/* Cadre contenant les infos principales */}
       <div
         ref={aboutRef}
         className={cn(
-          "mx-4 flex flex-col items-center justify-center rounded-2xl bg-gradient-to-b from-white-1/65 to-blue-5/45 transition-all duration-500 ease-in-out lg:mx-0 lg:h-5/6",
+          "mx-4 flex flex-col items-center justify-center rounded-2xl bg-gradient-to-b from-white-1/65 to-blue-5/45 transition-all duration-500 ease-in-out lg:mx-0 lg:h-5/6 dark:from-blue-9 dark:to-blue-5",
           aboutVisible ? "" : "opacity-0",
         )}
       >
-        <div className="lg:gap0 m-px flex flex-col items-center justify-evenly gap-8 rounded-2xl bg-blue-9/95 py-8 lg:h-full lg:py-0">
+        <div className="lg:gap0 m-px flex flex-col items-center justify-evenly gap-8 rounded-2xl bg-blue-9/95 py-8 lg:h-full lg:py-0 dark:bg-blue-1/85">
           {/* Photo de profil */}
           <Image
             ref={imgRef}

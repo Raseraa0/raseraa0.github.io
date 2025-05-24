@@ -10,7 +10,7 @@ import Name from "./components/Name";
 import ScrollDownArrow from "./components/ScrollDownArrow";
 import SocialMediaBar from "./components/SocialMediaBar";
 import NavigationBar from "./components/NavigationBar";
-import texts from "@/lib/data-texts";
+
 import BackgroundColor from "./components/BackgroundColor";
 
 import img9Forest from "../public/img/background_layer/9_Forest.png";
@@ -22,6 +22,9 @@ import img4Mountains from "../public/img/background_layer/4_Mountains.png";
 import img3Mountains from "../public/img/background_layer/3_Mountains.png";
 import img2Mountains from "../public/img/background_layer/2_Mountains.png";
 import img1Clouds from "../public/img/background_layer/1_Clouds.png";
+import LangSwitch from "./components/LangSwitch";
+import DarkSwitch from "./components/DarkSwitch";
+import { useLanguage } from "./contexts/language-context";
 
 // Propriétés
 type Props = {
@@ -30,13 +33,16 @@ type Props = {
 
 /**
  * @Hero
- * 
+ *
  * @description Page Hero.
- * 
+ *
  * @param parallaxRef: Référence de l'élément global parallax
- * 
+ *
  */
 function Hero({ parallaxRef }: Props) {
+  // Récupération du textes
+  const { texts } = useLanguage();
+
   return (
     <div>
       {/* Couches pour le background */}
@@ -55,6 +61,9 @@ function Hero({ parallaxRef }: Props) {
 
       {/* Barre de navigation */}
       <NavigationBar speed={-2} parallaxRef={parallaxRef} />
+
+      <LangSwitch speed={-2.2} />
+      {/* <DarkSwitch speed={-2.7} /> */}
 
       {/* Hi */}
       <Name

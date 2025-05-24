@@ -2,6 +2,7 @@ import type { Config } from "tailwindcss";
 import daisyui from "daisyui";
 
 export default {
+  darkMode : "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -23,6 +24,7 @@ export default {
           7: "#003b64",
           8: "#002545",
           9: "#00131c",
+          10: "#00090d",
         },
         white: {
           1: "#f7f7f7",

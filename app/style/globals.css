@@ -7,6 +7,17 @@
   min-height: 600px;
 }
 
+.half-ellipse {
+  width: 130%;
+  height: 280px;
+  /* hauteur importante pour bien voir la forme */
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+
 /* Hero */
 
 .p-animation {

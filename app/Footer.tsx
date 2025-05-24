@@ -9,7 +9,8 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 import "./style/footer.css";
-import texts from "@/lib/data-texts";
+import { useLanguage } from "./contexts/language-context";
+
 
 // Propriétés
 type Props = {
@@ -46,6 +47,10 @@ const FooterMedia = ({ name, href }: Props) => {
  *
  */
 function Footer() {
+
+  // Récupération du textes
+  const { texts } = useLanguage();
+
   return (
     <ParallaxLayer
       offset={3}

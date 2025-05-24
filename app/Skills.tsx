@@ -24,7 +24,7 @@ function Skills() {
     <ParallaxLayer
       offset={3}
       speed={0}
-      className="min-[600px] flex flex-col items-center"
+      className="min-[600px] flex flex-col items-center bg-blue-9 dark:bg-blue-4"
     >
       <div
         ref={skillsRef}

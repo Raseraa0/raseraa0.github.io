@@ -8,13 +8,13 @@ import { fontJersey15 } from "@/lib/font";
 import "../style/navigationBar.css";
 import { RefObject } from "react";
 import { cn } from "@/lib/utils";
-import texts from "@/lib/data-texts";
+import { useLanguage } from "../contexts/language-context";
 
 // Propriétés de NavigationBar
 type Props = {
   speed: number;
   parallaxRef: RefObject<IParallax | null>;
-}; 
+};
 
 // Propriétés de NavigationBarText
 type PropsAgain = {
@@ -28,11 +28,11 @@ type PropsAgain = {
  *
  * @description Texte qui va servir de lien cliquable
  * afin de renvoyer aux autre section du porte folio.
- * 
+ *
  * @param text: Texte qui sera affiché
  * @param className: Classe supplémentaire à appliquer au bouton
  * @param onClick: Fonction qui va etre réalisé lors du clique sur le texte
- * 
+ *
  */
 function NavigationBarText({
   text,
@@ -56,17 +56,20 @@ function NavigationBarText({
 /**
  * @NavigationBar
  *
- * @description Barre de navigation qui comportera des liens pour 
+ * @description Barre de navigation qui comportera des liens pour
  * aller aux autres sections du porte folio, sur sa proche couche parallax.
- * 
+ *
  * @param speed: Vitesse à transmettre à la couche parallax
  * @param parallaxRef: Référence de l'élément global parallax
- * 
+ *
  */
 function NavigationBar({ speed, parallaxRef }: Props) {
   const scrollToSection = (sectionOffset: number) => {
     parallaxRef.current?.scrollTo(sectionOffset);
   };
+
+  // Récupération du textes
+  const { texts } = useLanguage();
 
   return (
     <ParallaxLayer

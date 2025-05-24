@@ -1,8 +1,9 @@
+
 /**
- * Contains all texts
+ * Contains all English texts
  */
 
-const texts = {
+const textsEn = {
   loading: {
     text: "Loading...",
   },
@@ -63,4 +64,4 @@ const texts = {
   },
 };
 
-export default texts;
+export default textsEn;

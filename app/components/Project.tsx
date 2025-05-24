@@ -8,14 +8,18 @@
 import { cn } from "@/lib/utils";
 import Button from "./Button";
 import { fontJersey15 } from "@/lib/font";
-import projects from "@/lib/data-projects";
 import "../style/project.css";
 import SocialMedia from "./SocialMedia";
-import texts from "@/lib/data-texts";
+
 import Image from "next/image";
 import { Ref } from "react";
 
+import projectsFr from "../../lang/data-projects-fr";
+import projectsEn from "../../lang/data-projects-en";
+
+
 import githubBadge from "../../public/img/social_media/github-badge.svg";
+import { useLanguage } from "../contexts/language-context";
 
 // Propriétés
 type Props = {
@@ -41,8 +45,19 @@ type Props = {
  *
  */
 function Project({ ref, id, isExpanded, onExpand, className }: Props) {
+
+  const { language } = useLanguage();
+
+  // Selection du set de projects correspondant au language
+  let projects;
+  if (language === "fr") {
+    projects = projectsFr;
+  } else if (language === "en") {
+    projects = projectsEn;
+  }
+  
   // Récupération du projet correspondant à l'id
-  const selectedProject = projects.find((project) => project.id === id);
+  const selectedProject = projects?.find((project) => project.id === id);
 
   // Couleur de fond du projet
   const bg_col = selectedProject?.color ?? "#000000";
@@ -76,6 +91,9 @@ function Project({ ref, id, isExpanded, onExpand, className }: Props) {
 
   // Affectation de la couleur plus sombre
   const darkenedColor = darkenColor(bg_col, 0.2);
+
+  // Récupération du textes
+  const { texts } = useLanguage();
 
   return (
     <div

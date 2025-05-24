@@ -3,11 +3,12 @@
  * @type Component
  */
 
-import texts from "@/lib/data-texts";
+
 import "../style/timeline.css";
 import { fontJersey15, fontInter } from "@/lib/font";
 import { cn } from "@/lib/utils";
 import { useOnScreen } from "../hooks/useOnScreen";
+import { useLanguage } from "../contexts/language-context";
 
 // Propriétés de Timeline
 type Props = {
@@ -92,7 +93,7 @@ const TimelineMiddle = () => {
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 20 20"
         fill="currentColor"
-        className="h-5 w-5"
+        className="h-5 w-5 dark:brightness-[20%] "
       >
         <path
           fillRule="evenodd"
@@ -149,11 +150,11 @@ const TimelineStep = ({
 }: PropsAgainAgain) => {
   return (
     <li>
-      <hr className={isFirst ? "first-hr" : ""} />
+      <hr className={cn(isFirst ? "first-hr" : "", "dark:invert")} />
       <TimelineMiddle />
       <TimelineText name={name} desc={desc} right={right} />
       <TimelineDate date={date} right={!right} />
-      <hr className={isLast ? "last-hr" : ""} />
+      <hr className={cn(isLast ? "last-hr" : "", "dark:invert")} />
     </li>
   );
 };
@@ -172,6 +173,9 @@ const TimelineStep = ({
 function Timeline({ className = "" }: Props) {
   // Référence pour l'apparition au scroll
   const [lineRef, lineVisible] = useOnScreen<HTMLUListElement>();
+
+  // Récupération du textes
+  const { texts } = useLanguage();
 
   return (
     <ul

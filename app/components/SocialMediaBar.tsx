@@ -6,11 +6,12 @@
 import { ParallaxLayer } from "@react-spring/parallax";
 import { useEffect } from "react";
 import SocialMedia from "./SocialMedia";
-import texts from "@/lib/data-texts";
+
 
 import githubBadge from "../../public/img/social_media/github-badge.svg";
 import linkedinBadge from "../../public/img/social_media/linkedin-badge.svg";
 import mailBadge from "../../public/img/social_media/mail-badge.svg";
+import { useLanguage } from "../contexts/language-context";
 
 // Propriétés
 type Props = {
@@ -32,7 +33,7 @@ export default function SocialMediaBar({ speed }: Props) {
   // Effectué uniquement au début
   useEffect(() => {
     headerSetup();
-  }, []);
+  }, );
 
   /**
    * Va mettre en place le suivie de la barre en dessous des badge
@@ -103,6 +104,9 @@ export default function SocialMediaBar({ speed }: Props) {
     }
   }
 
+  // Récupération du textes
+  const { texts } = useLanguage();
+  
   return (
     <ParallaxLayer
       id="social-media-layer"
