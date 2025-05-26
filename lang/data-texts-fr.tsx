@@ -10,9 +10,9 @@ const textsFr = {
   },
   hero: {
     social: {
-      altGit: "Icône de réseau social GitHub",
-      altLinkedin: "Icône de réseau social LinkedIn",
-      altMail: "Icône de réseau social Email",
+      altGit: "Icône du réseau social GitHub",
+      altLinkedin: "Icône du réseau social LinkedIn",
+      altMail: "Icône du réseau social Email",
     },
     nav: {
       backToTop: "Retour en haut",
@@ -20,7 +20,7 @@ const textsFr = {
       projects: "Projets",
       skills: "Compétences",
     },
-    hi: "Bonjour, je suis",
+    hi: "Salut, je suis",
     arthur: "Arthur Rasera",
   },
   about: {
@@ -51,7 +51,7 @@ const textsFr = {
     },
   },
   projects: {
-    seeMore: "Cliquez pour développer",
+    seeMore: "Cliquez pour étendre",
     noDescription: "Aucune description disponible.",
     altProjects: "Illustration de projet",
   },

@@ -31,7 +31,7 @@ const projects = [
     id: 3,
     title: "Ray tracing",
     description:
-      "Développement d’un système de lancer de rayons. L’objectif est de simuler des objets et une caméra dans un espace 3D, puis de reconstruire de manière réaliste ce que la caméra percevrait en ajustant textures, couleurs ou motifs.",
+      "Développement d’un système de ray tracing. L’objectif est de simuler des objets et une caméra dans un espace 3D, puis de reconstruire de manière réaliste ce que la caméra percevrait en ajustant textures, couleurs ou motifs.",
     image_path: rayTracingImg,
     link: "https://github.com/Raseraa0/RayTracing",
     color: "#6d28d9",
