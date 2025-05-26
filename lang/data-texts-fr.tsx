@@ -25,7 +25,7 @@ const textsFr = {
   },
   about: {
     altPicture: "Photo de profil",
-    desc: "Bonjour, je suis un jeune ingénieur logiciel diplômé de l'Ensimag. J'aime travailler sur divers projets pour explorer différents environnements techniques et résoudre toutes sortes de problèmes.",
+    desc: "Salut, je suis un jeune ingénieur logiciel diplômé de l'Ensimag. J'aime travailler sur divers projets pour explorer différents environnements techniques et résoudre toutes sortes de problèmes.",
     seeCV: "Cliquez pour voir mon CV",
     timeline: {
       ensimag: {
