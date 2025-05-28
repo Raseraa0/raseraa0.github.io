@@ -24,7 +24,7 @@ const textsEn = {
   },
   about: {
     altPicture: "Profile picture",
-    desc: "Hi ! I’m a young software engineer, graduated from Ensimag. I enjoy working on various projects to explore different technical environments and solve all kinds of problems.",
+    desc: "Hi, I’m a young software engineer, graduated from Ensimag. I enjoy working on various projects to explore different technical environments and solve all kinds of problems.",
     seeCV: "Click to view my CV",
     timeline: {
       ensimag: {

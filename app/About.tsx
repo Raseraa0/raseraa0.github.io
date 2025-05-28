@@ -41,7 +41,7 @@ function About() {
     <ParallaxLayer
       offset={1}
       speed={0}
-      className="relative flex min-h-[600px] flex-col items-center justify-evenly bg-blue-9 dark:bg-blue-4 lg:flex-row"
+      className="relative flex min-h-[600px] flex-col items-center justify-evenly bg-blue-9 dark:bg-blue-4 lg:flex-row debug"
     >
       <div className="absolute top-0 -z-10 hidden h-32 w-full flex-col items-center bg-blue-9 dark:flex">
         <div className="half-ellipse absolute bg-blue-8"></div>
@@ -55,11 +55,11 @@ function About() {
       <div
         ref={aboutRef}
         className={cn(
-          "mx-4 flex flex-col items-center justify-center rounded-2xl bg-gradient-to-b from-white-1/65 to-blue-5/45 transition-all duration-500 ease-in-out lg:mx-0 lg:h-5/6 dark:from-blue-9 dark:to-blue-5",
+          "mx-4 flex flex-col items-center justify-center rounded-2xl bg-gradient-to-b from-white-1/65 to-blue-5/45 transition-all duration-500 ease-in-out lg:mx-0 dark:from-blue-9 lg:h-[642px] dark:to-blue-5",
           aboutVisible ? "" : "opacity-0",
         )}
       >
-        <div className="lg:gap0 m-px flex flex-col items-center justify-evenly gap-8 rounded-2xl bg-blue-9/95 py-8 lg:h-full lg:py-0 dark:bg-blue-1/85">
+        <div className="lg:gap0 m-px flex flex-col items-center justify-evenly gap-8 rounded-2xl bg-blue-9/95 py-8 lg:h-full  lg:py-0 dark:bg-blue-1/85">
           {/* Photo de profil */}
           <Image
             ref={imgRef}
