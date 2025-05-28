@@ -41,7 +41,7 @@ function About() {
     <ParallaxLayer
       offset={1}
       speed={0}
-      className="relative flex min-h-[600px] flex-col items-center justify-evenly bg-blue-9 dark:bg-blue-4 lg:flex-row debug"
+      className="relative flex min-h-[600px] flex-col items-center justify-evenly bg-blue-9 dark:bg-blue-4 lg:flex-row"
     >
       <div className="absolute top-0 -z-10 hidden h-32 w-full flex-col items-center bg-blue-9 dark:flex">
         <div className="half-ellipse absolute bg-blue-8"></div>
